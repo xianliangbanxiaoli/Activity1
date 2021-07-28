@@ -8,29 +8,64 @@
 </head>
 <body>
     <div class="box">
-        <div class="box-item1">
-            <div class="box-item2"></div>
+       <!-- D盘 -->
+            <div class="box-item2">
+                <img src="img/0-首页_slices/头部背景.png" alt="">
+            </div>
             <div class="box-item4"></div>
-        </div>
-                <div class="box-item3">
+        
+        <!-- item3是用来定位再全局的位置，item5是用来定位再item中的位置 -->
+            <div class="box-item3">
 
-                    <div class="box-item" style="text-align: left;">
+                <div class="box-item5">
+                    <div class="box-it1">
                         <div ><img src="img/0-首页_slices/爆款视频.png"/></div>
                         <p class="box-font1">300万铃声</p>
                         <p class="box-font2">高音质爆款</p>
                     </div>
-                    <div class="box-item" style="text-align: center;" >
+                    <div class="box-it2">
                         <div ><img src="img/0-首页_slices/话费礼包.png"/></div>
                         <p class="box-font1">话费礼包</p>
                         <p class="box-font2">最高888元</p>
                     </div>
-                    <div class="box-item" style="text-align: right;">
+                    <div class="box-it3">
                         
                         <div ><img src="img/0-首页_slices/专属视频.png"/></div>
                         <p class="box-font1">爆款视频</p>
                         <p class="box-font2">个性化DIY</p>
                     </div>
+                    <div class="box-item6"><input type="text" value="请输入移动号码" id="input"></div>
+                    <div class="box-item7">
+                        <img src="img/0-首页_slices/悬浮按钮 (1).png" alt="">
+                        <!-- <img src="img/0-首页_slices/按钮-立即抢.gif" alt=""> -->
+
+                        <div class="box-item8">
+                            <span id="sp-one"> 已有</span>
+                            <span id="sp">
+                                <span>1</span>
+                            </span>
+                            <span id="sp">
+                                <span>0</span>
+                            </span>
+                            <span id="sp">
+                                <span>9</span>
+                            </span>
+                            <span id="sp">
+                                <span>5</span>
+                            </span>
+                            <span id="sp">
+                                <span>8</span>
+                            </span>
+                            <span id="sp-one"> 用户办理
+                        </span>
+                        </div>
+                    </div>
+                    
+
                 </div>
+                 
+                       
+            </div>
            
 
     </div>
@@ -46,39 +81,39 @@
 			flex-direction:column;
             
         }
-        .box-item1{
-            height: 2000px;
-            background: #FF5345;
-        }
-    
-    
+        
         .box-item2{
             width: 520px;
-            height:406px;
-            background: #FF5345;
-            background-size: 520px 406px;
-            background-image: url(img/0-首页_slices/头部背景.png);
-           
+            height: 330px;
+            background: #FF5345;  
         }
-        .box-item3{
-            width: 900px;
-            height: 100px;
-            position: absolute;
-            top: 60%;
-            left: 38%;
+        .box-item2 img{
+            width: 520px;
+            height:390px;
         }
         .box-item4{
             width: 520px;
             height: 520px;
             background-image: url(img/0-首页_slices/福利背景\ \(1\)\ \(1\).png);
             background-size: 520px 520px;
-            
-
-            position: absolute;
-            top: 50%;
+            position: relative;
         }
        
+        .box-item3{
+            width: 560px;
+            height: 100px;
+            position: absolute;
+            
 
+        }
+        .box-item5{
+            width: 560px;
+            height: 335px;
+
+            position: relative;
+        }
+        
+/* 预设三个div相同的名字 */
         /* .box-item{
             height: 170px;
             width: 700px;
@@ -86,12 +121,43 @@
             top: 60%;
             left: 38%;
         } */
-        .box-item div{
-            height: 90px;
-            width: 100px;
-           
-        }
 
+        /* .box-item div{
+            height: 90px;
+            width: 80px;
+           
+        } */
+/*  预设三个不同的名字*/
+        .box-it1{
+            height: 94px;
+            width: 150px;
+            position: absolute; 
+            top: 8%;
+            left: 14%;
+        }
+        .box-it1 div img{font-weight: 100;height: 100px;}
+        .box-it1 p{margin: 10px auto;}
+        .box-it1 div{height: 94px;}
+        .box-it2{
+            height: 94px;
+            width: 150px;
+            position: absolute;
+            top: 8%;
+            left: 40%;   
+        }
+        .box-it2 div img{font-weight: 100;height: 100px;}
+        .box-it2 p{margin: 10px auto;}
+        .box-it2 div{height: 94px;}
+        .box-it3{
+            height: 94px;
+            width: 150px;
+            position: absolute;
+            top: 8%;
+            left: 64%;
+        }
+        .box-it3 div img{font-weight: 100;height: 100px;}
+        .box-it3 p{margin: 10px auto;}
+        .box-it3 div{height: 94px;}
         .box-font1{
             width: 126px;
             height: 12px;
@@ -110,7 +176,64 @@
             color: #C70505;
             line-height: 12px;
         } 
-         
+
+        .box-item6{
+            
+            position: absolute;
+           top: 60%;
+            left: 20%;
+        }
+        .box-item6 input{
+            width: 290px;
+            height: 56px;
+            background: #FFFFFF;
+            border: 4px solid #9D0302;
+            border-radius: 58px;
+            font-size: 20px;
+            font-family: PingFang SC;
+            font-weight: 600;
+            color: #8D2217;
+            text-align: center;
+           
+        }
+         .box-item7{
+
+             position: absolute;
+             top: 85%;
+             left: 6%;
+         }
+         .box-item7 img{
+             width: 492px;
+             height: 96px;
+             border-radius: 30%;
+         }
+         .box-item8{
+             height: 10px;
+            position: absolute;
+             top: 96%;
+             left: 30%;
+
+         }
+         #sp{
+            border-radius: 6px;    
+            height: 20px;    
+            width: 20px;    
+            display: inline-block;    
+            background:  #EF0708;      
+            vertical-align: top;
+        
+         }
+         #sp span{
+             color: white;
+         }
+        #sp-one{
+            font-size: 18px;
+            font-family: PingFang SC;
+            font-weight: bold;
+            color: #B63C00;
+            line-height: 12px;
+        }
+        
     </style>
 </body>
 </html>
