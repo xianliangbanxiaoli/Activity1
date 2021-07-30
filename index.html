@@ -7,6 +7,9 @@
     <title>重庆酷看——宠你没道理</title>
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/showDiv.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
 
 </head>
 <body>
@@ -37,7 +40,7 @@
                         </div>
                         <div class="box-item6"><input type="text" value="请输入移动号码" id="input"></div>
                         <div class="box-item7">
-                            <img src="img/0-首页_slices/悬浮按钮 (1).png" alt="">
+                            <img src="img/0-首页_slices/按钮-立即抢.gif" alt="" onclick="showWindow()">
                             <!-- <img src="img/0-首页_slices/按钮-立即抢.gif" alt=""> -->
     
                             <div class="box-item8">
@@ -63,9 +66,9 @@
                         </div> 
                     </div> 
                 </div>
-
+              
             </div>
-        
+       
         <!-- item3是用来定位再全局的位置，item5是用来定位再item中的位置 -->
             
             <div class="box-item9">
@@ -99,22 +102,102 @@
                     
                 </div> 
                 <div class="box-item11">
-                    <div id="title"><img src="img/0-首页_slices/标题.png" alt=""></div>
+                    <div id="title"><img src="img/0-首页_slices/标题(1).png" alt=""></div>
                     <div class="box-item12">
                         <div class="box-item13">
                             <img src="img/0-首页_slices/暂停按钮.png" id="stop-buton">
                             <p>当春风吹来一阵白日梦-在那个 午后一起做个白日梦<br>群星</p>
-                            <img src="img/0-首页_slices/设铃按钮.png" id="ling-buton">
-                           
+                            <img src="img/0-首页_slices/设铃按钮.png" id="ling-buton"> 
+                        </div>
+                        <div class="box-item14">
+                            <img src="img/0-首页_slices/播放按钮.png" id="stop-buton">
+                            <p>孤单心事-爱你是孤单的心事<br>群星</p>
+                            <img src="img/0-首页_slices/设铃按钮.png" id="ling-buton"> 
+                        </div>
+                        <div class="box-item15">
+                            <img src="img/0-首页_slices/播放按钮.png" id="stop-buton">
+                            <p>孤单心事-爱你是孤单的心事<br>群星</p>
+                            <img src="img/0-首页_slices/设铃按钮.png" id="ling-buton"> 
+                        </div>
+                        <div class="box-item16">
+                            <img src="img/0-首页_slices/播放按钮.png" id="stop-buton">
+                            <p>孤单心事-爱你是孤单的心事<br>群星</p>
+                            <img src="img/0-首页_slices/设铃按钮.png" id="ling-buton"> 
+                        </div>
+                        <div class="box-item17">
+                            <img src="img/0-首页_slices/播放按钮.png" id="stop-buton">
+                            <p>孤单心事-爱你是孤单的心事<br>群星</p>
+                            <img src="img/0-首页_slices/设铃按钮.png" id="ling-buton"> 
+                        </div>
+                        <div class="box-item18">
+                            <img id="but" src="img/0-首页_slices/按钮 拷贝.png" alt="">
+                        </div>
+                        <div class="box-video">
+                            <div class="box-item19"><img src="img/0-首页_slices/标题.png" alt=""></div>
+                            <div class="box-item20">
+                                <img src="img/4-抽奖-sclices/红包.png" alt="">
+                            </div>
+
+                            <div class="box-footer">
+                                <ul id="content">
+                                    <li>客服</li>
+                                    <li>客服邮箱</li>
+                                    <li>客服QQ</li>
+                                    <li>客服时间</li>
+                                </ul>
+                            </div>
                         </div>
                     </div> 
+                    
 
-                
                 </div>
-                
+               
             </div>  
-            
+           
     </div>
-    <div style="background: #FF5345;height: 1084px;"></div>
+    <div style="background: #FF5345;height: 2184px;"></div> 
+    
+</div>
+<!-- --------------------------------------弹窗----------------------------快乐的分割线--------------------------------------------------------- -->
+<!-- 遮罩层 -->
+<div id="cover"
+style="background: #000; position: absolute; left: 0px; top: 0px; width: 100%; filter: alpha(opacity=30); opacity: 0.3; display: none; z-index: 2 ">
+
+</div>
+<!-- 弹窗 -->
+<div id="showdiv"
+style="width: 610px; margin: 0 auto; height: 520px; 
+ display: none; position: absolute; top: 40%; left: 30%;
+ z-index: 3;">
+<!-- 标题 -->
+<div id="header">
+    <img src="img/1-弹窗/头部.png" alt="">
+ </div>
+ <!-- 内容 -->
+ <div id="main"
+ style="text-indent: 65px;">
+    <img src="img/1-弹窗/平铺.png" alt="">
+    <input type="text" value="请输入您的手机号">
+ </div>
+ <!-- 按钮 -->
+ <div id="button"
+ style="background: #418BCA; width: 80%; margin: 0 auto; height: 1.5rem; line-height: 1.5rem; text-align: center;color: #fff;margin-top: 1rem; -moz-border-radius: .128rem; -webkit-border-radius: .128rem; border-radius: .128rem;font-size: .59733rem;"
+     onclick="closeWindow()">
+    确 定
+ </div>
+   <script>
+	// 弹窗
+    function showWindow() {
+			$('#showdiv').show();  //显示弹窗
+			$('#cover').css('display', 'block'); //显示遮罩层
+			$('#cover').css('height', document.body.clientHeight + 'px'); //设置遮罩层的高度为当前页面高度
+		}
+	
+		// 关闭弹窗
+		function closeWindow() {
+			$('#showdiv').hide();  //隐藏弹窗
+			$('#cover').css('display', 'none');   //显示遮罩层
+		}
+    </script>
 </body>
 </html>
