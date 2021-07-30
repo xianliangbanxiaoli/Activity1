@@ -13,6 +13,7 @@
     justify-content:center;
     flex-direction:column;
     
+  
 }
 
 .box-item2{
@@ -130,13 +131,13 @@
  .box-item7{
 
      position: absolute;
-     top: 90%;
-     left: 15px;
+     top: 89%;
+     left: 1px;
  }
  .box-item7 img{
-     width: 492px;
-     height: 96px;
-     border-radius: 42%;
+     width: 520px;
+     height: 120px;
+     /* border-radius: 30%; */
  }
  .box-item8{
      height: 20px;
@@ -291,11 +292,11 @@
 
 .box-item12{
     width: 520px;
-    height: 500px;
+    height: 560px;
     background: #CB2B20;
     border-radius: 23px;
     position: absolute;
-    top: 70%;
+    top: 68%;
 
 }
 #stop-buton,#ling-buton{
@@ -303,28 +304,113 @@
     width: 50px;
 }
 .box-item13{
-    height: 10px;
-    width: 520px;
+    height: 78px;
+    width: 460px;
     position: absolute;
     
     top: 5%;
-    
+    left: 5%;
+    /* 边框虚线 */
+    border-bottom:1px dashed white; 
 }
 
 .box-item12 p{
     font-size: 16px;
     font-family: PingFang SC;
-    font-weight: 400;
+    font-weight: 300;
     color: #FFFAE6;
     line-height: 26px;
 
     position: absolute;
-    top: 70%;
-    left: 15%;
+    top: 10%;
+    left: 11%;
 }
 #ling-buton{
     position: absolute;
     /* top: 70%; */
-    right: 2%;
+    right: 0%;
 }
-
+.box-item14{
+    height: 78px;
+    width: 460px;
+    position: absolute;
+    
+    top: 22%;
+    left: 5%;
+    /* 边框虚线 */
+    border-bottom:1px dashed white; 
+}
+.box-item15,.box-item16{
+    height: 78px;
+    width: 460px;
+    
+    /* 边框虚线 */
+    border-bottom:1px dashed white; 
+}
+.box-item17{
+    height: 78px;
+    width: 460px;  
+}
+.box-item15{
+    position: absolute;
+    
+    top: 39%;
+    left: 5%;
+}
+.box-item16{
+    position: absolute;
+    
+    top: 56%;
+    left: 5%;
+}
+.box-item17{
+    position: absolute;
+    
+    top: 72%;
+    left: 5%;
+}
+#but{
+    height: 80px;
+    width: 300px;
+}
+.box-item18{
+    height: 80px;
+    width: 300px;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+}
+.box-video{
+    width: 520px;
+    height: 560px;
+    position: absolute;
+    top: 101%;
+}
+.box-item19{
+    width: 520px;
+    height: 560px;
+}
+.box-item20{
+    width: 520px;
+    height: 560px;
+    background: #CB2B20;
+    border-radius: 23px;
+    position: absolute;
+    top: 21%;
+}
+.box-footer{
+    width: 520px;
+    height: 190px;
+    background: #CB2B20;
+    border-radius: 23px;
+    position: absolute;
+    top: 122%;
+    
+}
+#content{
+    /* 去掉圆点 */
+    list-style-type: none;
+    /* 间距 */
+    padding: 25px;
+    line-height: 40px;
+}
