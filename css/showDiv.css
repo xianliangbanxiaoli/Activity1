@@ -1,0 +1,19 @@
+#header{
+    height: 329px;
+    width: 606px;
+}
+#header img{
+    height: 329px;
+    width: 606px;
+}
+#main{
+    width: 478px;
+    height: 606px;
+}
+#main img{
+    box-sizing: border-box;
+    margin: 0px auto 0px;
+    width: 478px;
+    height: 329px;
+
+}
