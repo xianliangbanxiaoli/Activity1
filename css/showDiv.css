@@ -1,19 +1,76 @@
+
 #header{
-    height: 329px;
+    height: 392px;
     width: 606px;
+    background-image: url(../img/1-弹窗/头部.png);
+    background-size: 606px 392px;
+    position: relative;
 }
 #header img{
-    height: 329px;
-    width: 606px;
+    height: 24px;
+    width: 25px;
+    position: absolute;
+    right: 84px;
+    top: 178px;
 }
 #main{
+    
+    position: absolute; 
+    left: 64px;
     width: 478px;
-    height: 606px;
+    height: 270px;
+    background: #DE3D22;
+    text-align: center;
+    border-radius: 0px 0px 30px 30px;
+
+
 }
-#main img{
-    box-sizing: border-box;
-    margin: 0px auto 0px;
+#main input{
+    width: 430px;
+    height: 94px;
+    background: #FFFFFF;
+    border: 3px solid #C93213;
+    border-radius: 47px;
+   
+
+    font-size: 30px;
+    font-family: PingFang SC;
+    font-weight: 600;
+    color: #4E4E4E;
+    line-height: 59px;
+}
+#main p{
+    width: 432px;
+    height: 66px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 300;
+    color: #FFFFFF;
+    line-height: 24px;
+    opacity: 0.3;
+}
+#ture-img{
+    position: absolute;
+    top: 42%;
+    left: 2%;
+}
+#footer{
     width: 478px;
-    height: 329px;
+    height: 80px;
+    border-radius: 0px 0px 30px 30px;
+    background: #8C1801;
+    position: absolute;
+    left: 62px;
+    top: 663px;
+    
+
+}
+#footer p{
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 200;
+    color: #FFFFFF;
+    line-height: 24px;
+    opacity: 0.3;
 
 }
