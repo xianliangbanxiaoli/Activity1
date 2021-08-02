@@ -397,6 +397,42 @@
     border-radius: 23px;
     position: absolute;
     top: 21%;
+
+    overflow: hidden;
+
+}
+#photo{
+    width: 1200px;
+	animation: switch 10s ease-out infinite;
+    
+
+}
+
+#photo > img {
+	float: left;
+    /* position: absolute;
+    top: 2%; */
+	width: 260px;
+	height: 462px;
+}
+ 
+@keyframes switch {
+	0%, 20% {
+		margin-left: 0;
+	}
+    25%,40%{
+        margin-left: -300px;   
+    }
+	45%, 60% {
+		margin-left: -600px;
+	}
+    65%, 80% {
+		margin-left: -900px;
+	}
+	85%, 100% {
+		margin-left: -1200px;
+	}
+
 }
 .box-footer{
     width: 520px;
