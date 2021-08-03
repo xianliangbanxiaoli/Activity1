@@ -7,6 +7,7 @@
     <title>重庆酷看——宠你没道理</title>
 w
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/index(phone).css">
     <link rel="stylesheet" href="css/showDiv.css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
     </script>
@@ -41,7 +42,6 @@ w
                         <div class="box-item6"><input type="text" value="请输入移动号码" id="input"></div>
                         <div class="box-item7">
                             <img src="img/0-首页_slices/按钮-立即抢.gif" alt="" onclick="showWindow()">
-                            <!-- <img src="img/0-首页_slices/按钮-立即抢.gif" alt=""> -->
     
                             <div class="box-item8">
                                 <span id="sp-one"> 已有</span>
@@ -68,8 +68,6 @@ w
                 </div>
               
             </div>
-       
-        <!-- item3是用来定位再全局的位置，item5是用来定位再item中的位置 -->
             
             <div class="box-item9">
                 <p>点击立即抢收下超值宠粉权益：百万正版铃声随便用，
@@ -78,7 +76,8 @@ w
             <div class="box-item10">
                 <div>
                     <img src="img/0-首页_slices/标题(2).png" alt="">
-                    <div id="div3"><img src="img/0-首页_slices/icon_update.png" alt="">
+                    <div id="div3">
+                        <img src="img/0-首页_slices/icon_update.png" alt="">
                         <p>换一组</p>
                     </div>
                 
@@ -111,22 +110,22 @@ w
                         </div>
                         <div class="box-item14">
                             <img src="img/0-首页_slices/播放按钮.png" id="stop-buton">
-                            <p>孤单心事-爱你是孤单的心事<br>群星</p>
+                            <p>孤单心事-爱你是孤单的心事14<br>群星</p>
                             <img src="img/0-首页_slices/设铃按钮.png" id="ling-buton"> 
                         </div>
                         <div class="box-item15">
                             <img src="img/0-首页_slices/播放按钮.png" id="stop-buton">
-                            <p>孤单心事-爱你是孤单的心事<br>群星</p>
+                            <p>孤单心事-爱你是孤单的心事15<br>群星</p>
                             <img src="img/0-首页_slices/设铃按钮.png" id="ling-buton"> 
                         </div>
                         <div class="box-item16">
                             <img src="img/0-首页_slices/播放按钮.png" id="stop-buton">
-                            <p>孤单心事-爱你是孤单的心事<br>群星</p>
+                            <p>孤单心事-爱你是孤单的心事16<br>群星</p>
                             <img src="img/0-首页_slices/设铃按钮.png" id="ling-buton"> 
                         </div>
                         <div class="box-item17">
                             <img src="img/0-首页_slices/播放按钮.png" id="stop-buton">
-                            <p>孤单心事-爱你是孤单的心事<br>群星</p>
+                            <p>孤单心事-爱你是孤单的心事17<br>群星</p>
                             <img src="img/0-首页_slices/设铃按钮.png" id="ling-buton"> 
                         </div>
                         <div class="box-item18">
@@ -205,17 +204,6 @@ style="width: 610px; margin: 0 auto; height: 520px;
  </div> -->
  
    <script type="text/javascript"> 
-        window.οnlοad=function(){
-				//1.首次加载的时候 调用动态设置rem的api
-				setRemSize();
-				window.addEventListener("resize",setRemSize,false);
-				function setRemSize(){
-				//1.在任何尺寸中都可以获得rem值
-				var _clientWidth=document.documentElement.clientWidth/6.4+"px";
-				//将得到的rem值赋值给根元素的font-size
-				document.documentElement.style.fontSize=_clientWidth;
-				}
-		};
 	// 弹窗
     function showWindow() {
 			$('#showdiv').show();  //显示弹窗
