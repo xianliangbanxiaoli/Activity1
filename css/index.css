@@ -44,22 +44,6 @@
 
     position: relative;
 }
-
-/* 预设三个div相同的名字 */
-/* .box-item{
-    height: 170px;
-    width: 700px;
-    position: absolute;
-    top: 60%;
-    left: 38%;
-} */
-
-/* .box-item div{
-    height: 90px;
-    width: 80px;
-   
-} */
-/*  预设三个不同的名字*/
 .box-it1{
     height: 94px;
     width: 150px;
