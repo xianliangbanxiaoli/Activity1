@@ -19,8 +19,8 @@ body{font-size: 0.14rem /*实际相当于14px*/}
 
 
     *{
-        margin: 0px;
-        padding: 0px;
+        margin: 0rem;
+        padding: 0rem;
     
     }
     
@@ -37,19 +37,19 @@ body{font-size: 0.14rem /*实际相当于14px*/}
     }
     
     .box-item2{
-        width: 6.4rem;
-        height: 4.27rem;
+        width: 5.2rem;
+        height: 3rem;
         background: #FF5345;  
     }
     .box-item2 img{
-        width: 6.4rem;
-        height:4.27rem;
+        width: 5.2rem;
+        height: 3.45rem;
     }
     .box-item4{
-        width: 6.4rem;
+        width: 5.2rem;
         height: 4.55rem;
         background-image: url(../img/0-首页_slices/福利背景\ \(1\)\ \(1\).png);
-        background-size: 5.20rem 4.75rem;
+        background-size: 5.2rem 4.55rem;
         position: relative;
     }
     
@@ -87,46 +87,46 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         top: 20%;
         left: 14%;
     }
-    .box-it1 div img{height: 80px;}
-    .box-it1 p{margin: 10px auto;}
-    .box-it1 div{height: 80px;}
+    .box-it1 div img{height: 0.8rem;}
+    .box-it1 p{margin: 0.1rem auto;}
+    .box-it1 div{height: 0.8rem;}
     .box-it2{
-        height: 94px;
-        width: 150px;
+        height: 0.94rem;
+        width: 1.50rem;
         position: absolute;
         top: 20%;
         left: 42%;   
     }
-    .box-it2 div img{height: 80px;}
-    .box-it2 p{margin: 10px auto;}
-    .box-it2 div{height: 80px;}
+    .box-it2 div img{height: 0.8rem;}
+    .box-it2 p{margin: 0.1rem auto;}
+    .box-it2 div{height: 0.8rem;}
     .box-it3{
-        height: 94px;
-        width: 150px;
+        height: 0.94rem;
+        width: 1.5rem;
         position: absolute;
         top: 20%;
         left: 68%;
     }
-    .box-it3 div img{height: 80px;}
-    .box-it3 p{margin: 10px auto;}
-    .box-it3 div{height: 80px;}
+    .box-it3 div img{height: 0.8rem;}
+    .box-it3 p{margin: 0.1rem auto;}
+    .box-it3 div{height: 0.8rem;}
     .box-font1{
-        width: 126px;
-        height: 12px;
-        font-size: 16px;
+        width: 1.26rem;
+        height: 0.12rem;
+        font-size: 0.16rem;
         font-family: PingFang SC;
         font-weight: bold;
         color: #540808;
-        line-height: 12px
+        line-height: 0.12rem;
     }
     .box-font2{
-        width: 143px;
-        height: 14px;
-        font-size: 18px;
+        width: 1.43rem;
+        height: 0.14rem;
+        font-size: 0.18rem;
         font-family: PingFang SC;
         font-weight: bold;
         color: #C70505;
-        line-height: 12px;
+        line-height: 0.12rem;
     } 
     
     .box-item6{
@@ -136,12 +136,12 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         left: 12%;
     }
     .box-item6 input{
-        width: 400px;
-        height: 58px;
+        width: 4rem;
+        height: 0.58rem;
         background: #FFFFFF;
-        border: 4px solid #9D0302;
-        border-radius: 58px;
-        font-size: 20px;
+        border: 0.04rem solid #9D0302;
+        border-radius: 0.58rem;
+        font-size: 0.2rem;
         font-family: PingFang SC;
         font-weight: 600;
         color: #8D2217;
@@ -152,24 +152,24 @@ body{font-size: 0.14rem /*实际相当于14px*/}
     
          position: absolute;
          top: 89%;
-         left: 1px;
+         left: 0.01rem;
      }
      .box-item7 img{
-         width: 520px;
-         height: 120px;
+         width: 5.2rem;
+         height: 1.2rem;
          /* border-radius: 30%; */
      }
      .box-item8{
-         height: 20px;
+         height: 0.2rem;
          position: absolute;
          top: 100%;
          left: 30%;
     
      }
      #sp{
-        border-radius: 6px;    
-        height: 20px;    
-        width: 20px;    
+        border-radius: 0.06rem;    
+        height: 0.2rem;    
+        width: 0.2rem;    
         display: inline-block;    
         background:  #EF0708;      
         vertical-align: top;
@@ -179,47 +179,47 @@ body{font-size: 0.14rem /*实际相当于14px*/}
          color: white;
      }
     #sp-one{
-        font-size: 18px;
+        font-size: 0.18rem;
         font-family: PingFang SC;
         font-weight: bold;
         color: #B63C00;
-        line-height: 12px;
+        line-height: 0.12rem;
     }
     .box-item9{
-        width: 500px;
-        height: 50px;
+        width: 5rem;
+        height: 0.5rem;
         background: #FF5345;  
     }
     .box-item9 p{
-        font-size: 13px;
+        font-size: 0.13rem;
         font-family: PingFang SC;
         font-weight: 400;
         color: #FFA5A5;
-        line-height: 28px;
+        line-height: 0.28rem;
     }
     .box-item10{
-        height: 120px;
+        height: 1.2rem;
         position: relative;
     }
     .box-item10 div img{
-        width: 520px;
-        height: 120px;
+        width: 5.2rem;
+        height: 1.2rem;
     }
     #div1{
         background:#FCDFDE;
-        height: 384px;
-        width: 220px;
+        height: 3.84rem;
+        width: 2.2rem;
         position: absolute;
         left: 3%;
     
-        border:5px solid #FEF889;
-        border-radius: 15px;
+        border:0.05rem solid #FEF889;
+        border-radius: 0.15rem;
       
         
     }
     #img1{
-        width: 90px;
-        height: 90px;
+        width: 0.9rem;
+        height: 0.9rem;
     
         position: absolute;
         top: 30%;
@@ -229,17 +229,17 @@ body{font-size: 0.14rem /*实际相当于14px*/}
     }
     #div2{
         background:#FEBA81;
-        height: 384px; 
-        width: 220px;
+        height: 3.84rem; 
+        width: 2.2rem;
         position: absolute;
         right: 3%;
     
-        border:5px solid #FEF889;
-        border-radius: 15px;
+        border:0.05rem solid #FEF889;
+        border-radius: 0.15rem;
     }
     #img2{
-        width: 90px;
-        height: 90px;
+        width: 0.9rem;
+        height: 0.9rem;
     
         position: absolute;
         top: 30%;
@@ -247,11 +247,11 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         
     }
     #div2 p,#div1 p{
-        font-size: 13px;
+        font-size: 0.13rem;
         font-family: PingFang SC;
         font-weight: 400;
         color: #FFFFFF;
-        line-height: 17px;
+        line-height: 0.17rem;
     
         position: absolute;
         top: 94%;
@@ -260,31 +260,31 @@ body{font-size: 0.14rem /*实际相当于14px*/}
     
     }
     #div3{
-        height: 10px;
-        width: 70px;
+        height: 0.1rem;
+        width: 0.7rem;
         position: absolute;
         top: 80%;
         right: 15%;
     
     }
     #div3 img{
-        height: 15px;
-        width: 15px;
+        height: 0.15rem;
+        width: 0.15rem;
     }
     #div3 p{
-        font-size: 15px;
+        font-size: o.15rem;
         font-family: PingFang SC;
         font-weight: 400;
         color: #FFFFFF;
-        line-height: 15px;
+        line-height: 0.15rem;
         position: absolute;
         top: 2%;
         right: 2%;
         
     }
     #img4{
-        height: 100px;
-        width: 220px;
+        height: 1rem;
+        width: 2.2rem;
     
         position: absolute;
         
@@ -293,15 +293,15 @@ body{font-size: 0.14rem /*实际相当于14px*/}
     
     }
     #img3{
-        height: 100px;
-        width: 220px;
+        height: 1rem;
+        width: 2.2rem;
         position: absolute; 
         top: 99%;
         right: 2%;
     
     }
     .box-item11{
-        height: 900px;
+        height: 9rem;
         
         position: relative;
     }
@@ -311,21 +311,21 @@ body{font-size: 0.14rem /*实际相当于14px*/}
     }
     
     .box-item12{
-        width: 520px;
-        height: 560px;
+        width: 5.2rem;
+        height: 5.6rem;
         background: #CB2B20;
-        border-radius: 23px;
+        border-radius: 0.23rem;
         position: absolute;
         top: 68%;
     
     }
     #stop-buton,#ling-buton{
-        height: 50px;
-        width: 50px;
+        height: 0.5rem;
+        width: 0.5rem;
     }
     .box-item13{
-        height: 78px;
-        width: 460px;
+        height: 0.78rem;
+        width: 4.6rem;
         position: absolute;
         
         top: 5%;
@@ -335,11 +335,11 @@ body{font-size: 0.14rem /*实际相当于14px*/}
     }
     
     .box-item12 p{
-        font-size: 16px;
+        font-size: 0.16rem;
         font-family: PingFang SC;
         font-weight: 300;
         color: #FFFAE6;
-        line-height: 26px;
+        line-height: 0.26rem;
     
         position: absolute;
         top: 10%;
@@ -351,8 +351,8 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         right: 0%;
     }
     .box-item14{
-        height: 78px;
-        width: 460px;
+        height: 0.78rem;
+        width: 4.6rem;
         position: absolute;
         
         top: 22%;
@@ -361,15 +361,15 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         border-bottom:1px dashed white; 
     }
     .box-item15,.box-item16{
-        height: 78px;
-        width: 460px;
+        height: 0.78rem;
+        width: 4.6rem;
         
         /* 边框虚线 */
-        border-bottom:1px dashed white; 
+        border-bottom:10.01px dashed white; 
     }
     .box-item17{
-        height: 78px;
-        width: 460px;  
+        height: 0.78rem;
+        width: 4.6rem;  
     }
     .box-item15{
         position: absolute;
@@ -390,31 +390,31 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         left: 5%;
     }
     #but{
-        height: 80px;
-        width: 300px;
+        height: 0.8rem;
+        width: 3rem;
     }
     .box-item18{
-        height: 80px;
-        width: 300px;
+        height: 0.8rem;
+        width: 3rem;
         position: absolute;
         top: 85%;
         left: 20%;
     }
     .box-video{
-        width: 520px;
-        height: 560px;
+        width: 5.2rem;
+        height: 5.6rem;
         position: absolute;
         top: 101%;
     }
     .box-item19{
-        width: 520px;
-        height: 560px;
+        width: 5.2rem;
+        height: 5.6rem;
     }
     .box-item20{
-        width: 520px;
-        height: 560px;
+        width: 5.2rem;
+        height: 5.6rem;
         background: #CB2B20;
-        border-radius: 23px;
+        border-radius: 0.23rem;
         position: absolute;
         top: 21%;
     
@@ -422,7 +422,7 @@ body{font-size: 0.14rem /*实际相当于14px*/}
     
     }
     #photo{
-        width: 1200px;
+        width: 12rem;
         animation: switch 10s ease-out infinite;
         
     
@@ -432,8 +432,8 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         float: left;
         /* position: absolute;
         top: 2%; */
-        width: 260px;
-        height: 462px;
+        width: 2.6rem;
+        height: 4.62rem;
     }
      
     @keyframes switch {
@@ -441,24 +441,24 @@ body{font-size: 0.14rem /*实际相当于14px*/}
             margin-left: 0;
         }
         25%,40%{
-            margin-left: -300px;   
+            margin-left: -3rem;   
         }
         45%, 60% {
-            margin-left: -600px;
+            margin-left: -6rem;
         }
         65%, 80% {
-            margin-left: -900px;
+            margin-left: -9rem;
         }
         85%, 100% {
-            margin-left: -1200px;
+            margin-left: -12rem;
         }
     
     }
     .box-footer{
-        width: 520px;
-        height: 190px;
+        width: 5.2rem;
+        height: 1.9rem;
         background: #CB2B20;
-        border-radius: 23px;
+        border-radius: 0.23rem;
         position: absolute;
         top: 122%;
         
@@ -467,8 +467,8 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         /* 去掉圆点 */
         list-style-type: none;
         /* 间距 */
-        padding: 25px;
-        line-height: 40px;
+        padding: 0.25rem;
+        line-height: 0.4rem;
     }
     
     }
