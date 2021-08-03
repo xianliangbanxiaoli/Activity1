@@ -3,21 +3,17 @@
     font-size: 64px;
     } */
     /*320px布局*/
-html{font-size: 50px;}
+html{font-size: 64px;}
 body{font-size: 0.14rem /*实际相当于14px*/}
  
 /* iphone 6 */
 @media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
-    html{font-size: 117.1875px;}
+    html{font-size: 150px;}
 }
 /* iphone6 plus */
 @media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
     html{font-size: 129.375px;}
 }
-
-
-
-
     *{
         margin: 0rem;
         padding: 0rem;
@@ -49,7 +45,7 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         width: 5.2rem;
         height: 4.55rem;
         background-image: url(../img/0-首页_slices/福利背景\ \(1\)\ \(1\).png);
-        background-size: 5.2rem 4.55rem;
+        background-size: 5.2rem 4.75rem;
         position: relative;
     }
     
@@ -64,35 +60,19 @@ body{font-size: 0.14rem /*实际相当于14px*/}
     
         position: relative;
     }
-    
-    /* 预设三个div相同的名字 */
-    /* .box-item{
-        height: 170px;
-        width: 700px;
-        position: absolute;
-        top: 60%;
-        left: 38%;
-    } */
-    
-    /* .box-item div{
-        height: 90px;
-        width: 80px;
-       
-    } */
-    /*  预设三个不同的名字*/
     .box-it1{
         height: 0.94rem;
         width: 1.5rem;
         position: absolute; 
         top: 20%;
-        left: 14%;
+        left: 12%;
     }
     .box-it1 div img{height: 0.8rem;}
     .box-it1 p{margin: 0.1rem auto;}
     .box-it1 div{height: 0.8rem;}
     .box-it2{
         height: 0.94rem;
-        width: 1.50rem;
+        width: 1.5rem;
         position: absolute;
         top: 20%;
         left: 42%;   
@@ -146,7 +126,6 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         font-weight: 600;
         color: #8D2217;
         text-align: center;
-       
     }
      .box-item7{
     
@@ -157,7 +136,6 @@ body{font-size: 0.14rem /*实际相当于14px*/}
      .box-item7 img{
          width: 5.2rem;
          height: 1.2rem;
-         /* border-radius: 30%; */
      }
      .box-item8{
          height: 0.2rem;
@@ -173,7 +151,6 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         display: inline-block;    
         background:  #EF0708;      
         vertical-align: top;
-    
      }
      #sp span{
          color: white;
@@ -187,7 +164,7 @@ body{font-size: 0.14rem /*实际相当于14px*/}
     }
     .box-item9{
         width: 5rem;
-        height: 0.5rem;
+        height: 0.8rem;
         background: #FF5345;  
     }
     .box-item9 p{
@@ -211,21 +188,15 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         width: 2.2rem;
         position: absolute;
         left: 3%;
-    
-        border:0.05rem solid #FEF889;
-        border-radius: 0.15rem;
-      
-        
+        border: 0.05rem solid #FEF889;
+        border-radius: 0.15rem;  
     }
     #img1{
         width: 0.9rem;
         height: 0.9rem;
-    
         position: absolute;
         top: 30%;
-        left: 24%;
-        
-        
+        left: 24%;    
     }
     #div2{
         background:#FEBA81;
@@ -233,7 +204,6 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         width: 2.2rem;
         position: absolute;
         right: 3%;
-    
         border:0.05rem solid #FEF889;
         border-radius: 0.15rem;
     }
@@ -252,7 +222,6 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         font-weight: 400;
         color: #FFFFFF;
         line-height: 0.17rem;
-    
         position: absolute;
         top: 94%;
        
@@ -261,9 +230,9 @@ body{font-size: 0.14rem /*实际相当于14px*/}
     }
     #div3{
         height: 0.1rem;
-        width: 0.7rem;
+        width: 0.8rem;
         position: absolute;
-        top: 80%;
+        top: 78%;
         right: 15%;
     
     }
@@ -272,14 +241,14 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         width: 0.15rem;
     }
     #div3 p{
-        font-size: o.15rem;
+        font-size: 0.15rem;
         font-family: PingFang SC;
         font-weight: 400;
         color: #FFFFFF;
         line-height: 0.15rem;
         position: absolute;
         top: 2%;
-        right: 2%;
+        right: 1%;
         
     }
     #img4{
@@ -365,7 +334,7 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         width: 4.6rem;
         
         /* 边框虚线 */
-        border-bottom:10.01px dashed white; 
+        border-bottom:0.01px dashed white; 
     }
     .box-item17{
         height: 0.78rem;
@@ -471,4 +440,4 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         line-height: 0.4rem;
     }
     
-    }
+}
