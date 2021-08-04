@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 整个布局 */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FF4A3D;
+
+}
+
+.body-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 6.4rem;
+    background-color: #FF4A3D;
+    position: relative;
+}
+.header{
+    height: 4.27rem;
+    width: 6.4rem;
+    
+    background:url(../img/0-shouye_slices/header-background.png);
+    background-size: 6.4rem 4.27rem;
+}
+.scroll-wrap{
+    height: 6.78rem;
+    width: 6.4rem;
+    position: absolute;
+    top: 3.6rem;
+    background: url(../img/0-shouye_slices/fuli-background.png);
+    background-size: 6.4rem 6.78rem;
+}
+.top-box{
+    height: 6.78rem;
+    width: 6.4rem;
+    position: relative;
+    
+
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 5.2rem ;
+    position: absolute;
+    top: 0.9rem;
+    left: 0.6rem;
+   
+}
+
+.box-item div{
+    height: 1rem;
+    width: 1.19rem;
+    position: relative;
+}
+.box-item div img{
+    width: 1.19rem;
+    height: 1.19rem;
+
+}
+.box-font1{
+    width: 1.2rem;
+    height: 0.22rem;
+    font-size: 0.22rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #540808;
+    line-height: 0.32rem;
+    position: absolute;
+    top: 1.19rem;
+    text-align: center;
+}
+.box-font2{
+    width: 1.22rem;
+    height: 0.24rem;
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #C70505;
+    line-height: 0.32rem;
+    text-align: center;
+}
+.input-box input{
+    width: 5.43rem;
+    height: 0.99rem;
+    background: #FFFFFF;
+    border: 0.03rem solid #9D0302;
+    border-radius: 0.49rem;
+
+    font-size: 0.34rem;
+    font-family: PingFang SC;
+    font-weight: 600;
+    color: #8D2217;
+    line-height: 0.59rem;
+    text-align: center;
+}
+.box1{
+    width: 5.43rem;
+    height: 2.2rem;
+    position: absolute;
+    top: 2.65rem;
+    left: 0.49rem;
+
+}
+.get-btn-layer img{
+    width: 5.56rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 1.6rem;
+    
+   
+}
+.num-user{
+    width: 5.93rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 2.55rem;
+    left: 0.53rem;
+}
+#sp-one{
+    /* width: 0.44rem;
+    height: 0.23rem; */
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #B63C00;
+    line-height: 0.78rem;
+}
+#sp{
+   /* font-size: 0.15rem;
+    font-family: Lantinghei SC;
+    font-weight: 800;
+    color: #FFE6A0;
+    line-height: 0.31rem;
+    
+    width: 0.61rem;
+    height: 0.27rem;
+    background: #EF0708; */
+    border-radius: 0.05rem;
+
+}
+#sp span{
+    
+    font-size: 0.15rem;
+    font-family: Lantinghei SC;
+    font-weight: 800;
+    color: #FFE6A0;
+    line-height: 0.31rem;
+    
+    width: 0.61rem;
+    height: 0.27rem;
+    background: #EF0708;
+    border-radius: 0.05rem;
+
+    
+}
+.msg{
+    height: 7.6rem;
+    width: 6.4rem;
+    
+}
+.top-msg{
+    height: 6rem;
+    width: 6.4rem;
+
+}
+.main-msg{
+    
+}
+.main-msg p{
+    width: 5.8rem;
+    height: 0.67rem;
+    font-size: 0.20rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFA5A5;
+    line-height: 0.24rem;
+    text-align: center;
+
+}
+.footer{
+    height: 1rem;
+    width: 6.4rem;
+    background: plum;
+}
