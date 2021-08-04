@@ -1,19 +1,4 @@
-@media only screen and (max-width: 320px) and (min-height: 568px) {
-    /* html,body{
-    font-size: 64px;
-    } */
-    /*320px布局*/
-html{font-size: 64px;}
-body{font-size: 0.14rem /*实际相当于14px*/}
- 
-/* iphone 6 */
-@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
-    html{font-size: 150px;}
-}
-/* iphone6 plus */
-@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
-    html{font-size: 129.375px;}
-}
+
     *{
         margin: 0rem;
         padding: 0rem;
@@ -154,6 +139,11 @@ body{font-size: 0.14rem /*实际相当于14px*/}
      }
      #sp span{
          color: white;
+         font-size: 0.15rem;
+         font-family: Lantinghei SC;
+         font-weight: 800;
+         color: #FFE6A0;
+         line-height: 0.31rem;
      }
     #sp-one{
         font-size: 0.18rem;
@@ -439,5 +429,12 @@ body{font-size: 0.14rem /*实际相当于14px*/}
         padding: 0.25rem;
         line-height: 0.4rem;
     }
+
+    #content li{
+        font-size: 0.23rem;
+    }
+    #footer1{
+        background: #FF5345;height: 21.84rem;
+    }
+
     
-}
