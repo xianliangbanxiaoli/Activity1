@@ -398,8 +398,18 @@
     top: 2%; */
 	width: 260px;
 	height: 462px;
+   
+}
+#photo_one{
+    width: 260px;
+	height: 462px;
+    z-index: 10;
+
 }
  
+#photo_two{
+
+}
 @keyframes switch {
 	0%, 20% {
 		margin-left: 0;
