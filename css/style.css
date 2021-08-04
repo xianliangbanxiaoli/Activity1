@@ -172,9 +172,17 @@ body{
 
 }
 .main-msg{
+    width: 5.8rem;
+    height: 0.67rem;
+    position: relative;
     
 }
-.main-msg p{
+.main-msg div{
+    width: 5.8rem;
+    position: absolute;
+    left: 5%;
+}
+.main-msg div p{
     width: 5.8rem;
     height: 0.67rem;
     font-size: 0.20rem;
@@ -185,6 +193,7 @@ body{
     text-align: center;
 
 }
+
 .footer{
     height: 1rem;
     width: 6.4rem;
