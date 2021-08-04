@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="body-wrap">
+        <div class="header"></div>
+        <div class="scroll-wrap">
+            <div class="config-box">
+                <div class="top-box">
+                    <div class="box">
+                        <div class="box-item">
+                            <div>
+                                <img src="img/0-shouye_slices/baokuanshipin.png" alt="">
+                                <p class="box-font1">300万铃声</p>
+                                <p class="box-font2">高音质爆款</p>
+                            </div>
+                        </div>
+                        <div class="box-item">
+                            <div>
+                                <img src="img/0-shouye_slices/hufeilibao.png" alt="">
+                                <p class="box-font1">话费礼包</p>
+                                <p class="box-font2">最高888元</p>
+                            </div>
+                        </div>
+                        <div class="box-item">
+                            <div>
+                                <img src="img/0-shouye_slices/zhuanshushipin.png" alt="">
+                                <p class="box-font1">爆款视频</p>
+                                <p class="box-font2">个性化DIY</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="box1">
+                    <div class="input-wrap">
+                        <div class="input-box">
+                            <input type="text" value="请输入重庆移动手机号码">
+                        </div>
+                        <div class="get-btn-layer">
+                            <img src="img/0-shouye_slices/floatbtn.png" alt="">
+                        </div>
+                        <div class="num-user">
+                             <span id="sp-one"> 已有</span>
+                                <span id="sp">
+                                    <span>1</span>
+                                </span>
+                                <span id="sp">
+                                    <span>0</span>
+                                </span>
+                                <span id="sp">
+                                    <span>9</span>
+                                </span>
+                                <span id="sp">
+                                    <span>5</span>
+                                </span>
+                                <span id="sp">
+                                    <span>8</span>
+                                </span>
+                                <span id="sp-one"> 用户办理
+                            </span>
+                        </div>
+
+                    </div> 
+                </div> 
+            </div>
+            
+        </div>
+        <div class="msg">
+            <div class="top-msg"></div>
+            <div class="main-msg"> <p>点击立即抢收下超值宠粉权益：百万正版铃声随便用，热门视频彩 铃放肆换，更有酷炫视频模板一键制作自己专属视频彩铃。资费仅需6元/月。</p></div>
+           
+        </div>
+        <div class="fee-title"></div>
+        <div class="fee-box"></div>
+        <div class="rule-title"></div>
+        <div class="rule-box"></div>
+        <div class="footer"></div>
+
+    </div>
+    <script type="text/javascript">
+        // 适配
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                // 根元素字体大小计算
+                docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+            document.querySelector('body').style.visibility = "visible";
+
+        })(document, window);
+    </script>
+</body>
+</html>
