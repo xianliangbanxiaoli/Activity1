@@ -126,7 +126,6 @@
     border-radius: 0rem 0rem 0.3rem 0.3rem;
     background-color: #C82505;
     height: 1.3rem;
-    
 
 }
 
@@ -143,23 +142,4 @@
     top: 0.22rem;
     left: 0.2rem;
 
-}
-/*  设置铃声弹窗*/
-#set-pop{
-    width: 6.4rem; 
-    margin: 0 auto; 
-    height: 10.26rem; 
-    display: none; 
-    position: absolute; 
-    top: 15%; 
-    z-index: 3;
-
-}
-#music-background{
-    width: 1.04rem;
-    height: 1.04rem;
-    border-radius: 0.10rem;
-}
-#music-background p{
-    
 }
