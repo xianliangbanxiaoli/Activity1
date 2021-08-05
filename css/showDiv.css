@@ -1,19 +1,32 @@
+/* 遮盖曾 */
+#cover{
+    background: #000; 
+    position: absolute; 
+    left: 0rem; 
+    top: 0rem; 
+    width: 100%; 
+    filter: alpha(opacity=30); 
+    opacity: 0.7; 
+    display: none; 
+    z-index: 2
+}
 #showdiv{
-    width: 6.1rem; 
+    width: 6.4rem; 
     margin: 0 auto; 
-    height: 5.2rem; 
+    height: 10.26rem; 
     display: none; 
     position: absolute; 
-    top: 15%; left: 24%;
- z-index: 3;
+    top: 15%; 
+    z-index: 3;
 }
 #header{
     height: 3.92rem;
     width: 6.06rem;
-    background-image: url(../img/1-弹窗/头部.png);
+    background-image: url(../img/1-tanchuang/header.png);
     background-size: 6.06rem 3.92rem;
     position: relative;
 }
+/*退出  */
 #header img{
     height: 0.24rem;
     width: 0.25rem;
@@ -21,19 +34,44 @@
     right: 0.84em;
     top: 1.78rem;
 }
+
 #main{
     
     position: absolute; 
-    left: 0.64rem;
+    
     width: 4.78rem;
     height: 2.7rem;
-    background: #DE3D22;
+    
     text-align: center;
     border-radius: 0rem 0rem 0.3rem 0.3rem;
 
 
 }
-#main input{
+#main-box{
+    width: 6.4rem;
+    height: 4.7rem;
+    position: relative;
+    z-index: 2;
+}
+#background-main{
+    background: #DE3D22;
+    border-radius: 0rem 0rem 0.3rem 0.3rem;
+    width: 4.78rem;
+    height: 2.88rem;
+    position: absolute;
+    left: 0.62rem;
+    top: 0rem;
+}
+
+#true-img{
+    width: 4.61rem;
+    height: 1.15rem;
+    position: absolute;
+    top: 1.56rem;
+    left: 0.7rem;
+   
+}
+#main-box input{
     width: 4.30rem;
     height: 0.94rem;
     background: #FFFFFF;
@@ -46,6 +84,20 @@
     font-weight: 600;
     color: #4E4E4E;
     line-height: 0.59rem;
+
+    text-align: center;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.8rem;
+
+   
+}
+#tuceng{
+    position: absolute;
+    top: 2.32rem;
+    left: 0rem;
+    width: 0.62rem;
+    height: 1.28rem;
 }
 #main p{
     width: 4.32rem;
@@ -57,32 +109,57 @@
     line-height: 0.24rem;
     opacity: 0.3;
 }
-#main img{
-    width: 4.3rem;
-}
-#ture-img{
-    width: 4.3rem;
-    position: absolute;
-    top: 42%;
-    left: 2%;
-}
+
 #footer{
     width: 4.78rem;
-    height: 0.8rem;
+    height: 1.4rem;
     border-radius: 0rem 0rem 0.3rem 0.3rem;
     background: #8C1801;
     position: absolute;
     left: 0.62rem;
     top: 6.63rem;
+    z-index: -1;
     
 
 }
+#p-background{
+    border-radius: 0rem 0rem 0.3rem 0.3rem;
+    background-color: #C82505;
+    height: 1.3rem;
+    
+
+}
+
 #footer p{
+    width: 4.32rem;
+    height: 0.66rem;
     font-size: 0.18rem;
     font-family: PingFang SC;
     font-weight: 200;
     color: #FFFFFF;
     line-height: 0.24rem;
     opacity: 0.3;
+    position: absolute;
+    top: 0.22rem;
+    left: 0.2rem;
 
+}
+/*  设置铃声弹窗*/
+#set-pop{
+    width: 6.4rem; 
+    margin: 0 auto; 
+    height: 10.26rem; 
+    display: none; 
+    position: absolute; 
+    top: 15%; 
+    z-index: 3;
+
+}
+#music-background{
+    width: 1.04rem;
+    height: 1.04rem;
+    border-radius: 0.10rem;
+}
+#music-background p{
+    
 }
