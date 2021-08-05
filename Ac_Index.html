@@ -7,7 +7,10 @@
     <title>Document</title>
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <!-- 引入弹窗样式 -->
     <link rel="stylesheet" href="css/showDiv.css">
+    <!-- 设铃声窗口 -->
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="body-wrap">
@@ -199,15 +202,32 @@
     </div>
  
     <div id="main">
-        <div id="background-main"></div>
+        <div id="background-setmain"></div>
         <div id="main-box">
-            <div id="music-background">
-                <img src="img/2-shelingtanchuang/icon_play.png" alt="">
-                <p></p>
+            <div id="player-music">
+                <!-- 蓝色背景包含播放按钮 -->
+                <div id="music-background">
+                    <img src="img/2-shelingtanchuang/icon_play.png" alt="">
+                </div>
+                    <div id="p-title">
+                        <p>当春风吹来一阵白日梦-在</br>
+                            那个午后一起做个白日梦
+                        </p>
+                        <p>群星</p>
+                    </div>
+
             </div>
-            <input type="text" value="请输入您的手机号">
+
+            </div>
+            <div id="set-title">
+                <img src="img/2-shelingtanchuang/left.png" id="left" alt="">
+                <p>验证手机号完成彩铃设置</p>
+                <img src="img/2-shelingtanchuang/right.png" id="right" alt="">
+
+            </div>
+            <!-- <input type="text" value="请输入您的手机号" id="phone-input">
             <img src="img/1-tanchuang/zu 203.png" id="true-img" alt="">
-            <img src="img/1-tanchuang/tuceng389.png" id="tuceng"> 
+            <img src="img/1-tanchuang/tuceng389.png" id="tuceng">  -->
         </div>   
     </div>
      <div id="footer">
@@ -259,14 +279,14 @@
 
         // 弹窗
         function showWindow() {
-            $('#showdiv').show();  //显示弹窗
+            $('#set-pop').show();  //显示弹窗
             $('#cover').css('display', 'block'); //显示遮罩层
             $('#cover').css('height', document.body.clientHeight + 'px'); //设置遮罩层的高度为当前页面高度
         }
         
             // 关闭弹窗
         function closeWindow() {
-            $('#showdiv').hide();  //隐藏弹窗
+            $('#set-pop').hide();  //隐藏弹窗
             $('#cover').css('display', 'none');   //显示遮罩层
         }
     </script>
