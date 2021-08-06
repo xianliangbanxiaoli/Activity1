@@ -213,10 +213,7 @@ body{
 }
 .icon-update img{
     width: 0.35rem;
-    height: 0.29rem;
-    /* position: absolute;
-    left: 4.94rem; */
-   
+    height: 0.29rem; 
 
 }
 .icon-update p{
@@ -237,11 +234,7 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-
-
     width: 6rem;
-    
-
 
 }
 .pk-item{
