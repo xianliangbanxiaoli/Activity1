@@ -121,12 +121,12 @@
                 <div class="music-list">
                     <img src="img/0-shouye_slices/stopbtn.png" >
                     <p>当春风吹来一阵白日梦-在那个 午后一起做个白日梦<br>群星</p>
-                    <img src="img/0-shouye_slices/shelingbtn.png"> 
+                    <img src="img/0-shouye_slices/shelingbtn.png" onclick="setmusic()"> 
                 </div>
                 <div class="music-list">
                     <img src="img/0-shouye_slices/playerbtn.png" >
                     <p>孤单心事-爱你是孤单的心事<br>群星</p>
-                    <img src="img/0-shouye_slices/shelingbtn.png" > 
+                    <img src="img/0-shouye_slices/shelingbtn.png" onclick="twoshow()"> 
                 </div>
                 <div class="music-list">
                     <img src="img/0-shouye_slices/playerbtn.png" >
@@ -152,7 +152,7 @@
         <div class="video-title">
             <img src="img/0-shouye_slices/title.png" alt="">
         </div>
-        <div class="video-box">
+        <!-- <div class="video-box">
             <div class="video-item">
                 <div><img id="photo_one" src="img/5-shipin/1 (1).jpeg" alt=""></div>
                 <div><img id="photo_two" src="img/5-shipin/1 (2).jpeg" alt=""></div>
@@ -161,15 +161,13 @@
             <div class="set-itbtn">
                 <img src="img/0-shouye_slices/btn-zhizuotongkuan.png" alt="">
             </div>
-        </div>
+        </div> -->
         <div class="footer">
             <div class="contact">
             </div>
         </div>
 
     </div>
-
-
 
 <!-- --------------------------------------弹窗----------------------------快乐的分割线--------------------------------------------------------- -->
 <!-- 遮罩层 -->
@@ -178,7 +176,7 @@
 <div id="showdiv">
    
         <div id="header">
-            <img src="img/1-tanchuang/guanbi.png" alt="">
+            <img src="img/1-tanchuang/guanbi.png" onclick="closeWindow()">
         </div>
      
         <div id="main">
@@ -186,7 +184,7 @@
             <div id="main-box">
                 <input type="text" value="请输入您的手机号">
                 <img src="img/1-tanchuang/zu 203.png" id="true-img" alt="">
-                <img src="img/1-tanchuang/tuceng389.png" id="tuceng"> 
+                <img src="img/1-tanchuang/tuceng389.png" id="tuceng" > 
             </div>   
         </div>
          <div id="footer">
@@ -198,7 +196,7 @@
 <!-- --------------------------------------设置铃声弹窗----------------------------快乐的分割线--------------------------------------------------------- -->
 <div id="set-pop">
     <div id="header">
-        <img src="img/1-tanchuang/guanbi.png" alt="">
+        <img src="img/1-tanchuang/guanbi.png" onclick="closesetWindow()">
     </div>
  
     <div id="main">
@@ -221,38 +219,65 @@
             </div>
             <div id="set-title">
                 <img src="img/2-shelingtanchuang/left.png" id="left" alt="">
-                <p>验证手机号完成彩铃设置</p>
+                <p id="set-phone">验证手机号完成彩铃设置</p>
                 <img src="img/2-shelingtanchuang/right.png" id="right" alt="">
 
             </div>
-            <!-- <input type="text" value="请输入您的手机号" id="phone-input">
-            <img src="img/1-tanchuang/zu 203.png" id="true-img" alt="">
-            <img src="img/1-tanchuang/tuceng389.png" id="tuceng">  -->
+            <input type="text" value="请输入您的手机号" id="setphone-input">
+            <img src="img/1-tanchuang/zu 203.png" id="btn-img" alt="">
+            <img src="img/1-tanchuang/tuceng389.png" id="tuceng2"> 
+        </div>   
+        <div id="set-footer">
+            <div id="set-pbackground">
+                <p>点击确认收下超值宠粉权益：百万正版铃声随便用，热s门视频彩铃放肆换，更有酷炫视频模板一键制作自己专 属视频彩铃。资费仅需6元/月。</p>
+            </div>
+        </div>
+</div>
+<!-- --------------------------------------二次确认弹窗----------------------------快乐的分割线--------------------------------------------------------- -->
+<div id="two">
+    <div id="header">
+        <img src="img/1-tanchuang/guanbi.png" onclick="closeshow()">
+    </div>
+    <div id="main">
+        <div id="background-twomain"></div>
+        <div id="main-box">
+            <!-- <input type="text" value="请输入您的手机号"> -->
+            <div id="user-info" >
+                <p >
+                    亲爱的13788374877用户：
+                </p> 
+            </div>
+            <div id="user-title">
+                <p>
+                    仅需最后一步，即可获得三大 超值宠粉权益！立即点击确认 收下吧~
+                </p>
+            </div>
+            <img src="img/1-tanchuang/zu 203.png" id="two-btn" alt="">
+            <img src="img/1-tanchuang/tuceng389.png" id="tuceng"> 
         </div>   
     </div>
-     <div id="footer">
+    <div id="two-footer">
     <div id="p-background">
-        <p>点击确认收下超值宠粉权益：百万正版铃声随便用，热s门视频彩铃放肆换，更有酷炫视频模板一键制作自己专 属视频彩铃。资费仅需6元/月。</p>
+        <p>点击确认收下超值宠粉权益：百万正版铃声随便用，热门视频彩铃放肆换，更有酷炫视频模板一键制作自己专 属视频彩铃。资费仅需6元/月。</p>
+    </div>
     </div>
 </div>
 
-</div>
+<script>
+    //二次确认弹窗
+    function twoshow() {
+        $('#two').show();  //显示弹窗
+        $('#cover').css('display', 'block'); //显示遮罩层
+        $('#cover').css('height', document.body.clientHeight + 'px'); //设置遮罩层的高度为当前页面高度
+    }
+    
+        // 关闭弹窗
+    function closeshow() {
+        $('#two').hide();  //隐藏弹窗
+        $('#cover').css('display', 'none');   //显示遮罩层
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</script>
 
     <script type="text/javascript">
         // 适配
@@ -279,16 +304,32 @@
 
         // 弹窗
         function showWindow() {
-            $('#set-pop').show();  //显示弹窗
+            $('#showdiv').show();  //显示弹窗
             $('#cover').css('display', 'block'); //显示遮罩层
             $('#cover').css('height', document.body.clientHeight + 'px'); //设置遮罩层的高度为当前页面高度
         }
         
             // 关闭弹窗
         function closeWindow() {
+            $('#showdiv').hide();  //隐藏弹窗
+            $('#cover').css('display', 'none');   //显示遮罩层
+        }
+
+
+        //设置铃声
+        function setmusic() {
+            $('#set-pop').show();  //显示弹窗
+            $('#cover').css('display', 'block'); //显示遮罩层
+            $('#cover').css('height', document.body.clientHeight + 'px'); //设置遮罩层的高度为当前页面高度
+        }
+        
+            // 关闭弹窗
+        function closesetWindow() {
             $('#set-pop').hide();  //隐藏弹窗
             $('#cover').css('display', 'none');   //显示遮罩层
         }
+
     </script>
+    
 </body>
 </html>
