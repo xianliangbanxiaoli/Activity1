@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 整个布局 */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FF4A3D;
+
+}
+.body-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 6.4rem;
+    background-color: #FF4A3D;
+   
+}
+.header{
+    height: 4.32rem;
+    width: 6.4rem;
+    
+    background:url(../img/4-choujiang-sclices/wholebackground.png);
+    background-size: 6.4rem 4.32rem;
+}
+.spend{
+    width: 6rem;
+    height: 5.92rem;
+    background: #FFF5DA;
+    border-radius: 0.14rem;
+    position: relative;
+}
+.spend-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.spend-title img{
+    width: 0.36rem;
+    height: 0.12rem;
+
+}
+#spend-left{
+    width: 0.36rem;
+    height: 0.12rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.49rem;
+
+}
+#spend-right{
+    width: 0.36rem;
+    height: 0.12rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.47rem;
+}
+.spend-title p{
+    width: 3.94rem;
+    height: 0.24rem;
+    font-size: 0.24rem;
+    font-family: Lantinghei SC;
+    font-weight: 800;
+    color: #DE3F34;
+    line-height: 0.58rem;
+
+    position: absolute;
+    top: 0.3rem;
+    left: 1.43rem;
+}
+.spend-img{
+    width: 6rem;
+    height: 5.92rem;
+    background: #FFF5DA;
+    border-radius: 0.14rem;
+}
+.spend-img img{
+    width: 5.71rem;
+    height: 3.76rem;
+    position: absolute;
+    top: 1.17rem;
+    left: 0.14rem;
+}
+.spend-time p{
+    width: 3.96rem;
+    height: 0.21rem;
+    font-size: 0.22rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #262626;
+    line-height: 0.58rem;
+
+}
+#p-time{
+    position: absolute;
+    top: 5.01rem;
+    left: 1.22rem;
+}
+#p-title{
+    position: absolute;
+    top: 5.41rem;
+    left: 1.32rem;
+}
+.prizelist-title{
+    width: 6.4rem;
+    height: 1.06rem;
+    position: relative;
+ 
+
+}
+.prizelist-title img{
+    width: 3.4rem;
+    height: 0.15rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 1.61rem;
+}
+.prizelist-title p{
+    width: 2.08rem;
+    height: 0.26rem;
+    font-size: 0.28rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #FFD87F;
+    position: absolute;
+    left: 2.6rem;
+    top: 0.32rem;
+
+    
+}
+.prizelist-box{
+    width: 6rem;
+    height: 1.49rem;
+    background: #FFF5DA;
+    box-shadow: 0rem 0.06rem 0.24rem 0rem rgba(197, 22, 42, 0.5);
+    border-radius: 0.16rem;
+    text-align: center;
+
+    position: relative;
+
+}
+.prizelist-box p{
+    width: 5.92rem;
+    height: 0.23rem;
+    font-size: 0.24rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #3C3B3A;
+
+    position: absolute;
+    top: 0.36rem;
+
+
+}
+.rule-title{
+    width: 6.4rem;
+    height: 1.06rem;
+    position: relative;
+}
+.rule-title p{
+    width: 2.08rem;
+    height: 0.26rem;
+    font-size: 0.28rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #FFD87F;
+    position: absolute;
+    left: 2.6rem;
+    top: 0.32rem;
+
+
+}
+.rule-title img{
+    width: 3.4rem;
+    height: 0.15rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 1.61rem;
+}
+.rule-box{
+    width: 6rem;
+    height: 5.93rem;
+    background: #FFF5DA;
+    box-shadow: 0rem 0.06rem 0.24rem 0rem rgba(197, 22, 42, 0.5);
+    border-radius: 0.16rem;
+}
+
+.rule-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* align-content:center; */
+    width: 6rem;
+
+}
+.rule-item{
+    height: 0.54rem;
+    width: 5.5rem;
+}
+#num{
+    width: 0.25rem;
+    height: 0.25rem;
+    background: #FF3863;
+    border-radius: 50%;
+    font-size: 0.20rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF; 
+    text-align: center;
+
+    float: left;
+}
+#rule{
+    width: 5.5rem;
+    height: 0.42rem;
+    font-size: 0.20rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 0.32rem;
+}
+.footer{
+    height: 0.5rem;
+}
