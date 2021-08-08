@@ -118,7 +118,7 @@ body{
    
 }
 .num-user{
-    width: 5.93rem;
+    width: 5rem;
     height: 0.2rem;
     position: absolute;
     top: 2.55rem;
@@ -204,7 +204,7 @@ body{
 
 }
 .icon-update{
-    width: 2.5rem;
+    width: 1rem;
     height: 0.32rem;
     position: absolute;
     left: 4.5rem;
