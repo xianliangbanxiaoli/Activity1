@@ -347,10 +347,14 @@ body{
     width: 6.4rem;
     height: 7.42rem;
     background: #CC0000;
+    position: relative;
 }
 .set-itbtn img{
     width: 3.82rem;
     height: 1.1rem;
+    position: absolute;
+    top:80%;
+    left: 20%;
 }
 
 .video-title img{
@@ -359,7 +363,7 @@ body{
 
 }
 /* 轮番视频 */
-.video-item div{
+/* .video-item div{
     width: 12rem;
     animation: switch 10s ease-out infinite;
 }
@@ -369,9 +373,9 @@ body{
     border-radius: 0.13rem;
     
     float: left;
-}
+} */
 
-@keyframes switch {
+/* @keyframes switch {
     0%, 20% {
         margin-left: 0;
     }
@@ -388,9 +392,88 @@ body{
         margin-left: -12rem;
     }
 
+} */
+/*  */
+.video-item div{
+    width: 2.6rem;
+}
+/* .video-item div img{
+    width: 2.6rem;
+    border-radius: 0.13rem;
+    height: 4.62rem;
+    
+    
+
+} */
+#photo_one{
+    height: 4.1rem;
+    width: 2.6rem;
+    border-radius: 0.13rem;
+
+
+}
+#photo_two{
+    height: 4.1rem;
+    width: 2.6rem;
+    border-radius: 0.13rem;
+}
+#photo_three{
+    width: 2.6rem;
+    height: 4.62rem;
+    border-radius: 0.13rem;
+
+}
+.player-btn{
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    z-index: 10;
+}
+.player-btn img{
+    width: 1rem;
+    height: 1rem;
 }
 
+.video1{
+    width: 2.6rem;
+    height: 4.1rem;
+    position: absolute;
+    left: 5%;
+    top: 12%;
+    z-index: 1;
+    border:1px solid #FEF889;
+    border-radius: 5%;
 
+}
+.video3{
+    width: 2.6rem;
+    height: 4.62rem;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    z-index: 10;
+    border:1px solid #FEF889;
+    border-radius: 5%;
+
+
+    
+
+
+}
+.video2{
+    width: 2.6rem;
+    height: 4.1rem;
+    position: absolute;
+    left: 54%;
+    top: 12%;
+    z-index: 1;
+    border:1px solid #FEF889;
+    border-radius: 5%;
+
+
+}
 
 .footer{
     height: 4.3rem;
