@@ -204,10 +204,10 @@ body{
 
 }
 .icon-update{
-    width: 1rem;
+    width: 1.8rem;
     height: 0.32rem;
     position: absolute;
-    left: 4.5rem;
+    left: 4.2rem;
     top: 0.58rem;
 
 }
@@ -226,7 +226,7 @@ body{
     line-height: 0.40rem;
     position: absolute;
     top: 0.7rem;
-    right: 1rem;
+    right: 0.2rem;
   
 }
 .pk-box{
