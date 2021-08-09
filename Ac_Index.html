@@ -317,6 +317,7 @@
         // 关闭弹窗
     function closeshow() {
         $('#two').hide();  //隐藏弹窗
+        $('body').attr('style','overflow：auto')//固定使弹窗往下滑动
         $('#cover').css('display', 'none');   //显示遮罩层
     }
 
@@ -356,6 +357,7 @@
             // 关闭弹窗
         function closeWindow() {
             $('#showdiv').hide();  //隐藏弹窗
+            $('body').attr('style','overflow：auto')//固定使弹窗往下滑动
             $('#cover').css('display', 'none');   //显示遮罩层
         }
 
@@ -371,6 +373,7 @@
             // 关闭弹窗
         function closesetWindow() {
             $('#set-pop').hide();  //隐藏弹窗
+            $('body').attr('style','overflow：auto')//固定使弹窗往下滑动
             $('#cover').css('display', 'none');   //显示遮罩层
         }
        
