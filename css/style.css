@@ -65,6 +65,20 @@ body{
     height: 1.19rem;
 
 }
+#box-img1{
+    /* position: absolute;
+    left: 0.7rem; */
+    /* float: left; */
+}
+#box-img2{
+    /* position: absolute;
+    left: 2.6rem; */
+}
+#box-img3{
+    /* position: absolute;
+    right: 0.73rem; */
+    /* float: right; */
+}
 .box-font1{
     width: 1.2rem;
     height: 0.22rem;
@@ -93,7 +107,7 @@ body{
     background: #FFFFFF;
     border: 0.03rem solid #9D0302;
     border-radius: 0.49rem;
-
+    outline: none;
     font-size: 0.34rem;
     font-family: PingFang SC;
     font-weight: 600;
@@ -109,41 +123,60 @@ body{
     left: 0.49rem;
 
 }
-.get-btn-layer img{
-    width: 5.56rem;
+.get-btn-layer{
+    width: 5.3rem;
+    height: 1.5rem;
+    background: url(../img/0-shouye_slices/floatbtn.png);
+   background-size: 5.3rem 1.5rem ;
+   position: absolute;
+    top: 1.6rem;
+    left: 0.1rem;
+}
+
+/* .get-btn-layer img{
+    width: 6.3rem;
     height: 1.5rem;
     position: absolute;
     top: 1.6rem;
-    
-   
-}
+    left: -0.4rem;
+
+
+} */
 .num-user{
-    width: 5rem;
+    width: 2.8rem;
     height: 0.2rem;
     position: absolute;
     top: 2.55rem;
-    left: 0.53rem;
+    left: 1.5rem;
 }
+/* 已有用户办理 */
 #sp-one{
-    /* width: 0.44rem;
-    height: 0.23rem; */
+    width: 7rem;
+    height: 0.23rem;
     font-size: 0.24rem;
     font-family: PingFang SC;
     font-weight: bold;
     color: #B63C00;
     line-height: 0.78rem;
+   
+   
+   
+
 }
 #sp{
-   /* font-size: 0.15rem;
+    font-size: 0.19rem;
     font-family: Lantinghei SC;
     font-weight: 800;
     color: #FFE6A0;
     line-height: 0.31rem;
     
-    width: 0.61rem;
+    width: 1rem;
     height: 0.27rem;
-    background: #EF0708; */
+    background: #EF0708;
     border-radius: 0.05rem;
+    margin: 0.01rem;
+   
+    
 
 }
 #sp span{
@@ -154,10 +187,11 @@ body{
     color: #FFE6A0;
     line-height: 0.31rem;
     
-    width: 0.61rem;
-    height: 0.27rem;
+    width: 1rem;
+    height: 0.57rem;
     background: #EF0708;
     border-radius: 0.05rem;
+
 
     
 }
@@ -189,8 +223,8 @@ body{
     font-family: PingFang SC;
     font-weight: 400;
     color: #FFA5A5;
-    line-height: 0.24rem;
-    text-align: center;
+    line-height: 0.28rem;
+    text-align: left;
 
 }
 .pk-title{
@@ -226,7 +260,7 @@ body{
     line-height: 0.40rem;
     position: absolute;
     top: 0.7rem;
-    right: 0.2rem;
+    right: 0.3rem;
   
 }
 .pk-box{
@@ -249,15 +283,21 @@ body{
 }
 .pk-item p{
     width: 2.16rem;
-    height: 0.26rem;
+    height: 0.66rem;
     font-size: 0.28rem;
     font-family: PingFang SC;
     font-weight: 400;
     color: #FFFFFF;
-    line-height: 0.40rem;
+    line-height: 0.4rem;
 
     position: absolute;
     top: 88%;
+    left: 0.09rem;
+/* 超出部分显示... */
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
 }
 .pk-item img{
     width: 2.83rem;
@@ -277,12 +317,12 @@ body{
     width: 2.83rem;
     height: 0.93rem;
     position: absolute;
-    top: 100%;
-    left: 0rem;
+    top: 101%;
+    left: -0.2rem;
 }
 .color-title{
     width: 6.3rem;
-    height: 1.8rem;
+    height: 2rem;
 }
 .color-title div{
     height: 0.7rem;
@@ -307,18 +347,24 @@ body{
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-direction: column;  
 
 }
-.music-list{
-    width: 5.8rem;
-    height: 1.5rem;
+.music-border{
+    width: 5.2rem;
+    height: 1.58rem;
     border-bottom:0.01rem dashed white;
     
+}
+.music-list{
+    width: 5.2rem;
+    height: 1rem;
+    padding: 0.1rem ;
+
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-direction: row;
 
 }
@@ -330,6 +376,8 @@ body{
     font-weight: 400;
     color: #FFFAE6;
     line-height: 0.36rem;
+    position: absolute;
+    left: 1.15rem;
 }
 .music-list img{
     width: 0.7rem;
@@ -341,6 +389,14 @@ body{
     background: #CB2B20;
     border-radius: 0.2rem;
     
+}
+#mu-btn{
+    position: absolute;
+    left: 0.28rem;
+}
+#setring{
+    position: absolute;
+    right: 0.28rem;
 }
 
 .video-box{
@@ -362,49 +418,10 @@ body{
     height: 1.22rem;
 
 }
-/* 轮番视频 */
-/* .video-item div{
-    width: 12rem;
-    animation: switch 10s ease-out infinite;
-}
-.video-item img{
-    width: 2.6rem;
-    height: 4.62rem;
-    border-radius: 0.13rem;
-    
-    float: left;
-} */
-
-/* @keyframes switch {
-    0%, 20% {
-        margin-left: 0;
-    }
-    25%,40%{
-        margin-left: -3rem;   
-    }
-    45%, 60% {
-        margin-left: -6rem;
-    }
-    65%, 80% {
-        margin-left: -9rem;
-    }
-    85%, 100% {
-        margin-left: -12rem;
-    }
-
-} */
-/*  */
 .video-item div{
     width: 2.6rem;
 }
-/* .video-item div img{
-    width: 2.6rem;
-    border-radius: 0.13rem;
-    height: 4.62rem;
-    
-    
 
-} */
 #photo_one{
     height: 4.1rem;
     width: 2.6rem;
@@ -429,7 +446,7 @@ body{
     position: absolute;
     top: 30%;
     left: 42%;
-    z-index: 10;
+    z-index: 3;
 }
 .player-btn img{
     width: 1rem;
@@ -453,13 +470,9 @@ body{
     position: absolute;
     left: 30%;
     top: 5%;
-    z-index: 10;
+    z-index: 3;
     border:1px solid #FEF889;
     border-radius: 5%;
-
-
-    
-
 
 }
 .video2{
@@ -486,4 +499,8 @@ body{
     width: 6.4rem;
     background: url(../img/0-shouye_slices/footer.png);
     background-size: 6.4rem 4.3rem;
+}
+.botton_btn{
+    background: url(../img/0-shouye_slices/floatbtn.png);
+    display: block; transform-origin: 0rem 0rem; opacity: 1; transform: scale(1, 1);
 }
