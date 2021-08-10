@@ -123,7 +123,7 @@
             <div class="music-main">
                 <div class="music-border">
                     <div class="music-list">
-                        <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn">
+                        <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn" onclick=" change_pic()">
                         <p>当春风吹来一阵白日梦在那个 午后一起做个白日梦<br>群星</p>
                         <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
                     </div>
@@ -131,7 +131,7 @@
                 </div>
                 <div class="music-border">
                     <div class="music-list">
-                        <img src="img/0-shouye_slices/stopbtn.png" id="mu-btn">
+                        <img src="img/0-shouye_slices/stopbtn.png" id="mu-btn" onclick=" change_pic()">
                         <p>孤单心事-爱你是孤单的心事<br>群星</p>
                         <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="twoshow()"> 
                     </div>
@@ -140,28 +140,28 @@
                 
                 <div class="music-border">
                     <div class="music-list">
-                        <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn" >
+                        <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn" onclick=" change_pic()">
                         <p>我只喜欢你-电视剧《我只喜欢你》
                             主题曲<br>胡夏</p>
-                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring"> 
+                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring"onclick="setmusic()"> 
                     </div>
 
                 </div>
                
                 <div class="music-border">
                     <div class="music-list">
-                        <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn">
+                        <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn" onclick=" change_pic()">
                         <p>等你像-遇见她前的等待 究竟是什么
                             感觉？<br>张碧晨</p>
-                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring"> 
+                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
                     </div>
 
                 </div>
                 <div>
                     <div class="music-list">
-                        <img src="img/0-shouye_slices/playerbtn.png "id="mu-btn">
+                        <img src="img/0-shouye_slices/playerbtn.png "id="mu-btn" onclick=" change_pic()">
                         <p>单数-怎样精彩都只有一个人<br>许廷锵</p>
-                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring"> 
+                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
                     </div>
 
                 </div>
@@ -224,14 +224,14 @@
         <div id="main">
             <div id="background-main"></div>
             <div id="main-box">
-                <input type="text" value="请输入您的手机号">
+                <input type="text" value="请输入您的手机号码" onfocus="if(value=='请输入您的手机号码') {value=''}" onblur="if (value=='') {value='请输入您的手机号码'}">
                 <img src="img/1-tanchuang/zu 203.png" id="true-img" alt="">
                 <img src="img/1-tanchuang/tuceng389.png" id="tuceng" > 
             </div>   
         </div>
          <div id="footer">
         <div id="p-background">
-            <p>点击确认收下超值宠粉权益：百万正版铃声随便用，热s门视频彩铃放肆换，更有酷炫视频模板一键制作自己专 属视频彩铃。资费仅需6元/月。</p>
+            <p>点击确认收下超值宠粉权益：百万正版铃声随便用，热门视频彩铃放肆换，更有酷炫视频模板一键制作自己专 属视频彩铃。资费仅需6元/月。</p>
         </div>
     </div>
 </div>
@@ -265,13 +265,13 @@
                 <img src="img/2-shelingtanchuang/right.png" id="right" alt="">
 
             </div>
-            <input type="text" value="请输入您的手机号" id="setphone-input">
+            <input type="text" value="请输入您的手机号码" id="setphone-input" onfocus="if(value=='请输入您的手机号码') {value=''}" onblur="if (value=='') {value='请输入您的手机号码'}">
             <img src="img/1-tanchuang/zu 203.png" id="btn-img" alt="">
             <img src="img/1-tanchuang/tuceng389.png" id="tuceng2"> 
         </div>   
         <div id="set-footer">
             <div id="set-pbackground">
-                <p>点击确认收下超值宠粉权益：百万正版铃声随便用，热s门视频彩铃放肆换，更有酷炫视频模板一键制作自己专 属视频彩铃。资费仅需6元/月。</p>
+                <p>点击确认收下超值宠粉权益：百万正版铃声随便用，热门视频彩铃放肆换，更有酷炫视频模板一键制作自己专属视频彩铃。资费仅需6元/月。</p>
             </div>
         </div>
 </div>
@@ -291,7 +291,7 @@
             </div>
             <div id="user-title">
                 <p>
-                    仅需最后一步，即可获得三大 超值宠粉权益！立即点击确认 收下吧~
+                    仅需最后一步，即可获得三大超值宠粉权益立即点击确认收下吧~
                 </p>
             </div>
             <img src="img/1-tanchuang/zu 203.png" id="two-btn" alt="">
@@ -381,6 +381,29 @@
 
 
     </script>
-    
+    <script>
+
+        function change_pic(){
+           
+
+            var mubtn = document.getElementById("mu-btn");
+
+            mubtn.onclick = function(){
+                if(mubtn.getAttribute("src",2) == "img/0-shouye_slices/playerbtn.png"){
+
+                    mubtn.setAttribute("src","img/0-shouye_slices/stopbtn.png");
+
+                }else{
+
+                    mubtn.setAttribute("src","img/0-shouye_slices/playerbtn.png");
+
+                };
+               
+            }
+        }
+        change_pic();
+
+    </script>
+
 </body>
 </html>
