@@ -40,7 +40,9 @@
     font-family: PingFang SC;
     font-weight: bold;
     color: #FFFAE6;
-    line-height: 0.3rem;
+    line-height: 0.35rem;
+    text-align: left;
+    padding: 0.1rem;
 
 
 }
@@ -65,7 +67,7 @@
 #background-setmain{
     background: #DE3D22;
     border-radius: 0rem 0rem 0.3rem 0.3rem;
-    width: 4.78rem;
+    width: 4.81rem;
     height: 4.5rem;
     position: absolute;
     left: 0.62rem;
