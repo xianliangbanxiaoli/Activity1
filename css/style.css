@@ -158,6 +158,7 @@ body{
     font-weight: bold;
     color: #B63C00;
     line-height: 0.78rem;
+    text-align: right;
    
    
    
@@ -176,7 +177,6 @@ body{
     border-radius: 0.05rem;
     margin: 0.01rem;
    
-    
 
 }
 #sp span{
@@ -191,6 +191,7 @@ body{
     height: 0.57rem;
     background: #EF0708;
     border-radius: 0.05rem;
+  
 
 
     
@@ -241,7 +242,7 @@ body{
     width: 1.8rem;
     height: 0.32rem;
     position: absolute;
-    left: 4.2rem;
+    left: 4.5rem;
     top: 0.58rem;
 
 }
@@ -260,7 +261,7 @@ body{
     line-height: 0.40rem;
     position: absolute;
     top: 0.7rem;
-    right: 0.3rem;
+    right: 0.38rem;
   
 }
 .pk-box{
