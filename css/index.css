@@ -8,8 +8,9 @@
     margin: 0 auto; 
     height: 10.26rem; 
     display: none; 
-    position: absolute; 
-    top: 150%; 
+    position: fixed; 
+    top: 5%;
+    left: 4%; 
     z-index: 3;
 
 }
