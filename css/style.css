@@ -179,7 +179,7 @@ body{
     width: 2.8rem;
     height: 0.2rem;
     position: absolute;
-    top: 3.4rem;
+    top: 3.3rem;
     left: 1.5rem;
 }
 .num-box{
@@ -246,49 +246,57 @@ body{
 .main-msg div p{
     width: 5.8rem;
     height: 0.67rem;
-    font-size: 0.20rem;
+    font-size: 0.2rem;
     font-family: PingFang SC;
     font-weight: 400;
     color: #FFA5A5;
     line-height: 0.28rem;
     text-align: left;
+/* 字间距  */
+    letter-spacing: 0.02rem;
 
 }
 .pk-title{
     width: 5.91rem;
     height: 1.72rem;
-
-    background: url(../img/0-shouye_slices/title\(2\).png);
-    background-size: 5.91rem 1.72rem;
-    
     position: relative;
 
 }
+.pk-img img{
+    width: 5.91rem;
+    height: 1.72rem;
+
+    /* background: url(../img/0-shouye_slices/title\(2\).png); */
+    background-size: 5.91rem 1.72rem;
+    position: absolute;
+    top: 0.1rem;
+    
+
+}
 .icon-update{
-    width: 1.6rem;
+    width: 1.58rem;
     height: 0.32rem;
     position: absolute;
-    left: 4.5rem;
-    top: 0.58rem;
+    left: 4.3rem;
+    top: 0.52rem;
 
 }
 .icon-update img{
-    width: 0.35rem;
-    height: 0.29rem; 
+    width: 0.41rem;
+    height: 0.34rem; 
 
 }
 .icon-update p{
-    width: 1rem;
-    height: 0.25rem;
-    font-size: 0.26rem;
+    width: 0.9rem;
+    height: 0.29rem;
+    font-size: 0.3rem;
     font-family: PingFang SC;
     font-weight: 400;
     color: #FFFFFF;
-    line-height: 0.40rem;
+    line-height: 0.37rem;
     position: absolute;
     top: 0.7rem;
-    right: 0.26rem;
-  
+    right: 0.16rem;
 }
 .pk-box{
     display: flex;
@@ -296,7 +304,6 @@ body{
     justify-content: space-around;
     flex-direction: row;
     width: 6rem;
-
 }
 .pk-item{
     width: 2.6rem;
@@ -304,9 +311,7 @@ body{
     border-radius: 0.13rem;
     background-color: coral;
     border: 0.05rem solid #FEF889 ;
-
     position: relative;
-
 }
 .pk-item p{
     width: 2.16rem;
@@ -316,7 +321,6 @@ body{
     font-weight: 400;
     color: #FFFFFF;
     line-height: 0.4rem;
-
     position: absolute;
     top: 88%;
     left: 0.09rem;
@@ -329,7 +333,6 @@ body{
 .pk-item img{
     width: 2.83rem;
     height: 0.93rem;
-   
 }
 #pk-player1,#pk-player2{
     width: 0.87rem;
@@ -337,8 +340,6 @@ body{
     position: absolute;
     top: 1.58rem;
     left: 0.87rem;
-
-
 }
 #setbtn{
     width: 2.83rem;
@@ -366,7 +367,6 @@ body{
     position: relative;
 }
 .music-main{
-   
     width: 6.08rem;
     height: 8.56rem;
     background: #CB2B20;
@@ -382,20 +382,32 @@ body{
     width: 5.2rem;
     height: 1.58rem;
     border-bottom:0.01rem dashed white;
-    
+    /* opacity: 0.3; */
+    display: flex;
+    align-items: center;
+    justify-content:  space-around;
+    flex-direction: row;
 }
 .music-list{
     width: 5.2rem;
     height: 1rem;
     padding: 0.1rem ;
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
+    /* display: flex;
+    align-items: baseline;
+    justify-content:  center;
+    flex-direction: column; */
 
+    column-width: 3rem;
 }
-.music-list p{
+.lyric {
+    width: 5.2rem;
+    height: 1rem;
+    padding: 0.1rem ;
+    /* column-count: 3; */
+  
+}
+.music-list  p{
     width: 3.24rem;
     height: 0.59rem;
     font-size: 0.24rem;
@@ -404,7 +416,7 @@ body{
     color: #FFFAE6;
     line-height: 0.36rem;
     position: absolute;
-    left: 1.15rem;
+    left: 1.16rem;
 }
 .music-list img{
     width: 0.7rem;
