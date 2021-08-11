@@ -131,6 +131,7 @@
     position: absolute;
     top: 2.1rem;
     left: 0.8rem;
+    z-index: 5;
 
 }
 /* 确定按钮 */
