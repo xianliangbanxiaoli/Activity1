@@ -127,7 +127,7 @@ body{
     width: 0.8rem;
     height: 0.8rem;
     position: absolute;
-    top: 1.4rem;
+    top: 1rem;
     right: 0.4rem;
     display: inline-block;
     transition: 0.3s linear;
@@ -449,9 +449,6 @@ body{
     height: 1.22rem;
 
 }
-/* .video-item div{
-    width: 2.6rem;
-} */
 
 
 #photo_one{
@@ -495,7 +492,7 @@ body{
 
   }
 .swiper-wrapper p{
-    width: 1.5rem;
+    width: 1.8rem;
     height: 0.2rem;
     font-size: 0.2rem;
     font-family: PingFang SC;
@@ -504,7 +501,7 @@ body{
     line-height: 0.24rem;
     position: absolute;
     top: 4.2rem;
-    left: 1.01rem;
+    left: 0.8rem;
 }
 
 .swiper-slide {
