@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入弹窗样式 -->
+    <link rel="stylesheet" href="css/showDiv.css">
+    <!-- 设铃声窗口 -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">  
+</head>
+<body>
+    <div class="body-wrap">
+        <div class="header"></div>
+        <div class="scroll-wrap">
+            <div class="config-box">
+                <div class="top-box">
+                    <div class="box">
+                        <div class="box-item">
+                            <div>
+                                <img src="img/0-shouye_slices/zhuanshushipin.png" id="box-img1">
+                                <p class="box-font1">300万铃声</p>
+                                <p class="box-font2">高音质爆款</p>
+                            </div>
+                        </div>
+                        <div class="box-item">
+                            <div>
+                                <img src="img/0-shouye_slices/hufeilibao.png" id="box-img2">
+                                <p class="box-font1">话费礼包</p>
+                                <p class="box-font2">最高888元</p>
+                            </div>
+                        </div>
+                        <div class="box-item">
+                            <div>
+                                <img src="img/0-shouye_slices/baokuanshipin.png" id="box-img3">
+                                <p class="box-font1">爆款视频</p>
+                                <p class="box-font2">个性化DIY</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="box1">
+                    <div class="input-wrap">
+                        <div class="input-box">
+                            <input type="text" value="请输入重庆移动手机号码"  onfocus="if(value=='请输入重庆移动手机号码') {value=''}" onblur="if (value=='') {value='请输入重庆移动手机号码'}">
+                        </div>
+                        <div class="get-btn-layer" onclick="showWindow()">
+                            
+                            <div class="finger"><img src="img/1-tanchuang/0.png"  alt=""></div>
+                        </div>
+                        <div class="num-user">
+                            <div class="num-box">
+                                <p id="sp-one">已有</p>
+                                <p id="sp">1</p>
+                                <p id="sp">0</p>
+                                <p id="sp">9</p>
+                                <p id="sp">5</p>
+                                <p id="sp">8</p>
+                                <p id="sp-two">用户办理</p>
+                            </div>
+                        </div>
+
+                    </div> 
+                </div> 
+            </div>
+            
+        </div>
+        <div class="msg">
+            <div class="top-msg"></div>
+            <div class="main-msg"> 
+                <div>
+                    <p>点击立即抢收下超值宠粉权益：
+                        百万正版铃声随便用，热门
+                        视频彩 铃放肆换，更有酷炫
+                        视频模板一键制作自己专属视频彩铃。资费仅需6元/月。
+                    </p>
+            </div>
+        
+
+        </div>
+            
+        </div>
+        <div class="pk-title">
+            <div class="icon-update">
+                <img src="img/0-shouye_slices/icon_update.png" alt="">
+                <p>换一组</p>
+            </div>
+        </div>
+        <div class="pk-box">
+            <div class="pk-item">
+                <img src="img/0-shouye_slices/player-btn(1).png" id="pk-player1" alt="">
+                <p>我是标题我是标题</p>
+                <img src="img/0-shouye_slices/sheweishipincailing.png" id="setbtn" alt="">
+            </div>
+            <div class="pk-item">
+                <img src="img/0-shouye_slices/player-btn(1).png" id="pk-player2" alt="">
+                <p>我是标题我是标题</p>
+                <img src="img/0-shouye_slices/sheweishipincailing.png" id="setbtn" alt="">
+
+            </div>
+        </div>
+        <div class="color-title">
+            <div>  
+            </div>
+            <img src="img/0-shouye_slices/title(1).png" alt="">
+        </div>
+        <div class="music-box">
+            <div class="music-main">
+                <div class="music-border">
+                    <div class="music-list">
+                        <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn" onclick=" change_pic()">
+                        <p>当春风吹来一阵白日梦在那个 午后一起做个白日梦<br>群星</p>
+                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
+                    </div>
+
+                </div>
+                <div class="music-border">
+                    <div class="music-list">
+                        <img src="img/0-shouye_slices/stopbtn.png" id="mu-btn" onclick=" change_pic()">
+                        <p>孤单心事-爱你是孤单的心事<br>群星</p>
+                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="twoshow()"> 
+                    </div>
+
+                </div>
+                
+                <div class="music-border">
+                    <div class="music-list">
+                        <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn" onclick=" change_pic()">
+                        <p>我只喜欢你-电视剧《我只喜欢你》
+                            主题曲<br>胡夏</p>
+                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring"onclick="setmusic()"> 
+                    </div>
+
+                </div>
+               
+                <div class="music-border">
+                    <div class="music-list">
+                        <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn" onclick=" change_pic()">
+                        <p>等你像-遇见她前的等待 究竟是什么
+                            感觉？<br>张碧晨</p>
+                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
+                    </div>
+
+                </div>
+                <div>
+                    <div class="music-list">
+                        <img src="img/0-shouye_slices/playerbtn.png "id="mu-btn" onclick=" change_pic()">
+                        <p>单数-怎样精彩都只有一个人<br>许廷锵</p>
+                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
+                    </div>
+
+                </div>
+                
+                <div class="music-btn">
+                    <img src="img/0-shouye_slices/btn.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+        <div class="video-title">
+            <img src="img/0-shouye_slices/title.png" alt="">
+        </div>
+        <div class="video-box">
+            <div class="video-item">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide" style="background-image:url(./img/5-shipin/1\ \(1\).jpeg)">
+                        <p>13.2 万人已使用</p>
+                        <div class="player-btn"><img src="img/0-shouye_slices/player-btn 2.png" alt=""></div>
+                    </div>
+                      <div class="swiper-slide" style="background-image:url(./img/5-shipin/1\ \(2\).jpeg)">
+                        <p>13.2 万人已使用</p>
+                        <div class="player-btn"><img src="img/0-shouye_slices/player-btn 2.png" alt=""></div>
+                    </div>
+                      <div class="swiper-slide" style="background-image:url(./img/5-shipin/1\ \(3\).jpeg)">
+                        <p>13.2 万人已使用</p>
+                        <div class="player-btn"><img src="img/0-shouye_slices/player-btn 2.png" alt=""></div>
+                    </div>
+                     
+                    </div>
+                    
+            </div> 
+            <div class="set-itbtn">
+                <img src="img/0-shouye_slices/btn-zhizuotongkuan.png" alt="">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contact">
+                <ul>
+                    <li class="tel">
+                        客服电话
+                        <span>400-1515-742</span>
+                    </li>
+                    <li class="email">
+                        客服邮箱
+                        <span>2689506586@qq.com</span>
+                    </li>
+                    <li class="QQ">
+                        客服QQ
+                        <span>2689506586</span>
+                    </li>
+                    <li class="time">
+                        客服时间
+                        <span>9:00 - 18:00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="bottom_btn" onclick="moveUP()" ></div> -->
+<!-- --------------------------------------弹窗----------------------------快乐的分割线--------------------------------------------------------- -->
+<!-- 遮罩层 -->
+<div id="cover"></div>
+<!-- 弹窗 -->
+<div id="showdiv">
+   
+        <div id="header">
+            <img src="img/1-tanchuang/guanbi.png" onclick="closeWindow()">
+        </div>
+     
+        <div id="main">
+            <div id="background-main"></div>
+            <div id="main-box">
+                <input type="text" placeholder="请输入您的手机号码">
+                <img src="img/1-tanchuang/zu 203.png" id="true-img" alt="">
+                <img src="img/1-tanchuang/tuceng389.png" id="tuceng" > 
+            </div>   
+        </div>
+         <div id="footer">
+        <div id="p-background">
+            <p>点击确认收下超值宠粉权益：百万正版铃声随便用，热门视频彩铃放肆换，更有酷炫视频模板一键制作自己专 属视频彩铃。资费仅需6元/月。</p>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------设置铃声弹窗----------------------------快乐的分割线--------------------------------------------------------- -->
+<div id="set-pop">
+    <div id="header">
+        <img src="img/1-tanchuang/guanbi.png" onclick="closesetWindow()">
+    </div>
+ 
+    <div id="main">
+        <div id="background-setmain"></div>
+        <div id="main-box">
+            <div id="player-music">
+                <!-- 蓝色背景包含播放按钮 -->
+                <div id="music-background">
+                    <img src="img/2-shelingtanchuang/icon_play.png" alt="">
+                </div>
+                    <div id="p-title">
+                        <p>当春风吹来一阵白日梦-在</br>
+                            那个午后一起做个白日梦
+                        </p>
+                        <p>群星</p>
+                    </div>
+
+            </div>
+
+            </div>
+            <div id="set-title">
+                <img src="img/2-shelingtanchuang/left.png" id="left" alt="">
+                <p id="set-phone">验证手机号完成彩铃设置</p>
+                <img src="img/2-shelingtanchuang/right.png" id="right" alt="">
+
+            </div>
+            <input  placeholder="请输入您的手机号码" type="text" id="setphone-input">
+            <img src="img/1-tanchuang/zu 203.png" id="btn-img" alt="">
+            <img src="img/1-tanchuang/tuceng389.png" id="tuceng2"> 
+        </div>   
+        <div id="set-footer">
+            <div id="set-pbackground">
+                <p>点击确认收下超值宠粉权益：百万正版铃声随便用，热门视频彩铃放肆换，更有酷炫视频模板一键制作自己专属视频彩铃。资费仅需6元/月。</p>
+            </div>
+        </div>
+</div>
+<!-- --------------------------------------二次确认弹窗----------------------------快乐的分割线--------------------------------------------------------- -->
+<div id="two">
+    <div id="header">
+        <img src="img/1-tanchuang/guanbi.png" onclick="closeshow()">
+    </div>
+    <div id="main">
+        <div id="background-twomain"></div>
+        <div id="main-box">
+            <!-- <input type="text" value="请输入您的手机号"> -->
+            <div id="user-info" >
+                <p >
+                    亲爱的13788374877用户：
+                </p> 
+            </div>
+            <div id="user-title">
+                <p>
+                    仅需最后一步，即可获得三大超值宠粉权益立即点击确认收下吧~
+                </p>
+            </div>
+            <img src="img/1-tanchuang/zu 203.png" id="two-btn" alt="">
+            <img src="img/1-tanchuang/tuceng389.png" id="tuceng"> 
+        </div>   
+    </div>
+    <div id="two-footer">
+    <div id="p-background">
+        <p>点击确认收下超值宠粉权益：百万正版铃声随便用，热门视频彩铃放肆换，更有酷炫视频模板一键制作自己专 属视频彩铃。资费仅需6元/月。</p>
+    </div>
+    </div>
+</div>
+
+<script>
+    
+
+</script>
+
+    <script type="text/javascript">
+        // 适配
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                // 根元素字体大小计算
+                docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+            document.querySelector('body').style.visibility = "visible";
+
+        })(document, window);
+
+
+
+
+
+        // 弹窗
+        function showWindow() {
+            $('#showdiv').show();  //显示弹窗
+            
+            $('#cover').css('display', 'block'); //显示遮罩层
+            $('#cover').css('height', document.body.clientHeight + 'px'); //设置遮罩层的高度为当前页面高度
+        }
+        
+            // 关闭弹窗
+        function closeWindow() {
+            $('#showdiv').hide();  //隐藏弹窗
+           
+            $('#cover').css('display', 'none');   //显示遮罩层
+        }
+
+
+        //设置铃声
+        function setmusic() {
+            $('#set-pop').show();  //显示弹窗
+           
+            $('#cover').css('display', 'block'); //显示遮罩层
+            $('#cover').css('height', document.body.clientHeight + 'px'); //设置遮罩层的高度为当前页面高度
+        }
+        
+            // 关闭弹窗
+        function closesetWindow() {
+            $('#set-pop').hide();  //隐藏弹窗
+          
+            $('#cover').css('display', 'none');   //显示遮罩层
+        }
+        //二次确认弹窗
+    function twoshow() {
+        $('#two').show();  //显示弹窗
+        // $('body').attr('style','overflow:hidden')//固定使弹窗不往下滑动
+        $('#cover').css('display', 'block'); //显示遮罩层
+        $('#cover').css('height', document.body.clientHeight + 'px'); //设置遮罩层的高度为当前页面高度
+    }
+    
+        // 关闭弹窗
+    function closeshow() {
+        $('#two').hide();  //隐藏弹窗
+        $('body').attr('style','overflow：auto')//固定使弹窗往下滑动
+        $('#cover').css('display', 'none');   //显示遮罩层
+    }
+       
+
+
+
+    </script>
+    <script>
+
+        function change_pic(){
+           
+
+            var mubtn = document.getElementById("mu-btn");
+
+            mubtn.onclick = function(){
+                if(mubtn.getAttribute("src",2) == "img/0-shouye_slices/playerbtn.png"){
+
+                    mubtn.setAttribute("src","img/0-shouye_slices/stopbtn.png");
+
+                }else{
+
+                    mubtn.setAttribute("src","img/0-shouye_slices/playerbtn.png");
+
+                };
+               
+            }
+        }
+        change_pic();
+
+    </script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
+
+</body>
+</html>
