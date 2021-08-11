@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #EB432D;
+}
+.header{
+    height: 4.36rem;
+    width: 6.4rem;
+    background:url(../img/0-shouye-quanyi/group2094.png);
+    background-size: 6.4rem 4.27rem;
+    position: relative;
+    
+
+}
+.scroll{
+    width: 6rem;
+    height: 0.29rem;
+    /* background: url(../img/0-shouye-quanyi/1018.png);
+    background-size:100% 100% ; */
+    /* display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: normal;
+    align-items: normal;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem; */
+
+}
+marquee{
+    background: rgba(207, 22, 16, 0.7);
+    border-radius: 0.27rem;
+    
+    width: -webkit-fill-available;
+   
+   
+   
+    
+}
+.time{
+    font-size: 0.24rem;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.2rem;
+    width: 3.62rem;
+    height: 0.24rem;
+    /* position: absolute;
+    top: 0.2rem;
+    left: 0.6rem; */
+
+}
+marquee span{
+    line-height: 0.02rem;
+    color: #FFF38A ;
+    font-size: 0.24rem;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    width: 3.62rem;
+    height: 0.14rem;
+    /* position: absolute;
+    top: 0.2rem;
+    left: 1.5rem; */
+    
+ 
+
+}
+/* :host {
+    display: inline-block;
+    overflow: hidden;
+    text-align: initial;
+    white-space: nowrap;
+} */
