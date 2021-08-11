@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福利不打烊</title>
+    <link rel="stylesheet" href="css2/style.css">
+</head>
+<body>
+    <div class="body-wrap">
+        <div class="header">
+            <div class="scroll"></div>
+            <!-- <div class="scroll"> -->
+                <marquee behavior="scroll" scrolldelay="0" loop="-1" vspace="50" >
+                    <span class="time"> 1分钟前 </span>
+                    <span>用户 151****2465 已抢到 </span>
+                    <span>用户 139****7489 已抢到 </span>
+                    <span class="time"> 1分钟前 </span>
+                    <span>用户 150****6738 已抢到 </span>
+                    <span class="time"> 1分钟前 </span>
+                    <span>用户 137****6020 已抢到 </span>
+                    <span class="time"> 1分钟前 </span>
+                    <span>用户 137****9857 已抢到 </span>
+                    <span class="time">1分钟前</span>
+                    <span>用户 151****2465 已抢到 </span>
+                    <span>用户 151****2465 已抢到 </span>
+                </marquee>
+
+            <!-- </div>
+             -->
+
+        </div>
+        <div class="main-wrap"></div>
+        <div class="msg"></div>
+        <div class="pop-title"></div>
+        <div class="pop-box"></div>
+        <div class="music-title"></div>
+        <div class="music-box"></div>
+        <div class="free-title"></div>
+        <div class="free-box"></div>
+        <div class="footer"></div>
+
+    </div>
+    <script type="text/javascript">
+     // 适配
+     (function (doc, win) {
+            var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                // 根元素字体大小计算
+                docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+            document.querySelector('body').style.visibility = "visible";
+
+        })(document, window);
+    
+    
+    </script>
+</body>
+</html>
