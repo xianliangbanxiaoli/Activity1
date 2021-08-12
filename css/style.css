@@ -349,26 +349,26 @@ body{
     left: -0.2rem;
 }
 .color-title{
-    width: 6.3rem;
+    width: 6.4rem;
     height: 2rem;
 }
 .color-title div{
     height: 0.7rem;
-    width: 6.3rem;
+    width: 6.4rem;
 }
 .color-title img{
-    width: 6.3rem;
+    width: 6.4rem;
     height: 1.22rem;
 
 }
 .music-box{
     width: 6.08rem;
-    height: 8.56rem;
+    height: 10.56rem;
     position: relative;
 }
 .music-main{
     width: 6.08rem;
-    height: 8.56rem;
+    /* height: 10.56rem; */
     background: #CB2B20;
     border-radius: 0.20rem;
 
@@ -377,50 +377,72 @@ body{
     justify-content: flex-start;
     flex-direction: column;  
 
+
 }
 .music-border{
-    width: 5.2rem;
-    height: 1.58rem;
-    border-bottom:0.01rem dashed white;
-    /* opacity: 0.3; */
-    display: flex;
-    align-items: center;
-    justify-content:  space-around;
-    flex-direction: row;
-}
-.music-list{
-    width: 5.2rem;
-    height: 1rem;
-    padding: 0.1rem ;
-
+    width: 5.26rem;
+    /* height: 1.72rem; */
+   border-bottom: 0.01rem dashed #f0e8e8;
     /* display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content:  center;
-    flex-direction: column; */
+    flex-direction: row; */
+    position: relative;
+    margin: 0.06rem;
+    padding: 0.2rem;
 
-    column-width: 3rem;
 }
-.lyric {
-    width: 5.2rem;
-    height: 1rem;
-    padding: 0.1rem ;
-    /* column-count: 3; */
-  
+/* left */
+.music-list{
+    
+    position: absolute;
+    left: 0.2rem;
 }
-.music-list  p{
-    width: 3.24rem;
-    height: 0.59rem;
+/* center */
+.lyric{
+    margin: 0 3rem;
+}
+/* right */
+.shelingbtn{
+    /* float: right; */
+    position: absolute;
+    right: 0.2rem;
+
+}
+.music-list,.shelingbtn{
+    width: 1.14rem;
+    height: 0.92rem;
+}
+#song{
+    width: 3.81rem;
+    
     font-size: 0.24rem;
     font-family: PingFang SC;
     font-weight: 400;
     color: #FFFAE6;
     line-height: 0.36rem;
-    position: absolute;
-    left: 1.16rem;
+
+  
 }
-.music-list img{
+#author{
+   
+    font-size: 0.22rem;
+    font-family: Adobe Heiti Std;
+    font-weight: normal;
+    color: #FFF4F4;
+    line-height: 0.4rem;
+    opacity: 0.6;
+    float: left;
+  
+    
+}
+.music-list img,.shelingbtn img{
     width: 0.7rem;
     height: 0.69rem;
+}
+.music-btn{
+    width: 3.14rem;
+    height: 1.1rem;
 }
 .music-btn img{
     width: 3.14rem;
@@ -431,12 +453,13 @@ body{
 }
 #mu-btn{
     position: absolute;
-    left: 0.28rem;
+    left: -0.23rem;
 }
 #setring{
     position: absolute;
-    right: 0.28rem;
+    right: -0.3rem;
 }
+
 
 .video-box{
     width: 6.4rem;
@@ -455,7 +478,10 @@ body{
     top:80%;
     left: 20%;
 }
-
+.video-title{
+    width: 6.4rem;
+    height: 1.22rem;
+}
 .video-title img{
     width: 6.4rem;
     height: 1.22rem;
@@ -534,7 +560,7 @@ body{
 }
 .contact{
     height: 4.2rem;
-    width: 6.4rem;
+    width: 6.3rem;
     /* background: url(../img/0-shouye_slices/footer.png);
     background-size: 6.4rem 4.3rem; */
     background: #CC1B13;
