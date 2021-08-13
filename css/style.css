@@ -117,10 +117,17 @@ body{
     position: absolute;
     top: 1.6rem;
     left: 0.1rem;
-    transition: 0.3s linear;
+   
     animation-name: scale;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    animation: scale 1s infinite;
+    
+/* Safari and Chrome */
+    -webkit-animation: scale 1s infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name: scale;
+    -webkit-animation-duration:1s;
 }
 
 .finger{
@@ -130,11 +137,16 @@ body{
     top: 0.5rem;
     right: 0.4rem;
     display: inline-block;
-    transition: 0.3s linear;
+
     animation-name: floating;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    animation: floating 1s infinite;
+/* Safari and Chrome */
+    -webkit-animation:floating 1s infinite;
+    -webkit-animation-timing-function:linear;
 }
+
 .finger img{
     width: 0.9rem;
     height: 0.9rem;
@@ -165,16 +177,6 @@ body{
 }
 }
 
-
-/* .get-btn-layer img{
-    width: 6.3rem;
-    height: 1.5rem;
-    position: absolute;
-    top: 1.6rem;
-    left: -0.4rem;
-
-
-} */
 .num-user{
     width: 2.8rem;
     height: 0.2rem;
@@ -363,7 +365,7 @@ body{
 }
 .music-box{
     width: 6.08rem;
-    height: 10.56rem;
+    /* height: 10.56rem; */
     position: relative;
 }
 .music-main{
@@ -382,7 +384,7 @@ body{
 .music-border{
     width: 5.26rem;
     /* height: 1.72rem; */
-   border-bottom: 0.01rem dashed #f0e8e8;
+   /* border-bottom: 0.01rem dashed #f0e8e8; */
     display: flex;
     align-items: center;
     justify-content:  center;
@@ -408,11 +410,22 @@ body{
     /* float: right; */
     position: absolute;
     right: 0.34rem;
+   
+    line-height: 0.2rem;
 
 }
 .music-list,.shelingbtn{
     width: 1.14rem;
     height: 0.92rem;
+}
+a{
+    text-decoration: none;
+    border-bottom:  0.01rem dashed #f0e8e8;
+}
+.line{
+    width: 5.26rem;
+    
+
 }
 #song{
     width: 3.81rem;
@@ -513,7 +526,7 @@ body{
     height: 0.25rem;
     position: absolute;
     top: 30%;
-    left: 0.79rem;
+    left: 0.9rem;
     z-index: 3;
 }
 .player-btn img{
@@ -521,7 +534,7 @@ body{
     height: 1rem;
 }
 
-.swiper-container {
+/* .swiper-container {
     width: 2.6rem;
     height: 4.62rem;
     padding-top: 0.5rem;
@@ -550,6 +563,68 @@ body{
     height: 4.62rem;
     border-radius: 0.13rem;
 
+  } */
+
+  .swiper-wrapper p{
+    width: 1.8rem;
+    height: 0.2rem;
+    font-size: 0.2rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.24rem;
+    position: absolute;
+    top: 4.2rem;
+    left: 1.2rem;
+}
+  .swiper-container {
+    width: 5.8rem;
+    /* height: 100%; */
+    /* width: 2.6rem; */
+    height: 4.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    top: 0.43rem;
+    /* border-left: 0.04rem solid rgba(255, 232, 108, 0.82) ;
+
+    border-right: 0.04rem solid rgba(255, 232, 108, 0.82); */
+    
+
+  
+  }
+ 
+  .swiper-slide {
+    width: rem;
+    background-position: center;
+    background-size: 2.6rem 4.62rem;
+    /* width: 100%;
+    height: 100%; */
+    border-radius: 0.13rem;
+    text-align: center;
+    font-size: 0.18rem;
+    background: #fff;
+    border: 0.04rem solid rgba(255, 232, 108, 0.82);
+
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+     transition: 300ms;
+     transform: scale(0.8);
+  }
+  .swiper-slide-active,.swiper-slide-duplicate-active{
+
+    transform: scale(1);
   }
 
 .footer{

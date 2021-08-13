@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/showDiv.css">
     <!-- 设铃声窗口 -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">  
+    <link rel="stylesheet" href="../Activity1/package/swiper-bundle.min.css">  
 </head>
 <body>
     <div class="body-wrap">
@@ -110,24 +110,30 @@
         </div>
         <div class="music-box">
             <div class="music-main">
-                <div class="music-border">
-                    <!--  left-->
-                    <div class="music-list">
-                        <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn" onclick=" change_pic()">
-                    </div>
-                    <!-- center -->
-                        <div class="lysic">
-                            <p id="song">当春风吹来一阵白日梦在那个午后一起做个白日梦</p>
-                            <p id="author">群星</p>
-                           
+                
+                    <div class="music-border">
+                        <!--  left-->
+                        <div class="music-list">
+                            <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn" onclick=" change_pic()">
                         </div>
-                    <!-- right -->
-                    <div class="shelingbtn">
-                        <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
-                    </div>
-                   
+                        <!-- center -->
+                            <div class="lysic">
+                                <p id="song">当春风吹来一阵白日梦在那个午后一起做个白日梦</p>
+                                <p id="author">群星</p>
+                               
+                            </div>
+                        <!-- right -->
+                        <div class="shelingbtn">
+                            <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
+                        </div>
+                       
+                       
+
+                
+                
 
                 </div>
+                <a href=""><p class="line">  </p></a>
                
                 <div class="music-border">
                     <div class="music-list">
@@ -142,7 +148,7 @@
                     </div>
 
                 </div>
-                
+                <a href=""><p class="line">  </p></a>
                 <div class="music-border">
                     <div class="music-list">
                         <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn" onclick="change_pic()">
@@ -157,7 +163,7 @@
                     </div>
 
                 </div>
-               
+                <a href=""><p class="line">  </p></a>
                 <div class="music-border">
                     <div class="music-list">
                         <img src="img/0-shouye_slices/playerbtn.png" id="mu-btn" onclick="change_pic()">
@@ -171,8 +177,9 @@
                     </div>
 
                 </div>
+                <a href=""><p class="line">  </p></a>
                
-                    <div class="music-border" style="border-bottom:none;" >
+                    <div class="music-border">
 
                         <div class="music-list">
                             <img src="img/0-shouye_slices/playerbtn.png "id="mu-btn" onclick="change_pic()">
@@ -210,6 +217,18 @@
                         <p>13.2 万人已使用</p>
                         <div class="player-btn"><img src="img/0-shouye_slices/player-btn 2.png" alt=""></div>
                     </div>
+                    <!-- <div class="swiper-slide" style="background-image:url(./img/5-shipin/1\ \(1\).jpeg)">
+                        <p>13.2 万人已使用</p>
+                        <div class="player-btn"><img src="img/0-shouye_slices/player-btn 2.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./img/5-shipin/1\ \(2\).jpeg)">
+                        <p>13.2 万人已使用</p>
+                        <div class="player-btn"><img src="img/0-shouye_slices/player-btn 2.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./img/5-shipin/1\ \(3\).jpeg)">
+                        <p>13.2 万人已使用</p>
+                        <div class="player-btn"><img src="img/0-shouye_slices/player-btn 2.png" alt=""></div>
+                    </div> -->
                     
                     </div>
                     
@@ -222,6 +241,7 @@
             <div class="contact">
                 <ul>
                     <li class="tel">
+                        
                         客服电话
                         <span>400-1515-742</span>
                     </li>
@@ -442,26 +462,22 @@
 
     </script>
 <!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+<script src="./package/swiper-bundle.min.js"> </script>
 
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper('.swiper-container', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });
+      slidesPerView: 2,
+      spaceBetween: -20,
+	  centeredSlides: true,
+	  loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+ 
+   
 </script>
 
 </body>
