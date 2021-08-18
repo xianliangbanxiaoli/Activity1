@@ -374,6 +374,12 @@ body{
     /* height: 10.56rem; */
     position: relative;
 }
+#more-music{
+    display: none;
+}
+#more-music a{
+    display: none;
+}
 .music-main{
     width: 6.08rem;
     /* height: 10.56rem; */
@@ -424,6 +430,7 @@ body{
     width: 1.14rem;
     height: 0.92rem;
 }
+
 a{
     text-decoration: none;
     border-bottom:  0.01rem dashed #f0e8e8;

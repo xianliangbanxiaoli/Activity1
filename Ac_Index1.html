@@ -206,10 +206,96 @@
                         </div>
     
                     </div>
-                    <div class="music-btn">
-                        <img src="img/0-shouye_slices/btn.png" alt="">
+                    
+                    
+                    <div class="music-main" id="more-music">
+                        <a href=""><p class="line"> </p></a>
+                        <div class="music-border">
+                            <!--  left-->
+
+                            <div class="music-list">
+                                <img src="img/0-shouye_slices/playerbtn.png" class="mubtn" onclick="change_pic()">
+                                <video class="music" style="display: none;" src=""></video>
+                            </div>
+                            <!-- center -->
+                                <div class="lysic">
+                                    <p class="song">当春风吹来一阵白日梦在那个午后一起做个白日梦</p>
+                                    <p class="author">群星</p>
+                                   
+                                </div>
+                            <!-- right -->
+                            <div class="shelingbtn">
+                                <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
+                            </div>             
+    
                     </div>
+                    <a href=""><p class="line">  </p></a>
+                   
+                    <div class="music-border">
+                        <div class="music-list">
+                            <img src="img/0-shouye_slices/stopbtn.png" class="mubtn" onclick="change_pic()">
+                            <video class="music" style="display: none;" src=""></video>
+                        </div>
+                            <div class="lysic">
+                                <p class="song">孤单心事-爱你是孤单的心事 </p>
+                                <p class="author">群星</p>
+                            </div>
+                        <div class="shelingbtn">
+                            <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="twoshow()"> 
+                        </div>
+    
+                    </div>
+                    <a href=""><p class="line">  </p></a>
+                    <div class="music-border">
+                        <div class="music-list">
+                            <img src="img/0-shouye_slices/playerbtn.png" class="mubtn" onclick="change_pic()">
+                        </div>
+                            <div class="lysic">
+                                <p class="song">我只喜欢你-电视剧《我只喜欢你就覅从每次考试现在现在在x熟悉熟悉欣赏欣赏次世代次世代
+                                    主题曲</p>
+                                <p class="author">胡夏</p>
+                            </div>
+                        <div class="shelingbtn">
+                            <img src="img/0-shouye_slices/shelingbtn.png" id="setring"onclick="setmusic()"> 
+                        </div>
+    
+                    </div>
+                    <a href=""><p class="line">  </p></a>
+                    <div class="music-border">
+                        <div class="music-list">
+                            <img src="img/0-shouye_slices/playerbtn.png" class="mubtn" onclick="change_pic()">
+                        </div>
+                        <div class="lysic">
+                            <p class="song">等你像-遇见她前的等待 究竟是什么感觉</p>
+                            <p class="author">张碧晨</p>
+                        </div>
+                        <div class="shelingbtn">  
+                            <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
+                        </div>
+    
+                    </div>
+                    <a href=""><p class="line">  </p></a>
+                
+                        <div class="music-border">
+    
+                            <div class="music-list">
+                                <img src="img/0-shouye_slices/playerbtn.png "class="mubtn" onclick="change_pic()">
+                            </div>
+                            <div class="lysic">
+                                <p class="song">单数-怎样精彩都只有一个人</p>
+                                <p class="author">许廷锵</p>  
+                            </div>
+                            <div class="shelingbtn">
+                                <img src="img/0-shouye_slices/shelingbtn.png" id="setring"> 
+                            </div>
+        
+                        </div>               
+                </div>
+                <div class="music-btn">
+                    <img src="img/0-shouye_slices/btn.png" id="manysong">
+                </div>
             </div>
+        
         </div>
         <div class="video-title">
             <img src="img/0-shouye_slices/title.png" alt="">
@@ -1677,7 +1763,7 @@ var  musicdata=
         document.getElementById("pk-pic1").src=data[0].picpath;
         document.getElementById("pk-pic2").src=data[1].picpath;
 
-        // var musicArray=new Array();
+        // 歌名、歌手
         var songname=document.getElementsByClassName("song");
         var songer=document.getElementsByClassName("author");
         for(var i=0;i<songname.length;i++){
@@ -1686,38 +1772,55 @@ var  musicdata=
             songer[i].innerHTML=musicdata[i].songer;
             
         }
-        // document.getElementById("song1").innerHTML=musicdata[1].name;
-        // var music=document.getElementsByClassName("music");
-        // for(var x=0;x<music.length;x++){
-        //     music[x].src=musicdata.shareurl;
-
-        // }
-         function change_pic(){
-            var mubtn=document.getElementsByClassName("mubtn");
-            for(var j=0;j<mubtn.length;j++){
-                // music[j].src=musicdata[j].shareurl;
-            //   mubtn[j].onclick=function(){
-                  
-                if(mubtn[j].getAttribute("src")=="img/0-shouye_slices/stopbtn.png"){
-
-                            mubtn[j].setAttribute("src","img/0-shouye_slices/playerbtn.png");
-                            
-                            }
-                            else if(mubtn[j].getAttribute("src")=="img/0-shouye_slices/playerbtn.png"){
-                            mubtn[j].setAttribute("src","img/0-shouye_slices/stopbtn.png");
-
-                            };
-              }
+        // function manysong(){
+            var manysong=document.getElementById("manysong");
+            manysong.onclick=function(){
+            //     var songbox= document.getElementsByClassName("music-box");
+            // // var songlist1= document.getElementsByClassName("music-list");
+            //     var songlist2= document.createElement("div"); 
+            //     songlist2.setAttribute("class","music-main");
+            //     // songlist2.val("class=music-main");
+            //     songbox.appendChild(songlist2);
+            var songbox=document.getElementById("more-music");
+            var line=document.getElementsByClassName("more-music.a")
+            
+                    songbox.style.display="block";
+                    //line.style.display="inline";
+            
 
             }
+            // songbox.addEventListener("click", function(){ songbox.style.display="none";});
+            
 
+
+            
+
+            
+        // }
+       //高品质彩铃随便用播放、暂停按钮事件
+        function change_pic() {
+            var mubtn = document.getElementsByClassName("mubtn");
+            //通过循环给每个按钮添加点击事件
+            for (var j = 0; j < mubtn.length; j++) {
+                mubtn[j].onclick = (function(j) {
+                    return function() {
+                        if (mubtn[j].getAttribute("src") == "img/0-shouye_slices/stopbtn.png") {
+                            mubtn[j].setAttribute("src", "img/0-shouye_slices/playerbtn.png");
+
+                        } else {
+                            mubtn[j].setAttribute("src", "img/0-shouye_slices/stopbtn.png");
+
+                        };
+                    }
+                })(j);
+            }
+
+        }
      // }
         
     
-
+//播放视频
       function playvideo(){
-          
-
             var playerbtn1=document.getElementById("one");
             var playerbtn2=document.getElementById("p-two");
             var playerbtn3=document.getElementById("p-thr");
@@ -1736,17 +1839,9 @@ var  musicdata=
             var video2=document.getElementById("video2")
             var video3=document.getElementById("video3")
 
-
-            // var box=document.getElementsByClassName("player-btn");
-            // var videoArray=new Array();
-            // viseoArray[0]=document.getElementById("video1");
-            // viseoArray[1]=document.getElementById("video1");
-            // viseoArray[2]=document.getElementById("video1");
-
-           
             playerbtn1.onclick=function(){
                 if(isPlay=true){
-                  
+            
                         img1.style.display="none";
                         video1.style.display="inline";
                         video1.src=data[0].playpath;
@@ -1772,7 +1867,7 @@ var  musicdata=
                         img2.style.display="none";
                         video2.style.display="inline";
                         video2.src=data[1].playpath;
-                       
+                
                         playerbtn1.style.display="none";
                         playerbtn3.style.display="none";
                         playerbtn2.style.display="none";
@@ -1793,9 +1888,7 @@ var  musicdata=
                         img3.style.display="none";
                         video3.style.display="inline";
                         video3.src=data[1].playpath;
-                        // video2.src=data[1].playpath;
-                        // video3.src=data[2].playpath;
-                       
+                        
                         playerbtn1.style.display="none";
                         playerbtn3.style.display="none";
                         playerbtn2.style.display="none";
@@ -1830,9 +1923,7 @@ var  musicdata=
                 }
 }
 
-       
-      
-       
+
 </script>
 </body>
 </html>
