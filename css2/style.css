@@ -1,3 +1,4 @@
+/* 第二个活动 */
 *{
     margin: 0;
     padding: 0;
@@ -352,7 +353,7 @@ body{
 }
 .pop-tab{
     width: 6rem ;
-    height: 0.6rem;
+    height: 0.78rem;
     /* position: relative; */
 }
 .tab-box{
@@ -392,7 +393,7 @@ body{
     color: #FFF494;
     line-height: 0.4rem;
     position: absolute;
-    top: 0.03rem;
+    top: 0.09rem;
     /* left: 0.1rem; */
     text-align: center;
     /* z-index: 2; */
@@ -400,7 +401,7 @@ body{
 
   .swiper-container {
     width: 6rem ;
-    height: 0.52rem;
+    height: 0.82rem;
   }
 
   .swiper-slide {
@@ -424,12 +425,13 @@ body{
     align-items: center;
 }
 .pop-grid{
-    width: 6rem;
-    height: 12.93rem;
+    width: 6.1rem;
+    height: 12.63rem;
     background: #FFF5DA;
     border-radius: 0.10rem;
     display: flex;
-    align-content: flex-start;
+      align-items: center;
+    /* align-content: flex-start; */
     justify-content: space-around;
     flex-direction: column;
     position: relative;
@@ -437,15 +439,17 @@ body{
 }
 .pop-box{
     width: 6rem;
-    height: 6.3rem;
+    height: 5.3rem;
     /* background: #FFF5DA;
     border-radius: 0.10rem; */
     margin-top: 0.3rem;
+    /* padding-left: 0.3rem;
+    padding-right: 0.3rem; */
     /* margin-bottom: 0.3rem; */
     /* padding: 0.05rem; */
     display: flex;
     /* align-items: center; */
-    /* align-content: center; */
+    /* align-content: flex-start; */
     justify-content: space-around;
     flex-direction: row;
     
@@ -481,6 +485,7 @@ body{
 .pop-item{
     width: 2.6rem;
     height: 4.62rem;
+    /* margin-left: 0.01rem; */
     position: relative;
 }
 #pop-pic1,#pop-pic2{
@@ -555,7 +560,7 @@ body{
 }
 .music-title{
     width: 4.26rem;
-    height: 3.22rem;
+    height: 1.32rem;
     position: relative;
 }
 .music-title img{
@@ -576,4 +581,199 @@ body{
     left: 1.33rem;
    
 
+}
+.music-box{
+    width: 6rem;
+/* height: 15.50rem; */
+background: #FFF5DA;
+border-radius: 0.12rem;
+position: relative;
+}
+
+#more-music{
+    display: none;
+}
+#more-music a{
+    display: none;
+}
+.music-main{
+    width: 6.08rem;
+    /* height: 10.56rem; */
+    /* background: #CB2B20; */
+    border-radius: 0.20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;  
+
+
+}
+.music-border{
+    width: 5.26rem;
+    /* height: 1.72rem; */
+   /* border-bottom: 0.01rem dashed #f0e8e8; */
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    flex-direction: row;
+    position: relative;
+    margin: 0.06rem;
+    padding: 0.2rem;
+
+}
+/* left */
+.music-list{
+    
+    position: absolute;
+    left: 0.33rem;
+}
+/* center */
+.lyric{
+    margin: 0 3rem;
+    
+}
+/* right */
+.shelingbtn{
+    /* float: right; */
+    position: absolute;
+    right: 0.34rem;
+    line-height: 0.2rem;
+
+}
+.music-list,.shelingbtn{
+    width: 1.14rem;
+    height: 0.92rem;
+}
+
+a{
+    text-decoration: none;
+    border-bottom:  0.01rem dashed #f0e8e8;
+}
+.line{
+    width: 5.26rem;
+    
+
+}
+.song{
+    width: 3.81rem;
+    
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.36rem;
+    
+    /* width: 325px; */
+/* height: 59px; */
+
+
+  
+}
+.author{
+   
+    font-size: 0.22rem;
+    font-family: Adobe Heiti Std;
+    font-weight: normal;
+    color: #C18F87;
+    line-height: 0.4rem;
+    opacity: 0.6;
+    float: left;
+
+    /* width: 42px;
+height: 20px; */
+
+  
+    
+}
+.music-list img,.shelingbtn img{
+    width: 0.7rem;
+    height: 0.69rem;
+}
+.music-btn{
+    width: 3.14rem;
+    height: 1.1rem;
+}
+.music-btn img{
+    width: 3.14rem;
+    height: 0.92rem;
+    background: #CB2B20;
+    border-radius: 0.2rem;
+    
+}
+.mubtn{
+    position: absolute;
+    left: -0.23rem;
+}
+#setmusic{
+    position: absolute;
+    right: -0.3rem;
+}
+
+.footer{
+    height: 4.4rem;
+    width: 6.4rem;
+    background: #EB432D;
+    position: relative;
+   
+}
+.contact{
+    height: 2.9rem;
+    width: 6rem;
+    /* background: url(../img/0-shouye_slices/footer.png);
+    background-size: 6.4rem 4.3rem; */
+    /* background: #CC1B13;
+    border-radius:0.23rem ; */
+    background: #C43D2E;
+/* opacity: 0.2; */
+border-radius: 0.08rem;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.2rem;
+    z-index: 0;
+
+}
+.contact ul{
+    list-style: none;
+    width: 5.6rem;
+    height: 0.4rem;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.14rem;
+    
+}
+.contact ul li{
+    font-size: 0.28rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #d3cece;
+    line-height: 0.36rem;
+    letter-spacing: 0.01rem;
+    
+
+    height: 0.66rem;
+
+}
+.contact ul li span{
+    width: 3.2rem;
+    float: right;
+
+    text-align: right;
+    font-size: 0.28rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.36rem;
+    opacity: 0.6;
+    /* position: absolute;
+   left: 3.93rem; */
+}
+.contact ul li img{
+    width: 0.36rem;
+    height: 0.36rem;
+    background: #EB432D;
+    border-radius: 50%;
+    float: left;
+    margin: 0 0.09rem;
+    
 }

@@ -140,7 +140,7 @@
         
             <div class="pop-grid">
                 <div class="pop-box"> 
-                    <div class="pop-item">
+                    <div class="pop-item" id="pop-left">
                         <video class="video" id="video1" controls="controls"
                         poster="https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/119_20210618181151_855708.webp?m" 
                     
@@ -153,7 +153,7 @@
                         <img src="img/0-shouye-quanyi/group 2061.png" id="setbtn" >
                         <p id="setring">设为视频彩铃</p>       
                     </div>
-                    <div class="pop-item">
+                    <div class="pop-item" id="pop-right">
                         <video id="video2" autoplay="autoplay" controls="controls" 
                         poster="https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/110_20210618180353_81045.jpg?m"
                         style="z-index: 2;object-fit:fill;height: 4.62rem;"
@@ -209,10 +209,247 @@
             <img src="./img/0-shouye-quanyi/group2087.png" alt="">
             <p>高品质彩铃</p>
         </div>
-        <div class="music-box"></div>
+        <div class="music-tab">
+            
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide" >
+                            <img class="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" onclick="light_pic()">
+                            <p id="tab-p"> 最新</p>
+                        </div>
+                        <div class="swiper-slide" >
+                            <img class="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" onclick="light_pic()">
+                            <p id="tab-p">最热</p>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" onclick="light_pic()">
+                            <p id="tab-p"> 抖音</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" onclick="light_pic()">
+                            <p id="tab-p"> 影视</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" onclick="light_pic()">
+                          <p id="tab-p"> 网红</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" onclick="light_pic()">
+                          <p id="tab-p"> 欧美</p>
+                        </div>
+                      
+                </div>
+        </div>
+        </div>
+         <div class="music-box">
+            <div class="music-main">
+                
+                    <div class="music-border">
+                        <!--  left-->
+                        <div class="music-list">
+                            <img src="img/0-shouye_slices/playerbtn.png" class="mubtn" onclick="change_pic()">
+                            <video class="music" style="display: none;" src=""></video>
+                        </div>
+                        <!-- center -->
+                            <div class="lysic">
+                                <p class="song">当春风吹来一阵白日梦在那个午后一起做个白日梦</p>
+                                <p class="author">群星</p>
+                               
+                            </div>
+                        <!-- right -->
+                        <div class="shelingbtn">
+                            <img src="img/0-shouye_slices/shelingbtn.png" id="setmusic" onclick="setmusic()"> 
+                        </div>
+                        
+
+                </div>
+                <a href=""><p class="line">  </p></a>
+               
+                <div class="music-border">
+                    <div class="music-list">
+                        <img src="img/0-shouye_slices/stopbtn.png" class="mubtn" onclick="change_pic()">
+                        <video class="music" style="display: none;" src=""></video>
+                    </div>
+                        <div class="lysic">
+                            <p class="song">孤单心事-爱你是孤单的心事 </p>
+                            <p class="author">群星</p>
+                        </div>
+                    <div class="shelingbtn">
+                        <img src="img/0-shouye_slices/shelingbtn.png" id="setmusic" onclick="twoshow()"> 
+                    </div>
+
+                </div>
+                <a href=""><p class="line">  </p></a>
+                <div class="music-border">
+                    <div class="music-list">
+                        <img src="img/0-shouye_slices/playerbtn.png" class="mubtn" onclick="change_pic()">
+                    </div>
+                        <div class="lysic">
+                            <p class="song">我只喜欢你-电视剧《我只喜欢你就覅从每次考试现在现在在x熟悉熟悉欣赏欣赏次世代次世代
+                                主题曲</p>
+                            <p class="author">胡夏</p>
+                        </div>
+                    <div class="shelingbtn">
+                        <img src="img/0-shouye_slices/shelingbtn.png" id="setmusic"onclick="setmusic()"> 
+                    </div>
+
+                </div>
+                <a href=""><p class="line">  </p></a>
+                <div class="music-border">
+                    <div class="music-list">
+                        <img src="img/0-shouye_slices/playerbtn.png" class="mubtn" onclick="change_pic()">
+                    </div>
+                    <div class="lysic">
+                        <p class="song">等你像-遇见她前的等待 究竟是什么感觉</p>
+                        <p class="author">张碧晨</p>
+                    </div>
+                    <div class="shelingbtn">  
+                        <img src="img/0-shouye_slices/shelingbtn.png" id="setmusic" onclick="setmusic()"> 
+                    </div>
+
+                </div>
+                <a href=""><p class="line">  </p></a>
+               
+                    <div class="music-border">
+
+                        <div class="music-list">
+                            <img src="img/0-shouye_slices/playerbtn.png "class="mubtn" onclick="change_pic()">
+                        </div>
+                        <div class="lysic">
+                            <p class="song">单数-怎样精彩都只有一个人</p>
+                            <p class="author">许廷锵</p>  
+                        </div>
+                        <div class="shelingbtn">
+                            <img src="img/0-shouye_slices/shelingbtn.png" id="setmusic"> 
+                        </div>
+    
+                    </div>
+                    
+                    
+                    <div class="music-main" id="more-music">
+                        <a href=""><p class="line"> </p></a>
+                        <div class="music-border">
+                            <!--  left-->
+
+                            <div class="music-list">
+                                <img src="img/0-shouye_slices/playerbtn.png" class="mubtn" onclick="change_pic()">
+                                <video class="music" style="display: none;" src=""></video>
+                            </div>
+                            <!-- center -->
+                                <div class="lysic">
+                                    <p class="song">当春风吹来一阵白日梦在那个午后一起做个白日梦</p>
+                                    <p class="author">群星</p>
+                                   
+                                </div>
+                            <!-- right -->
+                            <div class="shelingbtn">
+                                <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
+                            </div>             
+    
+                    </div>
+                    <a href=""><p class="line">  </p></a>
+                   
+                    <div class="music-border">
+                        <div class="music-list">
+                            <img src="img/0-shouye_slices/stopbtn.png" class="mubtn" onclick="change_pic()">
+                            <video class="music" style="display: none;" src=""></video>
+                        </div>
+                            <div class="lysic">
+                                <p class="song">孤单心事-爱你是孤单的心事 </p>
+                                <p class="author">群星</p>
+                            </div>
+                        <div class="shelingbtn">
+                            <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="twoshow()"> 
+                        </div>
+    
+                    </div>
+                    <a href=""><p class="line">  </p></a>
+                    <div class="music-border">
+                        <div class="music-list">
+                            <img src="img/0-shouye_slices/playerbtn.png" class="mubtn" onclick="change_pic()">
+                        </div>
+                            <div class="lysic">
+                                <p class="song">我只喜欢你-电视剧《我只喜欢你就覅从每次考试现在现在在x熟悉熟悉欣赏欣赏次世代次世代
+                                    主题曲</p>
+                                <p class="author">胡夏</p>
+                            </div>
+                        <div class="shelingbtn">
+                            <img src="img/0-shouye_slices/shelingbtn.png" id="setring"onclick="setmusic()"> 
+                        </div>
+    
+                    </div>
+                    <a href=""><p class="line">  </p></a>
+                    <div class="music-border">
+                        <div class="music-list">
+                            <img src="img/0-shouye_slices/playerbtn.png" class="mubtn" onclick="change_pic()">
+                        </div>
+                        <div class="lysic">
+                            <p class="song">等你像-遇见她前的等待 究竟是什么感觉</p>
+                            <p class="author">张碧晨</p>
+                        </div>
+                        <div class="shelingbtn">  
+                            <img src="img/0-shouye_slices/shelingbtn.png" id="setring" onclick="setmusic()"> 
+                        </div>
+    
+                    </div>
+                    <a href=""><p class="line">  </p></a>
+                
+                        <div class="music-border">
+    
+                            <div class="music-list">
+                                <img src="img/0-shouye_slices/playerbtn.png "class="mubtn" onclick="change_pic()">
+                            </div>
+                            <div class="lysic">
+                                <p class="song">单数-怎样精彩都只有一个人</p>
+                                <p class="author">许廷锵</p>  
+                            </div>
+                            <div class="shelingbtn">
+                                <img src="img/0-shouye_slices/shelingbtn.png" id="setring"> 
+                            </div>
+        
+                        </div>               
+                </div>
+                <div class="pop-box" id="pop-footer">
+                    <div class="pop-btn">
+                        <p>查看更多 ></p>
+                    </div>
+
+                </div>
+                <!-- <div class="music-btn">
+                    <img src="img/0-shouye_slices/btn.png" id="manysong">
+                </div> -->
+            </div>
+        
+        </div>
         <div class="free-title"></div>
         <div class="free-box"></div>
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="contact">
+                <ul>
+                    <li class="tel">
+                        <img src="./img/0-shouye-quanyi/group8.png" alt="">
+                        客服电话
+                        <span>400-1515-742</span>
+                    </li>
+                    <li class="email">
+                        <img src="./img/0-shouye-quanyi/group9.png" alt="">
+                        客服邮箱
+                        <span>2689506586@qq.com</span>
+                    </li>
+                    <li class="QQ">
+                        <img src="./img/0-shouye-quanyi/group10.png" alt="">
+                        客服QQ
+                        <span>2689506586</span>
+                    </li>
+                    <li class="time">
+                        <img src="./img/0-shouye-quanyi/group10(1).png" alt="">
+                        客服工作时间
+                        <span>9:00-18:00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
     </div>
     <script src="./package/swiper-bundle.min.js"> </script>
@@ -1479,11 +1716,6 @@
             var pkpic1=document.getElementById("pop-pic1");
             var pkpic2=document.getElementById("pop-pic2");
 
-            
-            var img1= document.getElementById("pic1");
-            var img2= document.getElementById("pic2");
-            var img3= document.getElementById("pic3");
-          
             var video1=document.getElementById("video1");
             var video2=document.getElementById("video2");
             var video3=document.getElementById("video3");     
