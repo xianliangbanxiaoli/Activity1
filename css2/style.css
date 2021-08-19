@@ -7,10 +7,20 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
     background-color: #EB432D;
 }
+.body-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 6.4rem;
+    background-color: #EB432D;
+    
+}
 .header{
-    height: 4.36rem;
+    height: 4.27rem;
     width: 6.4rem;
     background:url(../img/0-shouye-quanyi/group2094.png);
     background-size: 6.4rem 4.27rem;
@@ -18,62 +28,476 @@ body{
     
 
 }
-.scroll{
+.wrap{ 
+  margin:0.2rem auto; 
+  /* background: #ddd;  */
+  font-size: 0; 
+  /* 固宽，溢出隐藏 */
+  width: 6rem; 
+  height: 0.54rem; 
+  overflow: hidden;
+  white-space: nowrap;
+  background: rgba(207, 22, 16, 0.7);
+  border-radius: 0.27rem;
+  /* 相对定位 */
+  position: relative;
+}
+.wrap  .cont{
+  position: absolute; 
+  top: 0.1rem;
+  left: 0; 
+  /* height: 100%; */
+  /* 关键 */
+  /* width: 200%; */
+   transition:left 10s linear;
+  
+   width: 6rem;
+   height: 0.54rem;
+    
+
+}
+.wrap .txt{ 
+  display: inline-block; 
+  /* width: 2.72rem; */
+  height: 0.24rem;
+  font-size: 0.24rem;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.3rem;
+ 
+}
+#time{
+    display: inline-block; 
+    
+    height: 0.24rem;
+    font-size: 0.24rem;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+
+    line-height: 0.3rem;
+    height: 0.24rem;
+    color: #FFF38A;
+}
+.title-pic img{
+    width: 5.40rem;
+    height: 2.2rem;
+    position: absolute;
+    top: 1.05rem;
+    left: 0.5rem;
+
+}
+.red-pic img{
+    width: 1.46rem;
+    height: 1.02rem;
+    position: absolute;
+    top: 2.79rem;
+    right: 0rem;
+}
+.video-pic img{
+    width: 0.66rem;
+    height: 0.57rem;
+    position: absolute;
+    top: 3.46rem;
+    left: 1.26rem;
+
+}
+.main-wrap{
     width: 6rem;
-    height: 0.29rem;
-    /* background: url(../img/0-shouye-quanyi/1018.png);
-    background-size:100% 100% ; */
-    /* display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-content: normal;
-    align-items: normal;
+    height: 5.3rem;
+    background: #FFF5DA;
+    border-radius: 0.10rem;
+    position: relative;
+}
+.main-box{
+    width: 6rem;
+    height: 5.3rem;
+   
+    border-radius: 0.1rem;
+    position: relative;
+}
+.input-wrap{
+    width: 5.2rem;
+    height: 0.88rem;
+   
+    border-radius: 0.13rem;
+    position: absolute;
+    top: 2.3rem;
+    left: 0.4rem;
+
+}
+.input-wrap input{
+    width: 5.2rem;
+    height: 0.88rem;
+    background: #FFFFFF;
+    border: 0.05rem solid #FC6347;
+    box-shadow: 0rem 0rem 0.16rem 0rem #FF4B2A;
+    border-radius: 0.1rem;
+    font-size: 0.36rem;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #BA281C;
+    text-align: center;
+    line-height: 0.3rem;
+    
+}
+.getbtn,.getbtn img{
+    width: 6rem;
+    height: 1.65rem;
+    position: absolute;
+    top: 1.9rem;
+
+     
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation: scale 1s infinite;
+    
+/* Safari and Chrome */
+    -webkit-animation: scale 1s infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name: scale;
+    -webkit-animation-duration:1s;
+   
+}
+.finger{
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.9rem;
+    display: inline-block;
+
+    animation-name: floating;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation: floating 1s infinite;
+/* Safari and Chrome */
+    -webkit-animation:floating 1s infinite;
+    -webkit-animation-timing-function:linear;
+}
+.finger img{
+    width: 0.9rem;
+    height: 0.9rem;
+}
+/* 动画代码 */
+@keyframes scale {
+    0%{
+        transform: scale(1.02);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.02);
+    }
+
+  }
+@keyframes floating {
+0%{
+    transform: translate(0.0);
+}
+50%{
+    transform: translate(-.3rem,-.3rem);
+}
+100%{
+    transform: translate(0,0);
+}
+}
+.getbtn p{
+    /* width: 1.91rem; */
+    height: 0.48rem;
+    font-size: 0.48rem;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #FFFFE6;
+    line-height: 0.24rem;
+    position: absolute;
+    top: 2.32rem;
+    left: 2.04rem;
+    z-index: 2;
+}
+.main-top{
+    width: 6rem;
+    position: absolute;
+    top: 0rem;
+    
+
+}
+.main-content{
+    width: 5.66rem;
+    height: 2.22rem;
+    background: #FFFCF5;
+    border: 0.04rem solid rgba(255, 134, 107, 0.11);
+    border-radius: 0.1rem; 
+    
+    position: absolute;
+    top: 0.16rem;
+    left: 0.17rem;
+  
+}
+#left-pic,#center-pic1,#center-pic2,#right-pic{
+    width: 1.2rem;
+    /* height: 1.18rem; */
+
+    height: 1.1rem;
+}
+#p1{
+    height: 0.2rem;
+    font-size: 0.24rem;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #BA281C;
+    line-height: 0rem;
+    /* position: absolute;
+    top: 1.18rem; */
+    
+
+   
+    }
+#p2{
+    
+    font-size: 0.24rem;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #683531 ;
+    line-height: 0.2rem;
+
+}
+#right-top{
+    width: 0.4rem;
+    height: 0.19rem;
+    background: linear-gradient(-47deg, #FB63FF 0%, #9329FF 100%);
+    border-radius: 0.06rem 0.06rem 0.06rem 0rem;
+
+    position: absolute;
+    top:0.01rem ;
+    right: 0.17rem;
+
+    font-size: 0.08rem;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #FFFFEC;
+    line-height: 0.2rem;
+
+}
+.left,.right,.center-left,.center-right{
+    width: 1.2rem;
+    /* height: 2rem; */
+}
+.left{
     position: absolute;
     top: 0.2rem;
-    left: 0.2rem; */
+    left: 0.15rem;
+}
+.right{
+    position: absolute;
+    right: 0.16rem;
+    top: 0.2rem;
+}
+.center-left{
+    position: absolute;
+    top: 0.2rem;
+    margin: 0 1.51rem;
 
 }
-marquee{
-    background: rgba(207, 22, 16, 0.7);
-    border-radius: 0.27rem;
-    
-    width: -webkit-fill-available;
-   
-   
-   
-    
+.center-right{
+    position: absolute;
+    top: 0.2rem;
+    margin: 0 2.91rem;
+
 }
-.time{
+
+.left p,.right p,.center-left p,.center-right p{
+    text-align: center;
+}
+.msg{
+    width: 6rem;
+    position: absolute;
+    top: 5.2rem;
+    left: -0.22rem;
+}
+.msg p{
+    width: 6rem;
+    /* height: 83px; */
     font-size: 0.24rem;
-    font-family: Microsoft YaHei;
+    font-family: PingFang SC;
     font-weight: 400;
     color: #FFFFFF;
-    line-height: 0.2rem;
-    width: 3.62rem;
-    height: 0.24rem;
-    /* position: absolute;
-    top: 0.2rem;
-    left: 0.6rem; */
+    line-height: 0.30rem;
+    text-align: left;
+}
+.null{
+    height: 1rem;
+}
+.pop-title{
+    width: 4.26rem;
+    height: 1.22rem;
+    position: relative;
+}
+.pop-title img{
+    width: 4.26rem;
+    height: 1.22rem;
+    text-align: center;
+}
+.pop-title p{
+    width: 2.16rem;
+    height: 0.35rem;
+    font-size: 0.36rem;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #DB3922;
+    line-height: 0.3rem;
+    position: absolute;
+    top: 0.56rem;
+    left: 1.13rem;
+}
+.pop-tab{
+    width: 6rem ;
+    height: 0.6rem;
+    /* position: relative; */
+}
+.tab-box{
+    width: 6rem ;
+    height: 0.52rem;
+    
 
 }
-marquee span{
-    line-height: 0.02rem;
-    color: #FFF38A ;
-    font-size: 0.24rem;
+.tab-item{
+    width: 1.4rem;
+    height: 0.52rem;
+    /* background: linear-gradient(0deg, #FD7F46, #F84536);
+    box-shadow: 0rem 0.07rem 0.04rem 0rem rgba(194, 36, 29, 0.8); */
+    border-radius: 0.01rem;
+    /* position: absolute;
+    top: 0.1rem; */
+    position: relative;
+   
+    float: left;
+   
+}
+/* 图片 */
+.tab-pic{
+    width: 1.4rem;
+    height: 0.68rem;
+    
+    position: absolute;
+    top: 0.02rem;
+    /* left: 0.01rem; */
+}
+.swiper-slide p{
+    width: 1.4rem;
+    height: 0.52rem;
+    font-size: 0.26rem;
     font-family: Microsoft YaHei;
     font-weight: 400;
-    width: 3.62rem;
-    height: 0.14rem;
-    /* position: absolute;
-    top: 0.2rem;
-    left: 1.5rem; */
-    
- 
+    color: #FFF494;
+    line-height: 0.4rem;
+    position: absolute;
+    top: 0.03rem;
+    /* left: 0.1rem; */
+    text-align: center;
+    z-index: 2;
+  }
+
+  .swiper-container {
+    width: 6rem ;
+    height: 0.52rem;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 0.18rem;
+    width: 1.6rem;
+    border-radius: 0.1rem;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.pop-box{
+    width: 6rem;
+    height: 12.93rem;
+    background: #FFF5DA;
+    border-radius: 0.10rem;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.pop-item{
+    width: 2.6rem;
+    height: 4.62rem;
+    border-radius: 0.13rem;
+    /* background-color: coral; */
+    border: 0.05rem solid #FEF889 ;
+    position: relative;
+}
+#pop-pic1,#pop-pic2{
+    width: 2.6rem;
+    height: 4.62rem;
+    border-radius: 0.13rem;
+}
+
+.pop-item p{
+    width: 2.16rem;
+    height: 0.66rem;
+    font-size: 0.28rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.4rem;
+    position: absolute;
+    top: 88%;
+    left: 0.09rem;
+/* 超出部分显示... */
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 
 }
-/* :host {
-    display: inline-block;
-    overflow: hidden;
-    text-align: initial;
-    white-space: nowrap;
-} */
+.pop-item img{
+    width: 2.83rem;
+    height: 0.93rem;
+}
+#pk-player1,#pk-player2{
+    width: 0.87rem;
+    height: 0.87rem;
+    position: absolute;
+    top: 1.58rem;
+    left: 0.87rem;
+}
+#setbtn{
+    width: 2.83rem;
+    height: 0.93rem;
+    position: absolute;
+    top: 102%;
+    left: -0.12rem;
+}
+#video1{
+    display: none;
+    width: 2.6rem;
+    height: 4.2rem;
+    border-radius: 0.13rem;
+    background-size: auto;
+}
+#video2{
+    display: none;
+    width: 2.6rem;
+    height: 4.2rem;
+    border-radius: 0.13rem;
+    background-size: auto;
+}
