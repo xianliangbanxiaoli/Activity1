@@ -112,60 +112,103 @@
 
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img id="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" alt="精选">
-                            <p> 精选</p>
+                        <div class="swiper-slide" >
+                            <img class="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" onclick="light_pic()">
+                            <p id="tab-p"> 精选</p>
                         </div>
-                        <div class="swiper-slide">
-                            <img id="tab-pic" src="./img/0-shouye-quanyi/1018.png" alt="精选">
-                            <p>今日推荐</p>
+                        <div class="swiper-slide" >
+                            <img class="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" onclick="light_pic()">
+                            <p id="tab-p">今日推荐</p>
 
                         </div>
                         <div class="swiper-slide">
-                            <img id="tab-pic" src="./img/0-shouye-quanyi/1018.png" alt="精选">
-                            <p> 明星爱豆</p>
+                            <img class="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" onclick="light_pic()">
+                            <p id="tab-p"> 明星爱豆</p>
                         </div>
                         <div class="swiper-slide">
-                            <img id="tab-pic" src="./img/0-shouye-quanyi/1018.png" alt="精选">
-                            <p> 明星爱豆</p>
+                            <img class="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" onclick="light_pic()">
+                            <p id="tab-p"> 明星爱豆</p>
                         </div>
                         <div class="swiper-slide">
-                            <img id="tab-pic" src="./img/0-shouye-quanyi/1018.png" alt="精选">
-                          <p> 明星爱豆</p>
+                            <img class="tab-pic" src="./img/0-shouye-quanyi/1018(3).png" onclick="light_pic()">
+                          <p id="tab-p"> 明星爱豆</p>
                         </div>
                       
                 </div>
         </div>
         </div>
-        <div class="pop-box">
-            <div class="pop-item">
-                <video class="video" id="video1" controls="controls"
-                poster="https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/119_20210618181151_855708.webp?m" 
-               
-                style="z-index: 2;object-fit:fill;height: 4.62rem;"
-                autoplay="autoplay"> 
-                </video>
-                <img id="pop-pic1" src="./img/5-shipin/1 (1).jpeg" alt="">
-                <img src="img/0-shouye_slices/player-btn(1).png" id="pk-player1" onclick="playvideo()">
-                <p id="artitle1">我是标题我是标题</p>
-                <img src="img/0-shouye_slices/sheweishipincailing.png" id="setbtn" >
-                        
-            </div>
-            <div class="pop-item">
-                <video id="video2" autoplay="autoplay" controls="controls" 
-                poster="https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/110_20210618180353_81045.jpg?m"
-                style="z-index: 2;object-fit:fill;height: 4.62rem;"
-                autoplay="autoplay"> 
-                </video>
-                <img id="pop-pic2" src="./img/5-shipin/1 (1).jpeg" alt="">
-                <img src="img/0-shouye_slices/player-btn(1).png" id="pk-player2" onclick="playvideo()">
-                <p id="artitle2">我是标题我是标题</p>
-                <img src="img/0-shouye_slices/sheweishipincailing.png" id="setbtn" alt="">
+        
+            <div class="pop-grid">
+                <div class="pop-box"> 
+                    <div class="pop-item">
+                        <video class="video" id="video1" controls="controls"
+                        poster="https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/119_20210618181151_855708.webp?m" 
+                    
+                        style="z-index: 2;object-fit:fill;height: 4.62rem;"
+                        autoplay="autoplay"> 
+                        </video>
+                        <img id="pop-pic1" src="./img/5-shipin/1 (1).jpeg" alt="">
+                        <img src="img/0-shouye_slices/player-btn(1).png" id="pk-player1" onclick="playvideo()">
+                        <p class="arttitle" id="artitle1">我是标题我是标题</p>
+                        <img src="img/0-shouye-quanyi/group 2061.png" id="setbtn" >
+                        <p id="setring">设为视频彩铃</p>       
+                    </div>
+                    <div class="pop-item">
+                        <video id="video2" autoplay="autoplay" controls="controls" 
+                        poster="https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/110_20210618180353_81045.jpg?m"
+                        style="z-index: 2;object-fit:fill;height: 4.62rem;"
+                        autoplay="autoplay"> 
+                        </video>
+                        <img id="pop-pic2" src="./img/5-shipin/1 (1).jpeg" alt="">
+                        <img src="img/0-shouye_slices/player-btn(1).png" id="pk-player2" onclick="playvideo()">
+                        <p class="arttitle" id="artitle2">我是标题我是标题</p>
+                        <img src="img/0-shouye-quanyi/group 2061.png" id="setbtn" alt="">
+                        <!-- <span id="setring">设为视频彩铃</span> -->
+                        <p id="setring">设为视频彩铃</p>
+        
+                    </div>
+                </div>
+                <div class="pop-box">              
+                    <div class="pop-item">
+                        <video class="video" id="video1" controls="controls"
+                        poster="https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/119_20210618181151_855708.webp?m" 
+                    
+                        style="z-index: 2;object-fit:fill;height: 4.62rem;"
+                        autoplay="autoplay"> 
+                        </video>
+                        <img id="pop-pic1" src="./img/5-shipin/1 (1).jpeg" alt="">
+                        <img src="img/0-shouye_slices/player-btn(1).png" id="pk-player1" onclick="playvideo()">
+                        <p id="artitle1">我是标题我是标题</p>
+                        <img src="img/0-shouye-quanyi/group 2061.png" id="setbtn" >
+                        <p id="setring">设为视频彩铃</p>       
+                    </div>
+                    <div class="pop-item">
+                        <video id="video2" autoplay="autoplay" controls="controls" 
+                        poster="https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/110_20210618180353_81045.jpg?m"
+                        style="z-index: 2;object-fit:fill;height: 4.62rem;"
+                        autoplay="autoplay"> 
+                        </video>
+                        <img id="pop-pic2" src="./img/5-shipin/1 (1).jpeg" alt="">
+                        <img src="img/0-shouye_slices/player-btn(1).png" id="pk-player2" onclick="playvideo()">
+                        <p id="artitle2">我是标题我是标题</p>
+                        <img src="img/0-shouye-quanyi/group 2061.png" id="setbtn" alt="">
+                        <p id="setring">设为视频彩铃</p>
+                    </div>
+                    
+                </div>
+                <div class="pop-box" id="pop-footer">
+                    <div class="pop-btn">
+                        <p>查看更多 ></p>
+                    </div>
 
+                </div>
             </div>
-
+            
+        <div class="music-title">
+           
+            <img src="./img/0-shouye-quanyi/group2087.png" alt="">
+            <p>高品质彩铃</p>
         </div>
-        <div class="music-title"></div>
         <div class="music-box"></div>
         <div class="free-title"></div>
         <div class="free-box"></div>
@@ -203,31 +246,1233 @@
                 text.style.paddingRight = '300px'
                 cont.style.left = "-870px"
             }else{
-               
+            
             }
             // 滚动结束
             document.addEventListener("transitionend", function (){
                 textWidth<wrapWidth;
             
             }, true)
-            }
+            };
+            var  musicdata=
+[
+
+{
+
+"name":"目及皆是你 - 我波澜四起，心动好几个世纪！",
+
+"type":1,
+
+"picpath":"https://imgzm.ringbox.cn/ringsetting/ringPic/down/79/43/7943767.jpg!/format/jpg/quality/80",
+
+"ringid":"7943767",
+
+"iscrbt":0,
+
+"synopsis":{
+
+"stype":"1",
+
+"sinfo":"",
+
+"surltype":""
+
+},
+
+"isnew":"1",
+
+"coprinfo":{
+
+"type":"99",
+
+"price":"200",
+
+"cflag":"",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"promote":"",
+
+"cordertype":"000",
+
+"zordertype":"199"
+
+},
+
+"springid":"689059e6ea17232869b6ef920f954b8f",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"playtime":48,
+
+"preview":946,
+
+"wallpaperid":"",
+
+"islike":0,
+
+"likenum":64,
+
+"shareurl":"https://m.ringbox.cn/m/appshare/daypush,01502000561611.html?ringid=7943767",
+
+"isvip":"0",
+
+"ishot":"0",
+
+"playurl":"",
+
+"reringid":"",
+
+"videoer":"",
+
+"videoerpic":"",
+
+"videoscreen":"-1",
+
+"songer":"小蓝背心",
+
+"isringing":1,
+
+"isbell":1,
+
+"rtime":1624963804000,
+
+"issearch":0,
+
+"tagcontent":"",
+
+"relvideo":0,
+
+"repicpath":""
+
+},
+
+{
+
+"name":"放空 - 放松再慢慢升空，在被窝里做一个梦",
+
+"type":1,
+
+"picpath":"https://imgzm.ringbox.cn/ringsetting/ringPic/1626/76/13/1626761331169.jpg!/format/jpg/quality/80",
+
+"ringid":"7966479",
+
+"iscrbt":0,
+
+"synopsis":{
+
+"stype":"1",
+
+"sinfo":"",
+
+"surltype":""
+
+},
+
+"isnew":"0",
+
+"coprinfo":{
+
+"type":"99",
+
+"price":"200",
+
+"cflag":"",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"promote":"",
+
+"cordertype":"000",
+
+"zordertype":"199"
+
+},
+
+"springid":"3291aad5857781a46c6cd059a7a9e0d4",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"playtime":48,
+
+"preview":85,
+
+"wallpaperid":"",
+
+"islike":0,
+
+"likenum":10,
+
+"shareurl":"https://m.ringbox.cn/m/appshare/daypush,01502000561611.html?ringid=7966479",
+
+"isvip":"0",
+
+"ishot":"0",
+
+"playurl":"",
+
+"reringid":"",
+
+"videoer":"",
+
+"videoerpic":"",
+
+"videoscreen":"-1",
+
+"songer":"A1 TRIP,大籽,Lil E",
+
+"isringing":1,
+
+"isbell":1,
+
+"rtime":1626177002000,
+
+"issearch":0,
+
+"tagcontent":"",
+
+"relvideo":0,
+
+"repicpath":""
+
+},
+
+{
+
+"name":"星辰大海 - 你的眼睛里有星辰大海",
+
+"type":1,
+
+"picpath":"https://imgzm.ringbox.cn/ringsetting/ringPic/down/72/07/7207512.jpg!/format/jpg/quality/80",
+
+"ringid":"7207512",
+
+"iscrbt":0,
+
+"synopsis":{
+
+"stype":"1",
+
+"sinfo":"",
+
+"surltype":""
+
+},
+
+"isnew":"0",
+
+"coprinfo":{
+
+"type":"99",
+
+"price":"200",
+
+"cflag":"",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"promote":"",
+
+"cordertype":"000",
+
+"zordertype":"199"
+
+},
+
+"springid":"965315eacff84bbc5e78aa891203e268",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"playtime":48,
+
+"preview":80351,
+
+"wallpaperid":"",
+
+"islike":0,
+
+"likenum":741,
+
+"shareurl":"https://m.ringbox.cn/m/appshare/daypush,01502000561611.html?ringid=7207512",
+
+"isvip":"0",
+
+"ishot":"0",
+
+"playurl":"",
+
+"reringid":"",
+
+"videoer":"",
+
+"videoerpic":"",
+
+"videoscreen":"-1",
+
+"songer":"黄霄雲",
+
+"isringing":1,
+
+"isbell":1,
+
+"rtime":1611393889000,
+
+"issearch":0,
+
+"tagcontent":"",
+
+"relvideo":0,
+
+"repicpath":""
+
+},
+
+{
+
+"name":"嘉宾 - 愿你三冬暖 春不寒 天黑有灯 下雨有伞 喜欢的都拥有 失去的都释怀",
+
+"type":1,
+
+"picpath":"http://open.migu.cn:8100/material/pics/album/m/2021/06/04/c2a7322e907a0086f96e7a07a0c27623.jpg?m",
+
+"ringid":"7842155",
+
+"iscrbt":0,
+
+"synopsis":{
+
+"stype":"1",
+
+"sinfo":"",
+
+"surltype":""
+
+},
+
+"isnew":"0",
+
+"coprinfo":{
+
+"type":"99",
+
+"price":"200",
+
+"cflag":"",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"promote":"",
+
+"cordertype":"000",
+
+"zordertype":"199"
+
+},
+
+"springid":"414ee2a8a5e61f30b5bcc58338d93bca",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"playtime":48,
+
+"preview":11039,
+
+"wallpaperid":"",
+
+"islike":0,
+
+"likenum":186,
+
+"shareurl":"https://m.ringbox.cn/m/appshare/daypush,01502000561611.html?ringid=7842155",
+
+"isvip":"0",
+
+"ishot":"0",
+
+"playurl":"",
+
+"reringid":"",
+
+"videoer":"",
+
+"videoerpic":"",
+
+"videoscreen":"-1",
+
+"songer":"路飞文",
+
+"isringing":1,
+
+"isbell":1,
+
+"rtime":1622807507000,
+
+"issearch":0,
+
+"tagcontent":"",
+
+"relvideo":0,
+
+"repicpath":""
+
+},
+
+{
+
+"name":"风吹一夏 - 这个夏天想与你一同启航",
+
+"type":1,
+
+"picpath":"https://imgzm.ringbox.cn/ringsetting/ringPic/down/79/51/7951814.jpg!/format/jpg/quality/80",
+
+"ringid":"7951814",
+
+"iscrbt":0,
+
+"synopsis":{
+
+"stype":"1",
+
+"sinfo":"",
+
+"surltype":""
+
+},
+
+"isnew":"1",
+
+"coprinfo":{
+
+"type":"99",
+
+"price":"200",
+
+"cflag":"",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"promote":"",
+
+"cordertype":"000",
+
+"zordertype":"199"
+
+},
+
+"springid":"64cbaa08548271c36c6cd059a7a9e0d4",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"playtime":48,
+
+"preview":6132,
+
+"wallpaperid":"",
+
+"islike":0,
+
+"likenum":119,
+
+"shareurl":"https://m.ringbox.cn/m/appshare/daypush,01502000561611.html?ringid=7951814",
+
+"isvip":"0",
+
+"ishot":"0",
+
+"playurl":"",
+
+"reringid":"",
+
+"videoer":"",
+
+"videoerpic":"",
+
+"videoscreen":"-1",
+
+"songer":"DP龙猪,Swei水,Rays陈袁",
+
+"isringing":1,
+
+"isbell":1,
+
+"rtime":1625241154000,
+
+"issearch":0,
+
+"tagcontent":"",
+
+"relvideo":0,
+
+"repicpath":""
+
+},
+
+{
+
+"name":"热爱105°C的你 - super idol的笑容都没你的甜",
+
+"type":1,
+
+"picpath":"http://open.migu.cn:8100/material/pics/album/m/2021/07/01/f009e095c22e0af50d35ac84475b2406.jpg?m",
+
+"ringid":"7951472",
+
+"iscrbt":0,
+
+"synopsis":{
+
+"stype":"1",
+
+"sinfo":"",
+
+"surltype":""
+
+},
+
+"isnew":"1",
+
+"coprinfo":{
+
+"type":"99",
+
+"price":"200",
+
+"cflag":"",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"promote":"",
+
+"cordertype":"000",
+
+"zordertype":"199"
+
+},
+
+"springid":"841127362a08c790243f184dda611bd0",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"playtime":48,
+
+"preview":4877,
+
+"wallpaperid":"",
+
+"islike":0,
+
+"likenum":114,
+
+"shareurl":"https://m.ringbox.cn/m/appshare/daypush,01502000561611.html?ringid=7951472",
+
+"isvip":"0",
+
+"ishot":"1",
+
+"playurl":"",
+
+"reringid":"",
+
+"videoer":"",
+
+"videoerpic":"",
+
+"videoscreen":"-1",
+
+"songer":"阿肆",
+
+"isringing":1,
+
+"isbell":1,
+
+"rtime":1625143800000,
+
+"issearch":0,
+
+"tagcontent":"",
+
+"relvideo":0,
+
+"repicpath":""
+
+},
+
+{
+
+"name":"你能不能不要离开我 (莫叫语版) - 莫叫姐姐最新热歌",
+
+"type":1,
+
+"picpath":"http://open.migu.cn:8100/material/pics/album/m/2021/07/26/610061d1ba7eb61843338d3712cec669.jpg?m",
+
+"ringid":"7980122",
+
+"iscrbt":0,
+
+"synopsis":{
+
+"stype":"1",
+
+"sinfo":"",
+
+"surltype":""
+
+},
+
+"isnew":"1",
+
+"coprinfo":{
+
+"type":"99",
+
+"price":"200",
+
+"cflag":"",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"promote":"",
+
+"cordertype":"000",
+
+"zordertype":"199"
+
+},
+
+"springid":"7e0af766ed915f0cd195d17fb889a4b2",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"playtime":48,
+
+"preview":1874,
+
+"wallpaperid":"",
+
+"islike":0,
+
+"likenum":17,
+
+"shareurl":"https://m.ringbox.cn/m/appshare/daypush,01502000561611.html?ringid=7980122",
+
+"isvip":"0",
+
+"ishot":"0",
+
+"playurl":"",
+
+"reringid":"",
+
+"videoer":"",
+
+"videoerpic":"",
+
+"videoscreen":"-1",
+
+"songer":"莫叫姐姐",
+
+"isringing":1,
+
+"isbell":1,
+
+"rtime":1627286061000,
+
+"issearch":0,
+
+"tagcontent":"",
+
+"relvideo":0,
+
+"repicpath":""
+
+},
+
+{
+
+"name":"银河与星斗 - 与其仓皇的追赶日落 ，不如静待漫天的繁星",
+
+"type":1,
+
+"picpath":"https://imgzm.ringbox.cn/ringsetting/ringPic/down/79/53/7953959.jpg!/format/jpg/quality/80",
+
+"ringid":"7953959",
+
+"iscrbt":0,
+
+"synopsis":{
+
+"stype":"1",
+
+"sinfo":"",
+
+"surltype":""
+
+},
+
+"isnew":"1",
+
+"coprinfo":{
+
+"type":"99",
+
+"price":"200",
+
+"cflag":"",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"promote":"",
+
+"cordertype":"000",
+
+"zordertype":"199"
+
+},
+
+"springid":"af14f0b25b63bc69546c10b56b516a27",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"playtime":48,
+
+"preview":6904,
+
+"wallpaperid":"",
+
+"islike":0,
+
+"likenum":186,
+
+"shareurl":"https://m.ringbox.cn/m/appshare/daypush,01502000561611.html?ringid=7953959",
+
+"isvip":"0",
+
+"ishot":"1",
+
+"playurl":"",
+
+"reringid":"",
+
+"videoer":"",
+
+"videoerpic":"",
+
+"videoscreen":"-1",
+
+"songer":"yihuik苡慧",
+
+"isringing":1,
+
+"isbell":1,
+
+"rtime":1625503801000,
+
+"issearch":0,
+
+"tagcontent":"",
+
+"relvideo":0,
+
+"repicpath":""
+
+},
+
+{
+
+"name":"四季予你 - 唯有往后余生，用我心换你心，始知相忆深。",
+
+"type":1,
+
+"picpath":"http://open.migu.cn:8100/material/pics/album/m/2020/12/30/66cb9d7f2da28fa8eaa95256900ebd22.jpg?m",
+
+"ringid":"7187564",
+
+"iscrbt":0,
+
+"synopsis":{
+
+"stype":"1",
+
+"sinfo":"",
+
+"surltype":""
+
+},
+
+"isnew":"0",
+
+"coprinfo":{
+
+"type":"99",
+
+"price":"200",
+
+"cflag":"",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"promote":"",
+
+"cordertype":"000",
+
+"zordertype":"199"
+
+},
+
+"springid":"bdde9c6680a001b76b721f409d0f222e",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"playtime":48,
+
+"preview":92955,
+
+"wallpaperid":"",
+
+"islike":0,
+
+"likenum":863,
+
+"shareurl":"https://m.ringbox.cn/m/appshare/daypush,01502000561611.html?ringid=7187564",
+
+"isvip":"0",
+
+"ishot":"0",
+
+"playurl":"",
+
+"reringid":"",
+
+"videoer":"",
+
+"videoerpic":"",
+
+"videoscreen":"-1",
+
+"songer":"程响",
+
+"isringing":1,
+
+"isbell":1,
+
+"rtime":1610438677000,
+
+"issearch":0,
+
+"tagcontent":"",
+
+"relvideo":0,
+
+"repicpath":""
+
+},
+
+{
+
+"name":"大风吹 - 音乐人王赫野掀动乐坛复古新浪潮",
+
+"type":1,
+
+"picpath":"https://imgzm.ringbox.cn/ringsetting/ringPic/down/73/77/7377433.jpg!/format/jpg/quality/80",
+
+"ringid":"7377433",
+
+"iscrbt":0,
+
+"synopsis":{
+
+"stype":"1",
+
+"sinfo":"",
+
+"surltype":""
+
+},
+
+"isnew":"1",
+
+"coprinfo":{
+
+"type":"99",
+
+"price":"200",
+
+"cflag":"",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"promote":"",
+
+"cordertype":"000",
+
+"zordertype":"199"
+
+},
+
+"springid":"efc04082a75341f3c57d5132d8449e72",
+
+"bjshow":"1",
+
+"dxshow":"1",
+
+"ldshow":"1",
+
+"nlshow":"1",
+
+"xzshow":"1",
+
+"playtime":48,
+
+"preview":25539,
+
+"wallpaperid":"",
+
+"islike":0,
+
+"likenum":82,
+
+"shareurl":"https://m.ringbox.cn/m/appshare/daypush,01502000561611.html?ringid=7377433",
+
+"isvip":"0",
+
+"ishot":"0",
+
+"playurl":"",
+
+"reringid":"",
+
+"videoer":"",
+
+"videoerpic":"",
+
+"videoscreen":"-1",
+
+"songer":"王赫野",
+
+"isringing":1,
+
+"isbell":1,
+
+"rtime":1618300904000,
+
+"issearch":0,
+
+"tagcontent":"",
+
+"relvideo":0,
+
+"repicpath":""
+
+}
+
+]
+            var data=[
+                {
+                "name":"小猫也要烫个波浪",
+                "source":"移动",
+                "picpath":"https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/119_20210618181151_855708.webp?m",
+                "cid":"600926000002099129",
+                "playpath":"http://vod.migu.cn/BBvTsIECzrAvqPTwx9%2B71VS3roMv%2Fq6u4R8HQXgE6WIatnHMrPJEJCxHN45GMGVaY2jySqLBP5csh%2Fw4mQLCq5cSeb2IsPkQJrCnBDXed%2B134VxI8PBE5Oi9yNFMB4vN/1040046586231623996609010RiPVDG0ringtonemp4-cp-daily1_ringtonemp4-cp-daily.mp4?ec=2&flag=+&F=013015",
+                "sharenum":32,
+                "bid":"699396T3032",
+                "islike":0,
+                "likenum":11,
+                "videoscreen":"0",
+                "vid":"8002183",
+                "songer":"",
+                "yid":"699396T3032M",
+                "gtype":null,
+                "dyvideoid":null,
+                "hotnum":6182,
+                "vrbtid":"",
+                "introduce":"",
+                "taobao_pic":"",
+                "taobao_mp4":"",
+                "play":false,
+                "sound":true
+                },
+                {
+                "name":"冰雪消融之下的溪流",
+                "source":"移动",
+                "picpath":"https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/110_20210618181152_90511.jpg?m",
+                "cid":"600926000002099136",
+                "playpath":"http://vod.migu.cn/wa%2BLgrlbGWzp724qCX5NzA%2FvRDjPt72BymjaxfnTebgq%2FT6W4FO2x7y0lSvQDAkZiOpNlzwD7DgO2o%2B%2FrHFQ%2FEdcRCReCDwdhzKj4sfmo6LqxbPWk2etLtUOyY4qvBWP/1040046586241623996609213kHVtJq0ringtonemp4-cp-daily1_ringtonemp4-cp-daily.mp4?ec=2&flag=+&F=013015",
+                "sharenum":94,
+                "bid":"699396T3039",
+                "islike":0,
+                "likenum":49,
+                "videoscreen":"0",
+                "vid":"8002189",
+                "songer":"",
+                "yid":"699396T3039M",
+                "gtype":null,
+                "dyvideoid":null,
+                "hotnum":4358,
+                "vrbtid":"",
+                "introduce":"",
+                "taobao_pic":"",
+                "taobao_mp4":"",
+                "play":false,
+                "sound":true
+                },
+                {
+                "name":"戴着蝴蝶结打瞌睡的猫猫",
+                "source":"移动",
+                "picpath":"https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/110_20210618180353_81045.jpg?m",
+                "cid":"600926000002099147",
+                "playpath":"http://vod.migu.cn/BBvTsIECzrAvqPTwx9%2B71VS3roMv%2Fq6u4R8HQXgE6WIatnHMrPJEJCxHN45GMGVaQ92aIlO1E9N8sLaTZwr%2FY7d4dbMMavjVCCZCG9MLlud34VxI8PBE5Oi9yNFMB4vN/1040046586321623996610409pknLKz0ringtonemp4-cp-daily1_ringtonemp4-cp-daily.mp4?ec=2&flag=+&F=013015",
+                "sharenum":40,
+                "bid":"699396T3050",
+                "islike":0,
+                "likenum":41,
+                "videoscreen":"0",
+                "vid":"8002200",
+                "songer":"",
+                "yid":"699396T3050M",
+                "gtype":null,
+                "dyvideoid":null,
+                "hotnum":5641,
+                "vrbtid":"",
+                "introduce":"",
+                "taobao_pic":"",
+                "taobao_mp4":"",
+                "play":false,
+                "sound":true
+                },
+                {
+                "name":"不是所有的离别都能有重逢",
+                "source":"移动",
+                "picpath":"https://staticopen.migu.cn/material/pics/vrbt/2021/06/18/110_20210618182443_92499.jpg?m",
+                "cid":"600926000002099137",
+                "playpath":"http://vod.migu.cn/OiZlOFVug8H%2Bdk47O9t7N0WJMGo0mRCUbF0SB3mPtthapqY0IuGU1cJZDrPnmrlMtzp6nfjeLAZYGBaUksvKEs7USF%2FT3fPg8FXUBkPPlFIC6NG3yUc7i5glvXhH4sP4/1040046586221623996609173BU2mOd0ringtonemp4-cp-daily1_ringtonemp4-cp-daily.mp4?ec=2&flag=+&F=013015",
+                "sharenum":97,
+                "bid":"699396T3040",
+                "islike":0,
+                "likenum":99,
+                "videoscreen":"0",
+                "vid":"8002190",
+                "songer":"",
+                "yid":"699396T3040M",
+                "gtype":null,
+                "dyvideoid":null,
+                "hotnum":7631,
+                "vrbtid":"",
+                "introduce":"",
+                "taobao_pic":"",
+                "taobao_mp4":"",
+                "play":false,
+                "sound":true
+                }
+                ];
+
+         //按钮高亮
+        function light_pic(){
+            var tabbtn=document.getElementsByClassName("tab-pic");
+            var p=document.getElementById("tab-p");
+            for(var y=0;y<tabbtn.length;y++){
+                tabbtn.onclick=(function(y){
+                    return function(){
+                        if(tabbtn[y].getAttribute("src")=="./img/0-shouye-quanyi/1018(3).png"){
+                            tabbtn[y].setAttribute("src", "./img/0-shouye-quanyi/1018(2).png");
+                            p[y].setAttribute("color","#DB3922")
+                        }else{tabbtn[y].setAttribute("src", "./img/0-shouye-quanyi/1018(2).png");
+                        };
+                    
+                }
+
+            })(y);
+        }
+        }
+    light_pic();
+
     //轮播
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 30,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
+      observer:true,
     });
+    var tabbtn=document.getElementsByClassName("tab-pic");
+    // var tabbtn=document.getElementsByClassName("swiper-slide");
+    var p=document.getElementById("tab-p");
+    for(var y=0;y<tabbtn.length;y++){
+                tabbtn.onclick=(function(y){
+                    return function(){
+                        if(tabbtn[y].getAttribute("src")=="./img/0-shouye-quanyi/1018(3).png"){
+                            tabbtn[y].setAttribute("src", "./img/0-shouye-quanyi/1018(2).png");
+                            p[y].setAttribute("color","#DB3922")
+                        }else{tabbtn[y].setAttribute("src", "./img/0-shouye-quanyi/1018(2).png");
+                        };
+                    
+                }
+
+            })(y);
+        }
+    
         document.getElementById("pop-pic1").src=data[0].picpath;
         document.getElementById("pop-pic2").src=data[1].picpath;
 
+
     //播放视频
     function playvideo(){
-            var playerbtn1=document.getElementById("one");
-            var playerbtn2=document.getElementById("p-two");
-            var playerbtn3=document.getElementById("p-thr");
+            // var playerbtn1=document.getElementById("pk-player1");
+            // var playerbtn2=document.getElementById("p-two");
+            // var playerbtn3=document.getElementById("p-thr");
 
             var pkplayer1=document.getElementById("pk-player1");
             var pkplayer2=document.getElementById("pk-player2");
@@ -240,73 +1485,8 @@
             var img3= document.getElementById("pic3");
           
             var video1=document.getElementById("video1");
-            var video2=document.getElementById("video2")
-            var video3=document.getElementById("video3")
-
-            playerbtn1.onclick=function(){
-                if(isPlay=true){
-            
-                        img1.style.display="none";
-                        video1.style.display="inline";
-                        video1.src=data[0].playpath;
-                        playerbtn2.style.display="none"
-                        playerbtn3.style.display="none"
-                        playerbtn1.style.display="none"
-                        // isPlay=true;       
-
-                }else{
-                    img1.style.display="inline";
-                    video1.style.display="none";
-                    video1.src=data[0].picpath;
-                    playerbtn2.style.display="inline"
-                    playerbtn3.style.display="inline"
-                    playerbtn1.style.display="inline"
-
-                    // isPlay=false;
-                }
-
-    }
-                playerbtn2.onclick=function(){
-                    if(isPlay=true){
-                        img2.style.display="none";
-                        video2.style.display="inline";
-                        video2.src=data[1].playpath;
-                
-                        playerbtn1.style.display="none";
-                        playerbtn3.style.display="none";
-                        playerbtn2.style.display="none";
-
-
-                    }else{
-                        img2.style.display="inline";
-                        video2.style.display="none";
-                        img2.src=data[1].picpath;
-                        playerbtn2.style.display="inline";
-                        playerbtn3.style.display="inline";
-                        playerbtn1.style.display="inline";
-
-                    }
-                }
-                playerbtn3.onclick=function(){
-                    if(isPlay=true){
-                        img3.style.display="none";
-                        video3.style.display="inline";
-                        video3.src=data[1].playpath;
-                        
-                        playerbtn1.style.display="none";
-                        playerbtn3.style.display="none";
-                        playerbtn2.style.display="none";
-
-                    }else{
-                        img3.style.display="inline";
-                        video3.style.display="none";
-                        img3.src=data[2].picpath;
-                        playerbtn2.style.display="inline";
-                        playerbtn3.style.display="inline";
-                        playerbtn1.style.display="inline";
-                    }
-                    
-                }
+            var video2=document.getElementById("video2");
+            var video3=document.getElementById("video3");     
                 pkplayer1.onclick=function(){
                     pkpic1.style.display="none";
                     video1.style.display="inline";
@@ -326,6 +1506,7 @@
 
                 }
 }
+
     </script>
 </body>
 </html>

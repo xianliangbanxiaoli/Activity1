@@ -164,7 +164,7 @@ body{
     width: 0.8rem;
     height: 0.8rem;
     position: absolute;
-    top: 1rem;
+    top: 0.6rem;
     right: 0.9rem;
     display: inline-block;
 
@@ -251,9 +251,7 @@ body{
     line-height: 0rem;
     /* position: absolute;
     top: 1.18rem; */
-    
 
-   
     }
 #p2{
     
@@ -382,7 +380,7 @@ body{
     height: 0.68rem;
     
     position: absolute;
-    top: 0.02rem;
+    top: 0.01rem;
     /* left: 0.01rem; */
 }
 .swiper-slide p{
@@ -397,7 +395,7 @@ body{
     top: 0.03rem;
     /* left: 0.1rem; */
     text-align: center;
-    z-index: 2;
+    /* z-index: 2; */
   }
 
   .swiper-container {
@@ -408,7 +406,7 @@ body{
   .swiper-slide {
     text-align: center;
     font-size: 0.18rem;
-    width: 1.6rem;
+    width: 1rem;
     border-radius: 0.1rem;
 
     /* Center slide text vertically */
@@ -424,35 +422,74 @@ body{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
-
-.pop-box{
+}
+.pop-grid{
     width: 6rem;
     height: 12.93rem;
     background: #FFF5DA;
     border-radius: 0.10rem;
-
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    
+}
+.pop-box{
+    width: 6rem;
+    height: 6.3rem;
+    /* background: #FFF5DA;
+    border-radius: 0.10rem; */
+    margin-top: 0.3rem;
+    /* margin-bottom: 0.3rem; */
+    /* padding: 0.05rem; */
     display: flex;
     /* align-items: center; */
+    /* align-content: center; */
     justify-content: space-around;
     flex-direction: row;
+    
+}
+.pop-btn{
+    width: 1.95rem;
+    height: 0.59rem;
+    background: #FFE295;
+    box-shadow: 0rem 0.03rem 0rem 0rem #FFD051;
+    border-radius: 0.1rem;
+    text-align: center;
+    /* position: absolute;
+    top: 4.6rem;
+    left: 2.03rem; */
+}
+#pop-footer{
+    width: 6rem;
+    height: 0.59rem;
+    margin-top: 0rem;
+    margin-bottom: 0.3rem;
+
+}
+.pop-btn p{
+    /* width: 1.09rem; */
+    height: 0.26rem;
+    font-size: 0.28rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #DA3520;
+    line-height: 0.5rem;
 }
 
 .pop-item{
     width: 2.6rem;
     height: 4.62rem;
-    border-radius: 0.13rem;
-    /* background-color: coral; */
-    border: 0.05rem solid #FEF889 ;
     position: relative;
 }
 #pop-pic1,#pop-pic2{
     width: 2.6rem;
     height: 4.62rem;
-    border-radius: 0.13rem;
+    /* border-radius: 0.13rem; */
 }
 
-.pop-item p{
+.arttitle,#artitle1,#artitle2{
     width: 2.16rem;
     height: 0.66rem;
     font-size: 0.28rem;
@@ -461,14 +498,29 @@ body{
     color: #FFFFFF;
     line-height: 0.4rem;
     position: absolute;
+    letter-spacing: 0.04rem;
     top: 88%;
-    left: 0.09rem;
+    left: 0.31rem;
 /* 超出部分显示... */
     overflow:hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
 
 }
+#setring{
+    /* width: 1.67rem; */
+    height: 0.28rem;
+    font-size: 0.28rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #FFFAD3;
+    line-height: 0.40rem;
+    z-index: 6;
+    position: absolute;
+     bottom: -0.54rem;
+     left: 0.5rem;
+}
+
 .pop-item img{
     width: 2.83rem;
     height: 0.93rem;
@@ -500,4 +552,28 @@ body{
     height: 4.2rem;
     border-radius: 0.13rem;
     background-size: auto;
+}
+.music-title{
+    width: 4.26rem;
+    height: 3.22rem;
+    position: relative;
+}
+.music-title img{
+    width: 4.26rem;
+    height: 1.22rem;
+    text-align: center;
+}
+.music-title p{
+    width: 2.16rem;
+    height: 0.35rem;
+    font-size: 0.36rem;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #DB3922;
+    line-height: 0.3rem;
+    position: absolute;
+    top: 0.56rem;
+    left: 1.33rem;
+   
+
 }
