@@ -468,7 +468,7 @@ body{
 #pop-footer{
     width: 6rem;
     height: 0.59rem;
-    margin-top: 0rem;
+    margin-top: 0.2rem;
     margin-bottom: 0.3rem;
 
 }
@@ -479,7 +479,8 @@ body{
     font-family: PingFang SC;
     font-weight: 500;
     color: #DA3520;
-    line-height: 0.5rem;
+    line-height: 0.6srem;
+    text-align: center;
 }
 
 .pop-item{
