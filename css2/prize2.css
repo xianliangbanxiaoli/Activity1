@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 整个布局 */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FF4A3D;
+
+}
+.body-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 6.4rem;
+    background-color: #FF4A3D;
+   
+}
+.header{
+    height: 4.45rem;
+    width: 6.4rem;
+    
+    background:url(../img/0-shouye-quanyi/group2094.png);
+    background-size: 6.4rem 4.45rem;
+}
+.title-pic img{
+    width: 5.4rem;
+    height: 2.2rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 1.14rem;
+
+}
+.red-pic img{
+    width: 1.46rem;
+    height: 1.02rem;
+    position: absolute;
+    top: 2.79rem;
+    right: 0rem;
+}
+.video-pic img{
+    width: 0.66rem;
+    height: 0.57rem;
+    position: absolute;
+    top: 3.46rem;
+    left: 1.26rem;
+
+}
+.spend{
+    width: 6rem;
+    height: 5.12rem;
+    background: #FFF5DA;
+    border-radius: 0.1rem;
+    position: relative;
+}
+
+.spend-img{
+    width: 6rem;
+    height: 5.12rem;
+    background: #FFF5DA;
+    border-radius: 0.1rem;
+    
+}
+.spend-img img{
+    width: 5.32rem;
+    height: 3.76rem;
+    position: absolute;
+    top: 0.27rem;
+    left: 0.34rem;
+}
+.open img{
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 0.88rem;
+    left: 2.2rem;
+}
+.spend-time,.spend-time p{
+    width: 3.94rem;
+    height: 0.6rem;
+    font-size: 0.24rem;
+    font-family: Lantinghei SC;
+    font-weight: 600;
+    color: #DE3F34;
+    line-height: 0.36rem;
+    text-align: center;
+
+    position: absolute;
+    top: -0.9rem;
+    
+}
+#p-time{
+    position: absolute;
+    top: 5.01rem;
+    left: 1.22rem;
+}
+#p-title{
+    position: absolute;
+    top: 5.41rem;
+    left: 1.32rem;
+}
+.prizelist-title{
+    width: 6.4rem;
+    height: 1.46rem;
+    position: relative;
+ 
+
+}
+.prizelist-title img{
+    /* width: 3.89rem;
+    height: 0.69rem; */
+    width: 4.26rem;
+    height: 1.22rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 1.11rem;
+}
+.prizelist-title p{
+    /* width: 142px;
+    height: 34px; */
+    font-size: 0.36rem;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #DB3922;
+    line-height: 0.30rem;
+    position: absolute;
+    left: 2.6rem;
+    top: 0.61rem;
+
+    
+}
+.prizelist-box{
+    width: 6rem;
+    height: 1.49rem;
+    background: #FFF5DA;
+    box-shadow: 0rem 0.06rem 0.24rem 0rem rgba(197, 22, 42, 0.5);
+    border-radius: 0.16rem;
+    text-align: center;
+
+    position: relative;
+
+}
+.prizelist-box p{
+    width: 5.92rem;
+    height: 0.23rem;
+    font-size: 0.24rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #3C3B3A;
+
+    position: absolute;
+    top: 0.36rem;
+
+
+}
+.rule-title{
+    width: 6.4rem;
+    height: 1.86rem;
+    position: relative;
+}
+.rule-title p{
+    font-size: 0.36rem;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #DB3922;
+    line-height: 0.30rem;
+    position: absolute;
+    left: 2.6rem;
+    top: 0.88rem;
+
+
+}
+.rule-title img{
+    width: 4.26rem;
+    height: 1.22rem;
+    position: absolute;
+    top: 0.34rem;
+    left: 1.11rem;
+}
+.rule-box{
+    width: 6rem;
+    /* height: 5.93rem; */
+    background: #FFF5DA;
+    box-shadow: 0rem 0.06rem 0.24rem 0rem rgba(197, 22, 42, 0.5);
+    border-radius: 0.16rem;
+}
+
+.rule-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* align-content:center; */
+    width: 6rem;
+
+}
+.rule-item{
+    /* height: 1rem; */
+    width: 5.5rem;
+    margin: 0.02rem;
+    position: relative;
+}
+#num{
+    width: 0.25rem;
+    height: 0.25rem;
+    background: #EB432D;
+    border-radius: 50%;
+    font-size: 0.20rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: -0.2rem;
+    color: #FFFFFF; 
+    text-align: center;
+    margin: 0.13rem auto;
+
+    float: left;
+}
+#rule{
+    width: 5.2rem;
+    /* height: 0.42rem; */
+    font-size: 0.20rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 0.32rem;
+    margin-top: 0.1rem;
+    margin-left: 0.4rem;
+  
+
+}
+.footer{
+    height: 0.5rem;
+}
