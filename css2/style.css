@@ -354,7 +354,7 @@ body{
 /* 外层 */
 .pop-tab{
     width: 6rem ;
-    height: 0.6rem;
+    height: 0.7rem;
     position: relative;
     overflow: hidden;
    
@@ -444,10 +444,11 @@ left: 0.3rem;
 }
 .pop-box{
     width: 6rem;
-    height: 4.6rem;
+    height: 6.6rem;
+    margin: 0.6rem;
     /* background: #FFF5DA;
     border-radius: 0.10rem; */
-    margin-top: 0.3rem;
+    /* margin-top: 0.3rem; */
     /* padding-left: 0.3rem;
     padding-right: 0.3rem; */
     /* margin-bottom: 0.3rem; */
@@ -472,12 +473,20 @@ left: 0.3rem;
 }
 #pop-footer{
     width: 6rem;
-    height: 0.59rem;
+    height: 0.82rem;
     margin-top: 0.2rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
 
 }
 /* 查看更多 */
+.pop-btn{
+    width: 1.95rem;
+    height: 0.59rem;
+    margin-top: 0.2rem;
+    /* margin-bottom: 0.3rem; */
+
+
+}
 .pop-btn p{
     /* width: 1.09rem; */
     height: 0.26rem;
@@ -487,6 +496,7 @@ left: 0.3rem;
     color: #DA3520;
     line-height: 0.6rem;
     text-align: center;
+    
 }
 
 .pop-item{
@@ -495,11 +505,23 @@ left: 0.3rem;
     /* margin-left: 0.01rem; */
     position: relative;
 }
-#pop-pic1,#pop-pic2{
+#pop-pic1{
     width: 2.6rem;
     height: 4.62rem;
+    margin-left: 0.1rem;
+
+}
+#pop-pic2{
+    width: 2.6rem;
+    height: 4.62rem;
+    margin-right: 0.1rem;
+
+    /* margin: 0.2rem; */
     /* border-radius: 0.13rem; */
 }
+
+
+
 .tabset{
     width: 1.4rem;
     position: relative;
@@ -531,6 +553,23 @@ left: 0.3rem;
     white-space:nowrap;
 
 }
+.setring-btn{
+    width: 2.73rem;
+    height: 1.02rem;
+    margin-left: 0.05rem;
+    /* position: absolute;
+    left: 0.5rem;
+    top: 0.1rem; */
+    position: relative;
+}
+.setring-btn img{
+    width: 2.83rem;
+    height: 0.93rem;
+    margin-left: 0.05rem;
+    /* position: absolute;
+    left: 1rem; */
+
+}
 #setring{
     /* width: 1.67rem; */
     height: 0.28rem;
@@ -541,8 +580,9 @@ left: 0.3rem;
     line-height: 0.40rem;
     z-index: 6;
     position: absolute;
-     bottom: -0.54rem;
+     /* bottom: -0.54rem; */
      left: 0.5rem;
+     top: 0.05rem;
 }
 
 .pop-item img{
@@ -560,7 +600,7 @@ left: 0.3rem;
     width: 2.83rem;
     height: 0.93rem;
     position: absolute;
-    top: 102%;
+    top: -0.1rem;
     left: -0.12rem;
 }
 #video1{
@@ -807,7 +847,7 @@ height: 20px; */
 
 .free-box{
     width: 6.4rem;
-    /* height: 5.8rem; */
+    height: 6.8rem;
     position: relative;
 
 }
