@@ -5,10 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用5G视频彩铃</title>
+    <link rel="stylesheet" href="../Activity/css/style.css">
 </head>
 <body>
-    <div>
-        
+    <div class="body-wrap">
+        <div class="header">
+            <img src="../Activity/img/index-img/pic978 (2).png" id="top-icon">
+            <img src="../Activity/img/index-img/people-left.png" id="peole-left">
+            <img src="../Activity/img/index-img/people-right.png" id="people-right">
+        </div>
+        <div class="main-title">
+            <img src="../Activity/img/index-img/pic600.png" alt="">
+        </div>
+        <div class="main">
+            <div class="main-grid">
+                <div class="main-back">
+                    <div id="img-top">
+                        <img src="../Activity/img/index-img//group2113.png" >
+
+                    </div>
+                    <div id="img-center">
+                        <img src="../Activity/img/index-img/group2113(1).png" >
+
+                    </div>
+                    <div  id="img-bottom">
+                        <img src="../Activity/img/index-img/group2113(2).png">
+
+                    </div>
+                   
+            
+
+                </div>
+               
+            
+            </div>
+            <div class="null"></div>
+           
+        </div>
+        <div class="connect">
+            <img src="../Activity/img/index-img/background_07.jpg" alt="">
+        </div>
+        <div class="video-ring">
+            <div class="video-header">
+                <img src="../Activity/img/index-img/pic715.png" alt="">
+                <p>视频彩铃是什么?</p>
+            </div>
+            <div class="video-title">
+                <p>您可为自己挑选个性化来电显示，当对方拨打您的电话时，可收看到您的个性化彩铃。</p>
+            </div>
+            <div class="video-content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        
+                    </div>
+
+            </div>
+            <div class="set-colorring">
+                <img src="img/index-img/rectangle1058.png" alt="">
+                <p>设为视频彩铃</p>
+
+            </div>
+            
+        </div>
+
     </div>
+    <div class="two-connect">
+        <img src="../Activity/img/index-img/background_07.jpg" alt="">
+    </div>
+    <div class="video-group">
+        <div class="group-header">
+            <img src="../Activity/img/index-img/pic715.png" alt="">
+            <p>视频彩铃巅峰榜</p>
+        </div>
+        <div class="video-title">
+            <p>每天更新，根据百万网友的选择评分</p>
+        </div>
+        <div class="group-content">
+            
+        </div>
+        <div class="set-colorring">
+            <img src="img/index-img/reactangle 1058.png" alt="">
+            <p>查看更多</p>
+
+        </div>
+
+
+    </div>
+</div>
+
+    <script>
+        // 适配
+     (function (doc, win) {
+            var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                // 根元素字体大小计算
+                docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+            document.querySelector('body').style.visibility = "visible";
+
+        })(document, window);
+
+        //swiper
+        var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        });
+    </script>
 </body>
 </html>
