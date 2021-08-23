@@ -92,9 +92,9 @@
         <div class="pop-tab">
             <div class="tab-box">
                 <div class="tab-content">
-                    <div class="tab-item" id="select" onclick="lightpic">
+                    <div class="tab-item" id="select" >
                         <div class="tabset">
-                            <img id="tab-pic" src="img/0-shouye-quanyi/1018(3).png" >
+                            <img id="tab-pic" src="img/0-shouye-quanyi/1018(3).png" onclick="lightpic()">
                             <p class="tab-p"> 精选</p>
 
                         </div>
@@ -102,21 +102,21 @@
                     </div>
                     <div class="tab-item" id="other">
                         <div class="tabset">
-                            <img id="tab-pic" src="img/0-shouye-quanyi/1018.png">
+                            <img id="tab-pic" src="img/0-shouye-quanyi/1018(3).png" onclick="lightpic()">
                         <p  class="tab-p">今日推荐</p>
                         </div>
                         
                     </div>
                     <div class="tab-item" id="other">
                         <div class="tabset">
-                            <img id="tab-pic" src="img/0-shouye-quanyi/1018.png" >
+                            <img id="tab-pic" src="img/0-shouye-quanyi/1018(3).png" onclick="lightpic()">
                             <p  class="tab-p"> 明星爱豆</p>
                         </div>
                        
                     </div>
                     <div class="tab-item" id="other">
                         <div class="tabset">
-                            <img id="tab-pic" src="img/0-shouye-quanyi/1018.png">
+                            <img id="tab-pic" src="img/0-shouye-quanyi/1018(3).png" onclick="lightpic()">
                             <p  class="tab-p"> 明星爱豆</p>
 
                         </div>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="tab-item" id="other">
                         <div class="tabset">
-                            <img id="tab-pic" src="img/0-shouye-quanyi/1018.png">
+                            <img id="tab-pic" src="img/0-shouye-quanyi/1018(3).png">
                         <p  class="tab-p"> 明星爱豆</p>
 
                         </div>
@@ -1855,10 +1855,10 @@
             for(var y = 0;y < tabpic.length;y++){
                 tabpic.onclick=(function(y){
                     return function(){
-                        if(tabpic[y].getAttribute("src")=="img/0-shouye-quanyi/1018(3).png"){
-                            tabpic[y].setAttribute("src", "img/0-shouye-quanyi/1018(2).png");
-                            p[y].setAttribute("color","#DB3922")
-                        }else{tabpic[y].setAttribute("src", "img/0-shouye-quanyi/1018(2).png");
+                        if(tabpic[y].src="img/0-shouye-quanyi/1018(3).png"){
+                            tabpic[y].src= "img/0-shouye-quanyi/1018(2).png";
+                            p[y].style.color="#DB3922";
+                        }else{tabpic[y].src= "img/0-shouye-quanyi/1018(2).png";
                         };
                     
                 }
