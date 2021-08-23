@@ -263,7 +263,7 @@ body{
     line-height: 0.2rem;
 
 }
-#right-top{
+.top-grid{
     width: 0.4rem;
     height: 0.19rem;
     background: linear-gradient(-47deg, #FB63FF 0%, #9329FF 100%);
@@ -271,13 +271,19 @@ body{
 
     position: absolute;
     top:0.01rem ;
-    right: 0.17rem;
-
-    font-size: 0.08rem;
+    right: 0.1rem;
+    
+}
+#right-top{
+    /* width: 0.29rem;
+    height: 0.12rem; */
+    font-size: 0.12rem;
     font-family: Microsoft YaHei;
     font-weight: bold;
     color: #FFFFEC;
-    line-height: 0.2rem;
+    line-height: 0.18rem;
+    /* float: right; */
+    /* margin: 0.1rem; */
 
 }
 .left,.right,.center-left,.center-right{
@@ -428,14 +434,7 @@ body{
     /* left: 0.3rem; */
 
 }
-.tab-pic::before{
-    background: url(../img/0-shouye-quanyi/1018\(3\).png);
 
-}
-.tab-pic::after{
-    background: url(../img/0-shouye-quanyi/1018\(2\).png);
-
-}
 .tabset p{
     /* width: 1.4rem; */
     /* height: 0.52rem;
@@ -663,10 +662,10 @@ body{
 }
 .music-box{
     width: 6rem;
-/* height: 15.50rem; */
-background: #FFF5DA;
-border-radius: 0.12rem;
-position: relative;
+    /* height: 15.50rem; */
+    background: #FFF5DA;
+    border-radius: 0.12rem;
+    position: relative;
 }
 .music-tab{
     width: 0.96rem;
@@ -706,10 +705,39 @@ position: relative;
 }
 /* left */
 .music-list{
-    
+    width: 0.3rem;
+    height: 0.65rem;
     position: absolute;
-    left: 0.33rem;
+    left: 0.15rem;
 }
+/* 前三 */
+#top-num{
+    width: 0.26rem;
+    height: 0.2rem;
+    font-size: 0.24rem;
+    font-family: Adobe Heiti Std;
+    font-weight: bold;
+    color: #FA3734;
+    line-height: 0.64rem;
+
+    
+
+}
+/* 后面数字 */
+.num{
+    width: 0.27rem;
+    height: 0.2rem;
+    font-size: 0.24rem;
+    font-family: Adobe Heiti Std;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.64rem;
+    /* position: absolute;
+    left: -0.23rem; */
+    /* text-align: center; */
+
+}
+
 /* center */
 .lyric{
     margin: 0 3rem;
@@ -725,13 +753,7 @@ position: relative;
     line-height: 0.2rem;
 
 }
-.music-list{
-    width: 1.14rem;
-    height: 0.92rem;
-
-    
-   
-}
+ 
 
 a{
     text-decoration: none;
@@ -739,9 +761,9 @@ a{
 }
 .line{
     width: 5.26rem;
-height: 0.01rem;
-/* border: 0.01rem solid #C49D83; */
-opacity: 0.3;
+    height: 0.01rem;
+    /* border: 0.01rem solid #C49D83; */
+    opacity: 0.3;
 
 }
 .song{
@@ -798,40 +820,18 @@ height: 20px; */
     
 }
 .mubtn{
+    width: 0.36rem;
+    height: 0.36rem;
     display: none;
-    position: absolute;
-    left: -0.23rem;
+    margin-bottom: 0.62rem;
+    /* position: absolute;
+    left: -0.33rem; */
 }
 #setmusic{
     width: 0.62rem;
     height: 0.68rem;
     position: absolute;
     right: -0.3rem;
-}
-#top-num{
-    width: 0.26rem;
-    height: 0.2rem;
-    font-size: 0.24rem;
-    font-family: Adobe Heiti Std;
-    font-weight: bold;
-    color: #FA3734;
-    line-height: 0.64rem;
-
-    
-
-}
-.num{
-    width: 0.27rem;
-    height: 0.2rem;
-    font-size: 0.24rem;
-    font-family: Adobe Heiti Std;
-    font-weight: bold;
-    color: #333333;
-    line-height: 0.64rem;
-    position: absolute;
-    left: -0.23rem;
-    /* text-align: center; */
-
 }
 
 .free-title{
@@ -891,11 +891,11 @@ height: 20px; */
   }
 .slide-item{
     width: 4.12rem;
-    /* height: 6.59rem; */
+    height: 6.7rem;
     background: #FFF5DA;
     box-shadow: 0rem 0.09rem 0rem 0rem #DA3520, 0rem 0.02rem 0rem 0rem #FFFFFF;
-    border-radius: 0.10rem;
-    border-radius: 0.13rem;
+    border-radius: 0.1rem;
+
 
 
 }
@@ -942,22 +942,23 @@ height: 20px; */
 }
   #pic1,#pic2,#pic3{
     width: 3.72rem;
-    height: 6.19rem;
+    height: 6.1rem;
     background: #9D1B16;
     border-radius: 0.10rem;
   }
  
 #topslie,#bottomslie{
     width: 4rem;
-    height: 0.15rem;
-    margin-left: 0.06rem;
-    margin-right: 0.06rem;
+    /* height: 0.15rem; */
+    /* margin-left: 0.06rem;
+    margin-right: 0.06rem; */
+    margin: 0.06rem;
   
 } 
   #free-video2{
     display: none;
-     width: 2.6rem;
-     height: 4.2rem;
+     width: 3.72rem;
+     height: 6.19rem;
      border-radius: 0.13rem;
      background-size: auto;
  }
@@ -1014,7 +1015,7 @@ left: 0.7rem;
     border-radius:0.23rem ; */
     background: #C43D2E;
 /* opacity: 0.2; */
-border-radius: 0.08rem;
+    border-radius: 0.08rem;
     position: absolute;
     top: 0.3rem;
     left: 0.2rem;
