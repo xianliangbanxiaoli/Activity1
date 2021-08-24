@@ -122,8 +122,6 @@ body{
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation: scale 1s infinite;
-    
-/* Safari and Chrome */
     -webkit-animation: scale 1s infinite;
     -webkit-animation-timing-function:linear;
     -webkit-animation-name: scale;
@@ -142,7 +140,6 @@ body{
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation: floating 1s infinite;
-/* Safari and Chrome */
     -webkit-animation:floating 1s infinite;
     -webkit-animation-timing-function:linear;
 }
