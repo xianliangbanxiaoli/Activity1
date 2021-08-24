@@ -311,17 +311,17 @@ body{
     width: 6.4rem;
     height: 1rem;
     position: absolute;
-    top: -0.2rem;
+    top: -0.12rem;
 }
 
 .video-group{
     width: 6rem;
-    height: 13.94rem;
+    height: 13.64rem;
     background: #FFB955;
     /* box-shadow: 0px 7px 18px 0px #B60917, 0px -4px 0px 0px #FF6C3F, 0px 4px 0px 0px #FFD45D; */
     border-radius: 0.15rem;
-    border-top-left-radius: 0rem ;
-    border-top-right-radius: 0rem;
+    /* border-top-left-radius: 0rem ;
+    border-top-right-radius: 0rem; */
     position: relative;
 
 }
@@ -337,6 +337,7 @@ body{
     height: 0.77rem;
     position: absolute;
     left: 1.07rem;
+    top: -0.08rem;
 
 
 }
@@ -350,7 +351,7 @@ body{
     z-index: 2;
     position: absolute;
     left: 1.62rem;
-    top: 0.13rem;
+    top: 0.01rem;
 }
 .video-title{
     width: 5.16rem;
@@ -467,6 +468,7 @@ body{
     width: 2.54rem;
     height: 0.86rem;
     margin-left: 0.05rem;
+    margin-bottom: 0.01rem;
     /* position: absolute;
     left: 1rem; */
 
@@ -553,15 +555,19 @@ top: 0.39rem;
       z-index: 5;
   }
 .float-btn {
-    width: 6rem;
-    height: 1.64rem;
+    width: 6.4rem;
+    height: 1.66rem;
     position: relative;
+    background: #FFFCE9;
+    box-shadow: 0rem -0.07rem 0.07rem 0rem rgba(178, 34, 15, 0.41)
     
 
 }
 #float-button{
     width: 6rem;
     height: 1.64rem;
+   
+;
 
     animation-name: scale;
     animation-duration: 1s;
