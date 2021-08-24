@@ -154,7 +154,7 @@ body{
     width: 5.16rem;
     height: 0.53rem;
     /* margin: 0.72rem 0.42rem; */
-    margin-top: 0.72rem;
+    margin-top: 0.74rem;
     margin-left: 0.42rem;
 
 }
@@ -183,13 +183,13 @@ body{
 .swiper-container {
     width: 5.60rem;
     height: 7.52rem;
+    position: absolute;
+    top: -0.3rem;
+
   }
   .swiper-slide {
     text-align: center;
     font-size: 0.18rem;
-    background: #fff;
-
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -207,19 +207,87 @@ body{
   }
   .swiper-slide-active,.swiper-slide-duplicate-active{
     transform: scale(1);
+    width: 3.70rem;
+    height: 6.46rem;
+    z-index: 3;
   }
-  .set-colorring{
+  .swiper-slide-next{
+    z-index: 2;
+    opacity: 0.4;
+
+}
+ .swiper-slide-prev{
+    opacity: 0.4;
+}
+
+.slide-item{
+    width: 3.70rem;
+    height: 6.46rem;
+    border-radius: 0.1rem;
+
+
+}
+#pic1,#pic2,#pic3{
+    width: 3.70rem;
+    height: 6.46rem;
+    border: 0.04rem solid #FFDB7A;
+    border-radius: 0.10rem;
+  }
+
+  #free-video2,#free-video1,#free-video3{
+    display: none;
+    width: 3.70rem;
+    height: 6.46rem;
+    border: 0.04rem solid #FFDB7A;
+    border-radius: 0.10rem;
+    
+     border-radius: 0.13rem;
+     background-size: auto;
+ }
+.free-btn{
+    width: 0.97rem;
+    height: 0.97rem;
+    position: absolute;
+    top: 40%;
+    left: 0.6rem;
+}
+.free-btn img{
+    width: 0.97rem;
+    height: 0.97rem;
+
+}
+.msg{
+    width: 5.7rem;
+    height: 0.3rem;
+    position: relative;
+
+}
+.msg p{
+    width: 1.5rem;
+    height: 0.23rem;
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #FFFBED;
+    /* z-index: 5; */
+    position: absolute;
+    letter-spacing: 0.01rem;
+    left: 2.08rem;
+    top: -0.6rem;
+  
+}
+.set-ring{
     width: 6rem;
-    height: 0.95rem;
+    height: 1rem;
     text-align: center;
     position: relative;
 
   }
-  .set-colorring img{
-      width: 3.45rem;
-      height: 0.95rem;
-  }
-  .set-colorring p{
+.set-ring img{
+    width: 3.45rem;
+    height: 0.95rem;
+}
+.set-ring p{
     width: 1.96rem;
     height: 0.31rem;
     font-size: 0.32rem;
@@ -228,9 +296,10 @@ body{
     color: #FFFAD3;
     position: absolute;
     left: 2rem;
-    top: 0.28rem;
-    
-  }
+    top: 0.3rem;
+
+}
+  
   .two-connect{
     width: 6.4rem;
     height: 0.75rem;
@@ -247,7 +316,7 @@ body{
 
 .video-group{
     width: 6rem;
-    height: 13.64rem;
+    height: 13.94rem;
     background: #FFB955;
     /* box-shadow: 0px 7px 18px 0px #B60917, 0px -4px 0px 0px #FF6C3F, 0px 4px 0px 0px #FFD45D; */
     border-radius: 0.15rem;
@@ -298,15 +367,264 @@ body{
     font-family: PingFang SC;
     font-weight: bold;
     color: #96271C;
+    padding-top: 0.1rem;
     text-align: center;
 }
-
-.group-content{
+.video-box{
     width: 5.60rem;
-    height: 11.05rem;
+    height: 11.3rem;
     background: #FFFCE9;
     border-radius: 0.14rem;
-    /* margin-top: 666660.3rem; */
     margin-right: 0.2rem;
     margin-left: 0.2rem;
+    
+}
+.group-content{
+    width: 5.60rem;
+    height: 11.03rem;
+   
+   
+    /* margin-top: 666660.3rem; */
+    /* margin-right: 0.2rem;
+    margin-left: 0.2rem; */
+    display: flex;
+      align-items: center;
+    /* align-content: flex-start; */
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+}
+.pop-item{
+
+    width: 2.44rem;
+    height: 4.32rem;
+    background: #A0591A;
+    border-radius: 0.08rem;
+    /* margin-left: 0.01rem; */
+    position: relative;
+}
+.pop-box{
+    width: 5.6rem;
+    height: 5.2rem;
+    margin-top: 0.3rem;
+   
+    display: flex;
+  
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+#pop-left{
+    margin-left: 0.1rem;
+
+}
+#pop-right{
+    margin-right: 0.1rem;
+
+}
+#pop-pic1{
+    width: 2.44rem;
+    height: 4.32rem;
+   
+
+}
+#pop-pic2{
+    width: 2.44rem;
+    height: 4.32rem;
+   
+
+    /* margin: 0.2rem; */
+    /* border-radius: 0.13rem; */
+}
+.arttitle,#artitle1,#artitle2{
+    width: 2.02rem;
+    /* height: 0.25rem; */
+    font-size: 0.26rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.37rem;
+    position: absolute;
+    letter-spacing: 0.04rem;
+    top: 88%;
+    left: 0.31rem;
+/* 超出部分显示... */
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+}
+.setring-btn{
+    width: 2.54rem;
+    height: 0.76rem;
+    /* margin-left: 0.05rem; */
+    /* position: absolute;
+    left: 0.5rem;
+    top: 0.1rem; */
+    position: relative;
+}
+.setring-btn img{
+    width: 2.54rem;
+    height: 0.86rem;
+    margin-left: 0.05rem;
+    /* position: absolute;
+    left: 1rem; */
+
+}
+#setring{
+    /* width: 1.67rem; */
+    height: 0.28rem;
+    font-size: 0.28rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #FFFAD3;
+    line-height: 0.40rem;
+    z-index: 3;
+    position: absolute;
+     /* bottom: -0.54rem; */
+     left: 0.3rem;
+     top: 0.05rem;
+}
+
+/* .pop-item img{
+    width: 2.83rem;
+    height: 0.93rem;
+} */
+#pk-player1,#pk-player2{
+    width: 0.90rem;
+    height: 0.90rem;
+    position: absolute;
+    top: 1.58rem;
+    left: 0.87rem;
+}
+#setbtn{
+    width: 2.54rem;
+    height: 0.86rem;
+    position: absolute;
+    top: -0.1rem;
+    left: -0.12rem;
+}
+#video1{
+    display: none;
+    width: 2.44rem;
+    height: 4.32rem;
+    border-radius: 0.8rem;
+    background-size: auto;
+}
+#video2{
+    display: none;
+    width: 2.44rem;
+    height: 4.32rem;
+    border-radius: 0.8rem;
+    background-size: auto;
+}
+.set-colorring{
+    width: 6rem;
+    height: 0.95rem;
+    text-align: center;
+    position: relative;
+
+  }
+.set-colorring img{
+    width: 2.85rem;
+    height: 0.81rem;
+}
+.set-colorring p{
+/* width: 0.96rem; */
+height: 0.23rem;
+font-size: 0.24rem;
+font-family: PingFang SC;
+font-weight: bold;
+color: #96271C;
+position: absolute;
+left: 2.6rem;
+top: 0.39rem;
+
+}
+  .floating{
+     
+    width: 6rem;
+    height: 1.64rem;
+      position: fixed;
+      top: 30rem;
+      width: 6rem;
+      height: 0.64rem;
+      top: 10rem;
+      z-index: 5;
+  }
+.float-btn {
+    width: 6rem;
+    height: 1.64rem;
+    position: relative;
+    
+
+}
+#float-button{
+    width: 6rem;
+    height: 1.64rem;
+
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation: scale 1s infinite;
+    -webkit-animation: scale 1s infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name: scale;
+    -webkit-animation-duration:1s;
+    
+
+
+}
+.float-btn p{
+    width: 1.5rem;
+    height: 0.48rem;
+    font-size: 0.48rem;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #FFFFE6;
+    line-height: 0.24rem;
+    position: absolute;
+    top: 0.42rem;
+    left: 2.3rem;
+}
+.null2{
+    height: 1.32rem;
+}
+#float-icon{
+    width: 0.76rem;
+    height: 0.77rem;
+    position: absolute;
+    top: 0.42rem;
+    left: 4.2rem;
+
+    animation-name: floating;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation: floating 1s infinite;
+    -webkit-animation:floating 1s infinite;
+    -webkit-animation-timing-function:linear;
+}
+/* 动画代码 */
+@keyframes scale {
+    0%{
+        transform: scale(1.02);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.02);
+    }
+
+  }
+@keyframes floating {
+0%{
+    transform: translate(0.0);
+}
+50%{
+    transform: translate(-.3rem,-.3rem);
+}
+100%{
+    transform: translate(0,0);
+}
 }
