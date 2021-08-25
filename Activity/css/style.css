@@ -2,13 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-}
 .body-wrap{
     display: flex;
     align-items: center;
@@ -52,9 +45,6 @@ body{
 .main-title img{
     width: 6.4rem;
     height: 1.12rem;
-
-  
-
 }
 .main{
     width: 6rem;
@@ -71,7 +61,6 @@ body{
     border-radius: 0.15rem;
     position: absolute;
     top: -0.5rem;
-  
 }
 .main-back{
     width: 5.60rem;
@@ -140,12 +129,10 @@ body{
 }
 .video-header p{
     width: 2.78rem;
-    height: 0.35rem;
     font-size: 0.36rem;
     font-family: PingFang SC;
     font-weight: bold;
     color: #96271C;
-    z-index: 2;
     position: absolute;
     left: 1.62rem;
     top: 0.13rem;
@@ -160,7 +147,6 @@ body{
 }
 .video-title p{
     width: 5.16rem;
-    height: 0.53rem;
     font-size: 0.24rem;
     font-family: PingFang SC;
     font-weight: bold;
@@ -234,7 +220,7 @@ body{
     border-radius: 0.10rem;
   }
 
-  #free-video2,#free-video1,#free-video3{
+#free-video2,#free-video1,#free-video3{
     display: none;
     width: 3.70rem;
     height: 6.46rem;
@@ -316,7 +302,7 @@ body{
 
 .video-group{
     width: 6rem;
-    height: 13.64rem;
+    height: 13.84rem;
     background: #FFB955;
     /* box-shadow: 0px 7px 18px 0px #B60917, 0px -4px 0px 0px #FF6C3F, 0px 4px 0px 0px #FFD45D; */
     border-radius: 0.15rem;
@@ -389,7 +375,7 @@ body{
     /* margin-right: 0.2rem;
     margin-left: 0.2rem; */
     display: flex;
-      align-items: center;
+    align-items: center;
     /* align-content: flex-start; */
     justify-content: space-evenly;
     flex-direction: column;
@@ -411,18 +397,19 @@ body{
    
     display: flex;
   
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
     
 }
-#pop-left{
-    margin-left: 0.1rem;
+/* #pop-left{
+    /* margin-left: 0.1rem;
+    margin-right: 0.1rem; */
 
 }
 #pop-right{
     margin-right: 0.1rem;
 
-}
+} */
 #pop-pic1{
     width: 2.44rem;
     height: 4.32rem;
@@ -432,10 +419,6 @@ body{
 #pop-pic2{
     width: 2.44rem;
     height: 4.32rem;
-   
-
-    /* margin: 0.2rem; */
-    /* border-radius: 0.13rem; */
 }
 .arttitle,#artitle1,#artitle2{
     width: 2.02rem;
@@ -487,11 +470,6 @@ body{
      left: 0.3rem;
      top: 0.05rem;
 }
-
-/* .pop-item img{
-    width: 2.83rem;
-    height: 0.93rem;
-} */
 #pk-player1,#pk-player2{
     width: 0.90rem;
     height: 0.90rem;
@@ -522,7 +500,7 @@ body{
 }
 .set-colorring{
     width: 6rem;
-    height: 0.95rem;
+    height: 1rem;
     text-align: center;
     position: relative;
 
@@ -532,28 +510,27 @@ body{
     height: 0.81rem;
 }
 .set-colorring p{
-/* width: 0.96rem; */
-height: 0.23rem;
-font-size: 0.24rem;
-font-family: PingFang SC;
-font-weight: bold;
-color: #96271C;
-position: absolute;
-left: 2.6rem;
-top: 0.39rem;
+    height: 0.23rem;
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #96271C;
+    position: absolute;
+    left: 2.6rem;
+    top: 0.39rem;
 
 }
-  .floating{
+.floating{
      
     width: 6rem;
     height: 1.64rem;
-      position: fixed;
-      top: 30rem;
-      width: 6rem;
-      height: 0.64rem;
-      top: 10rem;
-      z-index: 5;
-  }
+    position: fixed;
+    top: 30rem;
+    width: 6rem;
+    height: 0.64rem;
+    top: 10rem;
+    z-index: 5;
+}
 .float-btn {
     width: 6.4rem;
     height: 1.66rem;
@@ -566,9 +543,6 @@ top: 0.39rem;
 #float-button{
     width: 6rem;
     height: 1.64rem;
-   
-;
-
     animation-name: scale;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -577,24 +551,21 @@ top: 0.39rem;
     -webkit-animation-timing-function:linear;
     -webkit-animation-name: scale;
     -webkit-animation-duration:1s;
-    
-
-
 }
 .float-btn p{
     width: 1.5rem;
-    height: 0.48rem;
+    /* height: 0.48rem; */
     font-size: 0.48rem;
     font-family: Microsoft YaHei;
     font-weight: bold;
     color: #FFFFE6;
-    line-height: 0.24rem;
+    line-height: 0.48rem;
     position: absolute;
-    top: 0.42rem;
+    top: 0.32rem;
     left: 2.3rem;
 }
 .null2{
-    height: 1.32rem;
+    height: 1.62rem;
 }
 #float-icon{
     width: 0.76rem;
