@@ -79,27 +79,25 @@
     position: relative;
    
 }
-.main-grid{
+/* .main-grid{
     width: 6rem;
-    height: 4.84rem;
+    height: 4.74rem;
     background: #FFB955;
-    /* border-radius: 0.15rem; */
+
     border-bottom-right-radius: 0.15rem;
     border-bottom-left-radius: 0.15rem;
-    /* margin: 0 auto; */
+   
     text-align: center;
-    /* position: absolute;
-    top: -0.5rem; */
+   
 }
 .main-back{
     width: 5.60rem;
-    height: 4.71rem;
+    height: 4.41rem;
     background: #FFFCE9;
     border-radius: 0.14rem;
     position: absolute;
     left: 0.2rem;
   
-    /* margin: 0 auto; */
     text-align: center;
     display: table-cell;
 	vertical-align: middle;
@@ -110,14 +108,59 @@
     width: 5.30rem;
     height: 1.4rem; 
     vertical-align: middle;
-    margin-top: 0.1rem;
-    /* margin-top: 0.13rem; */
+   
   
+}
+
+.main-back img:first-child{
+    margin-top: 0.1rem;
+
+} */
+.main-grid{
+    width: 6rem;
+    height: 4.84rem;
+
+    background: #FFB955;
+    /* box-shadow: 0rem 0.07rem 18rem 0rem #B60917, 0rem -0.04rem 0rem 0rem #FF6C3F, 0rem 0.04rem 0rem 0rem #FFD45D;
+    */
+    border-radius: 0.15rem;
+    position: absolute;
+    top: -0.2rem;
+  
+}
+.main-back{
+    width: 5.60rem;
+    height: 4.41rem;
+    background: #FFFCE9;
+    border-radius: 0.14rem;
+    margin: 0.2rem 0.22rem;
+   
+}
+.main-img{
+    width: 5.30rem;
+    height: 1.4rem;
+    /* margin: 0.13rem 0.16rem 0rem 0.14rem; */
+    margin-left: 0.1rem;
 
 }
-.connect,.connect img{
+.main-back .main-img img:first-child{
+    margin-top: 0.1rem;
+}
+.main-img img{
+    width: 5.30rem;
+    height: 1.4rem;
+   
+}
+.connect{
+    width: 6.4rem;
+    height: 0.8rem;
+    position: relative;
+}
+.connect img{
     width: 6.4rem;
     height: 1rem;
+    position: absolute;
+    top: -0.15rem;
 }
 .video-ring{
     width: 6rem;
@@ -180,6 +223,7 @@
     margin-top: 0.43rem;
     margin-right: 0.1rem;
     margin-left: 0.1rem;
+    position: relative;
 }
 
 .swiper-container {
@@ -259,15 +303,15 @@
     height: 0.97rem;
 
 }
-.msg{
+/* .msg{
     width: 5.7rem;
     height: 0.3rem;
     position: relative;
 
-}
-.msg p{
+} */
+.msg{
     width: 1.5rem;
-    height: 0.23rem;
+    /* height: 0.23rem; */
     font-size: 0.24rem;
     font-family: PingFang SC;
     font-weight: bold;
@@ -276,8 +320,8 @@
     position: absolute;
     letter-spacing: 0.01rem;
     left: 2.08rem;
-    top: -0.6rem;
-  
+    bottom: 0.27rem;
+
 }
 .set-ring{
     width: 6rem;
