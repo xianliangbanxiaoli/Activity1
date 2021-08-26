@@ -31,6 +31,13 @@
     position: absolute;
     top: 1.98rem;
     left: 0.02rem;
+    animation-name: peoplemove;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation: peoplemove 1s infinite;
+    -webkit-animation:peoplemove 1s infinite;
+    -webkit-animation-timing-function:linear;
+    
 
 
 }
@@ -40,62 +47,73 @@
     position: absolute;
     right: 0.11rem;
     top: 1.8rem;
+    animation-name: peoplemove;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation: peoplemove 1s infinite;
+    -webkit-animation:peoplemove 1s infinite;
+    -webkit-animation-timing-function:linear;
 
+}
+/* 动画代码 */
+@-webkit-keyframes peoplemove
+{
+	0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -10px);}
+	100% {transform: translate(0px, 0px);}
+}
+
+.main-title{
+    width: 6.4rem;
+    height: 1.1rem;
+  
 }
 .main-title img{
     width: 6.4rem;
     height: 1.12rem;
+  
 }
 .main{
     width: 6rem;
-    height: 4rem;
+    height: 4.64rem;
     position: relative;
+   
 }
 .main-grid{
     width: 6rem;
     height: 4.84rem;
-
     background: #FFB955;
-    /* box-shadow: 0rem 0.07rem 18rem 0rem #B60917, 0rem -0.04rem 0rem 0rem #FF6C3F, 0rem 0.04rem 0rem 0rem #FFD45D;
-    */
-    border-radius: 0.15rem;
-    position: absolute;
-    top: -0.5rem;
+    /* border-radius: 0.15rem; */
+    border-bottom-right-radius: 0.15rem;
+    border-bottom-left-radius: 0.15rem;
+    /* margin: 0 auto; */
+    text-align: center;
+    /* position: absolute;
+    top: -0.5rem; */
 }
 .main-back{
     width: 5.60rem;
-    height: 4.41rem;
+    height: 4.71rem;
     background: #FFFCE9;
     border-radius: 0.14rem;
-    margin: 0.2rem 0.22rem;
+    position: absolute;
+    left: 0.2rem;
+  
+    /* margin: 0 auto; */
+    text-align: center;
+    display: table-cell;
+	vertical-align: middle;
+  
    
 }
-#img-top,#img-center,#img-bottom{
+.main-back img{
     width: 5.30rem;
-    height: 1.4rem;
-    margin: 0.13rem 0.16rem 0rem 0.14rem;
+    height: 1.4rem; 
+    vertical-align: middle;
+    margin-top: 0.1rem;
+    /* margin-top: 0.13rem; */
+  
 
-}
-#img-top img{
-    margin-top: 0.13rem;
-   
-}
-#img-bottom{
-    
-    margin-top: 0rem;
-}
-#img-top img,#img-center img,#img-bottom img{
-    width: 5.30rem;
-    height: 1.4rem;
-    /* margin: 0.13rem 0.16rem 0rem 0.14rem; */
-
-}
-.null{
-    width: 6rem;
-    height: 3rem;
-    background-color: #EB432D;
-
-    
 }
 .connect,.connect img{
     width: 6.4rem;
@@ -103,28 +121,24 @@
 }
 .video-ring{
     width: 6rem;
-    height: 10.54rem;
+    height: 10.58rem;
     background: #FFB955;
     /* box-shadow: 0px 7px 18px 0px #B60917, 0px -4px 0px 0px #FF6C3F, 0px 4px 0px 0px #FFD45D; */
     border-radius: 0.15rem;
     border-top-left-radius: 0rem ;
     border-top-right-radius: 0rem;
+   
     position: relative;
   
 }
 .video-header{
-    width: 6rem;
-    height: 0.77rem;
-    position: absolute;
-    top: -0.15rem;
-
-}
-.video-header img{
     width: 3.88rem;
     height: 0.77rem;
+    background: url("../img/index-img/pic715.png");
+    background-size: 3.88rem 0.77rem;
     position: absolute;
+    top: -0.15rem;
     left: 1.07rem;
-
 
 }
 .video-header p{
@@ -132,14 +146,16 @@
     font-size: 0.36rem;
     font-family: PingFang SC;
     font-weight: bold;
+    line-height: 0.6rem;
     color: #96271C;
-    position: absolute;
+    margin: 0 auto;
+    /* position: absolute;
     left: 1.62rem;
-    top: 0.13rem;
+    top: 0.13rem; */
 }
 .video-title{
     width: 5.16rem;
-    height: 0.53rem;
+    height: 0.64rem;
     /* margin: 0.72rem 0.42rem; */
     margin-top: 0.74rem;
     margin-left: 0.42rem;
@@ -169,7 +185,7 @@
 .swiper-container {
     width: 5.60rem;
     height: 7.52rem;
-    position: absremolute;
+    position: absolute;
     top: -0.3rem;
     
 
@@ -266,6 +282,7 @@
 .set-ring{
     width: 6rem;
     height: 1rem;
+    
     text-align: center;
     position: relative;
 
@@ -276,10 +293,11 @@
 }
 .set-ring p{
     width: 1.96rem;
-    height: 0.31rem;
+   
     font-size: 0.32rem;
     font-family: PingFang SC;
     font-weight: bold;
+    line-height: 0.4rem;
     color: #FFFAD3;
     position: absolute;
     left: 2rem;
@@ -291,8 +309,6 @@
     width: 6.41rem;
     height: 0.75rem;
     position: relative;
-    
-
   }
   .two-connect img{
     width: 6.41rem;
@@ -315,7 +331,8 @@
 }
 .group-header{
     width: 6rem;
-    height: 1.2rem;
+    height: 1.4rem;
+
     /* position: absolute; */
     /* top: -rem; */
 
@@ -336,11 +353,11 @@
 
 }
 .group-title p{
-    width: 2.78rem;
-    height: 0.35rem;
+    width: 2.57rem;
     font-size: 0.36rem;
     font-family: PingFang SC;
     font-weight: bold;
+    line-height: 0.4rem;
     color: #96271C;
     z-index: 2;
     position: absolute;
@@ -368,33 +385,38 @@
     
 }
 .video-box{
-    width: 5.60rem;
+    width: 6rem;
     /* height: 11.3rem; */
-    background: #FFFCE9;
+   
     border-radius: 0.14rem;
-    margin-right: 0.2rem;
+    /* margin-right: 0.2rem;
     margin-left: 0.2rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.3rem; */
+    position: relative;
+  
+
   
 }
 .pop-box{
     width: 5.6rem;
-    
-    position: relative;
+    background: #FFFCE9;
+    border-radius: 0.14rem;
+    margin-left: 0.2rem;
+  
 }
-.null3{
+.pop-header{
     height: 0.3rem;
 }
 .pop-grid{
     width: 5.6rem;
-    margin-left: 0.23rem;
+    margin-left: 0.2rem;
+    /* margin-top: 0.3rem; */
+  
 }
 .pop-item{
     width: 2.44rem;
     height: 5.32rem;
     border-radius: 0.08rem;
-    
- 
     display: inline-block;
   
 }
@@ -409,9 +431,7 @@
 #pop-pic1{
     width: 2.44rem;
     height: 4.32rem;
-    border-radius: 0.08rem;
-   
-   
+    border-radius: 0.08rem; 
 
 }
 
@@ -497,22 +517,15 @@
 }
 .set-colorring{
     width: 2.85rem;
-    height: 1rem;
-   
+    height: 1.3rem;
     margin-left: 1.58rem;
-    position: relative;
   
-   
-
-
+    position: relative;
   }
 .set-colorring img{
     width: 2.85rem;
     height: 0.81rem;
-    margin-bottom: 0.2rem;
-   
-   
-    
+    margin-bottom: 0.01rem;  
 }
 .set-colorring p{
     width: 0.96rem;
@@ -520,19 +533,20 @@
     font-family: PingFang SC;
     font-weight: bold;
     color: #96271C;
+    margin: 0 auto;
     
     position: absolute;
     left: 0.93rem;
-    top: 0.20rem;
+    top: 0.40rem;
 
 }
 .floating{
     position: fixed;
     bottom: 0%;
-    width: 6rem;
-    height: 1.64rem;
-   
+    width: 6.4rem;
+    height: 1.66rem;
     z-index: 5;
+    text-align: center;
 }
 .float-btn {
     width: 6.4rem;
@@ -574,8 +588,8 @@
     width: 0.76rem;
     height: 0.77rem;
     position: absolute;
-    top: 0.42rem;
-    left: 4.2rem;
+    top: 0.58rem;
+    left: 4.3rem;
 
     animation-name: floating;
     animation-duration: 1s;
